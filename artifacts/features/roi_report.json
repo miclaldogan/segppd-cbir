@@ -1,0 +1,6 @@
+{
+  "margin_frac": 0.1,
+  "n": 2263,
+  "seconds": 87.49661288400239,
+  "note": "ORACLE: uses ground-truth masks for query AND gallery; not deployable"
+}

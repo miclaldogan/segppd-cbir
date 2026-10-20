@@ -1,0 +1,12 @@
+{
+  "A_logits1000": {
+    "dim": 1000,
+    "bytes_per_vector": 4000,
+    "total_MB_2263": 9.052
+  },
+  "B_pooled2048": {
+    "dim": 2048,
+    "bytes_per_vector": 8192,
+    "total_MB_2263": 18.538496
+  }
+}

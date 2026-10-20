@@ -1,0 +1,182 @@
+{
+ "seed": 777,
+ "headline_declared_before_test": "UNCHANGED from Protocol B: mean over 3 seeds of D5_dinoB_p4_supcon, Hit@1=P@1, macro over classes. No model, loss, weight or hyper-parameter was changed after seeing Protocol B test results.",
+ "frozen_on": "2026-10-20 before first look at any test_query_C result; protocolC_seed777.csv audited first",
+ "candidates": {
+  "BASE_resnet50_frozen_logits1000_raw": {
+   "kind": "emb",
+   "path": "artifacts/features/resnet50_v2_full.npz",
+   "key": "logits",
+   "l2n": false
+  },
+  "BASE_resnet50_frozen_pooled2048_raw": {
+   "kind": "emb",
+   "path": "artifacts/features/resnet50_v2_full.npz",
+   "key": "pooled",
+   "l2n": false
+  },
+  "R1_resnet50_ft_arcface_existing_system": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/R1_resnet_arcface_s0_embeddings.npz"
+  },
+  "F_dinov2s_frozen_cls": {
+   "kind": "emb",
+   "path": "artifacts/features/dinov2s_frozen_s224.npz",
+   "key": "cls",
+   "l2n": false
+  },
+  "F_dinov2b_frozen_cls": {
+   "kind": "emb",
+   "path": "artifacts/features/dinov2b_frozen_s224.npz",
+   "key": "cls",
+   "l2n": false
+  },
+  "D2_dinoS_p4_arcface_s0": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D2_dino_p4_arcface_lr3e-5_s0_embeddings.npz"
+  },
+  "D3_dinoS_p4_proxyanchor_s0": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D3_dino_p4_proxyanchor_lr3e-5_s0_embeddings.npz"
+  },
+  "D4_dinoS_p4_supcon_s0": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D4_dino_p4_supcon_lr3e-5_s0_embeddings.npz"
+  },
+  "D5_dinoB_p4_supcon_s0": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D5_dinoB_p4_supcon_lr3e-5_s0_embeddings.npz"
+  },
+  "D3_dinoS_p4_proxyanchor_s1": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D3_dino_p4_proxyanchor_lr3e-5_s1_embeddings.npz"
+  },
+  "D4_dinoS_p4_supcon_s1": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D4_dino_p4_supcon_lr3e-5_s1_embeddings.npz"
+  },
+  "D5_dinoB_p4_supcon_s1": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D5_dinoB_p4_supcon_lr3e-5_s1_embeddings.npz"
+  },
+  "D3_dinoS_p4_proxyanchor_s2": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D3_dino_p4_proxyanchor_lr3e-5_s2_embeddings.npz"
+  },
+  "D4_dinoS_p4_supcon_s2": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D4_dino_p4_supcon_lr3e-5_s2_embeddings.npz"
+  },
+  "D5_dinoB_p4_supcon_s2": {
+   "kind": "emb",
+   "path": "artifacts/extensions/B/D5_dinoB_p4_supcon_lr3e-5_s2_embeddings.npz"
+  },
+  "E_dinoB_supcon_3seed_ensemble": {
+   "kind": "fuse",
+   "parts": [
+    [
+     "D5_dinoB_p4_supcon_s0",
+     0.3333333333333333
+    ],
+    [
+     "D5_dinoB_p4_supcon_s1",
+     0.3333333333333333
+    ],
+    [
+     "D5_dinoB_p4_supcon_s2",
+     0.3333333333333333
+    ]
+   ]
+  },
+  "E_dinoS_supcon_3seed_ensemble": {
+   "kind": "fuse",
+   "parts": [
+    [
+     "D4_dinoS_p4_supcon_s0",
+     0.3333333333333333
+    ],
+    [
+     "D4_dinoS_p4_supcon_s1",
+     0.3333333333333333
+    ],
+    [
+     "D4_dinoS_p4_supcon_s2",
+     0.3333333333333333
+    ]
+   ]
+  },
+  "FUSE_dinoBens0.8_dinoSens0.2_(dev-selected)": {
+   "kind": "fuse",
+   "parts": [
+    [
+     "E_dinoB_supcon_3seed_ensemble",
+     0.8
+    ],
+    [
+     "E_dinoS_supcon_3seed_ensemble",
+     0.2
+    ]
+   ]
+  },
+  "FUSE_dinoBens0.9_resnetft0.1_(dev-selected)": {
+   "kind": "fuse",
+   "parts": [
+    [
+     "E_dinoB_supcon_3seed_ensemble",
+     0.9
+    ],
+    [
+     "R1_resnet50_ft_arcface_existing_system",
+     0.1
+    ]
+   ]
+  }
+ },
+ "paired": [
+  [
+   "D5_dinoB_p4_supcon_s0",
+   "R1_resnet50_ft_arcface_existing_system"
+  ],
+  [
+   "D5_dinoB_p4_supcon_s1",
+   "R1_resnet50_ft_arcface_existing_system"
+  ],
+  [
+   "D5_dinoB_p4_supcon_s2",
+   "R1_resnet50_ft_arcface_existing_system"
+  ],
+  [
+   "E_dinoB_supcon_3seed_ensemble",
+   "R1_resnet50_ft_arcface_existing_system"
+  ],
+  [
+   "E_dinoB_supcon_3seed_ensemble",
+   "F_dinov2b_frozen_cls"
+  ],
+  [
+   "D5_dinoB_p4_supcon_s0",
+   "D4_dinoS_p4_supcon_s0"
+  ],
+  [
+   "D4_dinoS_p4_supcon_s0",
+   "D2_dinoS_p4_arcface_s0"
+  ],
+  [
+   "D4_dinoS_p4_supcon_s0",
+   "D3_dinoS_p4_proxyanchor_s0"
+  ],
+  [
+   "E_dinoB_supcon_3seed_ensemble",
+   "D5_dinoB_p4_supcon_s0"
+  ],
+  [
+   "FUSE_dinoBens0.8_dinoSens0.2_(dev-selected)",
+   "E_dinoB_supcon_3seed_ensemble"
+  ],
+  [
+   "FUSE_dinoBens0.9_resnetft0.1_(dev-selected)",
+   "E_dinoB_supcon_3seed_ensemble"
+  ]
+ ],
+ "protocol": "C"
+}

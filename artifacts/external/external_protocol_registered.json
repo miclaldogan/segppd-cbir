@@ -1,0 +1,19 @@
+{
+ "registered_before_any_model_inference_on_external_images": true,
+ "dataset": "PlantSeg v2, Zenodo 13958858, CC BY-NC-ND 4.0, md5 16cb69a5d97a61bc553a572f929490bf; research evaluation only; images not redistributed",
+ "queries": "PlantSeg images of STRICT-tier mapped classes (11 SegPPD classes) that survive the leakage screen (hash rule pHash<=12 & dHash<=18, OR frozen DINOv2-B CLS cosine >= 0.85 to any of the 2,263 SegPPD images)",
+ "screen_file": "artifacts/external/plantseg_leak_screen.csv",
+ "screen_file_sha256_12": "8bfaaf88c31e",
+ "gallery": "SegPPD Protocol B gallery_B (809 images, all 75 classes; retrieval is open over all 75 classes, not restricted to the 11 mapped ones)",
+ "models": "D5ck_* = DINOv2-B last-4 blocks + SupCon, seeds 0/1/2, retrained with checkpoints (same config as the declared headline); R1-style ResNet50 and frozen baselines for context",
+ "preprocessing": "PlantSeg image -> EXIF transpose -> RGB -> bicubic squash to 256x256 -> bicubic to 224x224 -> ImageNet norm; embedding = mean of image and h-flip, L2-normalised; exact squared-L2 ranking",
+ "headline": "mean over the 3 seeds of Hit@1 (macro over the 11 mapped classes); 95% CI by bootstrap over classes AND over images within class (reported both)",
+ "secondary": "loose-tier classes (4) reported separately, never in headline; per-class Hit@1; P@10",
+ "no_selection": "no model, threshold or mapping may be changed after the external result is seen",
+ "known_limits": [
+  "undetected overlap (heavier crops/edits) cannot be excluded",
+  "11 of 75 classes only, no healthy classes",
+  "PlantSeg images are original-resolution web photos squashed to 256x256 (SegPPD provenance of resizing unknown)",
+  "screen threshold 0.85 chosen by visual review of SegPPD-vs-PlantSeg pairs"
+ ]
+}

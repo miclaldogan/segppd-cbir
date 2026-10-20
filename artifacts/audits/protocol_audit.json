@@ -1,0 +1,39 @@
+{
+ "protocolA": {
+  "dev_queries_n": 150,
+  "dev_train_gallery_n": 1581,
+  "test_queries_n": 225,
+  "final_train_gallery_n": 1731,
+  "dev_queries_disjoint_from_dev_run_training": true,
+  "dev_queries_disjoint_from_test_queries": true,
+  "test_queries_disjoint_from_dev_run_training": true,
+  "test_queries_disjoint_from_final_training": true,
+  "dev_queries_inside_final_training(by design: final run retrains on full gallery after selection)": true,
+  "test_query_groups_disjoint_from_final_training": true,
+  "excluded_dup_or_conflict_images_in_any_training": false,
+  "test_vs_final_training_near_dup_candidates(pHash<=14&dHash<=20)": 1,
+  "test_vs_dev_queries_near_dup_candidates": 0,
+  "min_phash_distance_test_vs_training": 14
+ },
+ "protocolB": {
+  "n_train": 772,
+  "n_gallery": 809,
+  "n_dev_query": 150,
+  "n_test_query": 225,
+  "n_classes": 75,
+  "all_sets_mutually_disjoint": true,
+  "group_ids_mutually_disjoint": true,
+  "test_queries_not_in_protocolA_test_or_dev": true,
+  "min_gallery_positives_per_class": 5,
+  "min_train_images_per_class": 4,
+  "every_class_has_3_test_2_dev_train_gallery": true,
+  "near_dup_candidates_test_vs_train": 1,
+  "min_phash_test_vs_train": 14,
+  "near_dup_candidates_test_vs_gallery": 0,
+  "min_phash_test_vs_gallery": 14,
+  "near_dup_candidates_dev_vs_train": 0,
+  "min_phash_dev_vs_train": 14,
+  "near_dup_candidates_dev_vs_gallery": 1,
+  "min_phash_dev_vs_gallery": 14
+ }
+}

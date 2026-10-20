@@ -1,0 +1,25 @@
+{
+ "n_pairs_calibration": 28,
+ "calib_dup_cos_min": 0.8925501108169556,
+ "calib_dup_cos_p05": 0.9203407168388367,
+ "emb_threshold_used": 0.85,
+ "calib_nondup_cos_max": 0.9746971130371094,
+ "calib_nondup_cos_p99": 0.9381741285324097,
+ "n_plantseg": 11458,
+ "n_flagged": 867,
+ "n_hash": 229,
+ "n_emb": 862,
+ "flagged_by_tier": {
+  "unmapped": 671,
+  "strict": 136,
+  "loose": 60
+ },
+ "nn_cos_quantiles": {
+  "0.5": 0.6951143145561218,
+  "0.9": 0.8260878920555115,
+  "0.99": 0.9587582945823669,
+  "0.999": 0.986221432685852
+ },
+ "mapped_images": 2240,
+ "mapped_flagged": 196
+}

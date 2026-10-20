@@ -1,0 +1,22 @@
+{
+ "n_query": 142,
+ "n_gallery": 667,
+ "n_classes": 75,
+ "queries_per_class": {
+  "2": 67,
+  "1": 8
+ },
+ "image_overlap_q_g": 0,
+ "image_overlap_q_train": 0,
+ "group_overlap_q_g": 0,
+ "group_overlap_q_train": 0,
+ "sha_overlap_q_gallery": 0,
+ "every_query_class_has_gallery": true,
+ "min_gallery_per_class": 4,
+ "min_phash_dist_vs_gallery": 14,
+ "near_dup_pairs_vs_gallery": 0,
+ "near_dup_same_class_vs_gallery": 0,
+ "min_phash_dist_vs_train": 14,
+ "near_dup_pairs_vs_train": 0,
+ "near_dup_same_class_vs_train": 0
+}

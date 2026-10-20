@@ -1,0 +1,76 @@
+class_id,a,b,diff_a_minus_b,label
+33,0.0,1.0,-1.0,eggplant_healthy
+56,0.0,1.0,-1.0,okra_powdery mildew
+64,0.0,1.0,-1.0,peanut_leaf scorch
+94,0.0,1.0,-1.0,tomato_late blight
+13,0.5,1.0,-0.5,cassava_bacterial blight
+14,0.0,0.5,-0.5,cassava_brown streak disease
+8,0.5,1.0,-0.5,banana_sigatoka
+1,0.5,1.0,-0.5,apple_healthy
+27,0.5,1.0,-0.5,cotton_healthy
+31,0.5,1.0,-0.5,cucmber_powdery mildew
+41,0.5,1.0,-0.5,grape_healthy
+29,0.5,1.0,-0.5,cotton_fussarium wilt
+21,0.0,0.5,-0.5,coffee_brown spot
+28,0.5,1.0,-0.5,cotton_bacterial blight
+10,0.5,1.0,-0.5,bean_angular leaf spot
+3,0.5,1.0,-0.5,apple_frog eye leaf spot
+74,0.5,1.0,-0.5,persimmon_healthy
+68,0.5,1.0,-0.5,pear_rust
+67,0.0,0.5,-0.5,pear_powdery mildew
+66,0.5,1.0,-0.5,pear_healthy
+58,0.0,0.5,-0.5,orange_healthy
+60,0.0,0.5,-0.5,orange_canker
+73,0.5,1.0,-0.5,pepper_mosaic virus
+75,0.0,0.5,-0.5,persimmon_diseased
+18,0.5,1.0,-0.5,cauliflower_black rot
+36,0.0,0.5,-0.5,eggplant_necrotic leaf spot
+82,0.5,1.0,-0.5,sunflower_healthy
+9,0.5,1.0,-0.5,bean_healthy
+91,0.5,1.0,-0.5,tomato_healthy
+4,0.0,0.0,0.0,apple_rust
+2,1.0,1.0,0.0,apple_powdery mildew
+17,1.0,1.0,0.0,cauliflower_healthy
+72,1.0,1.0,0.0,pepper_curl
+69,0.5,0.5,0.0,pear_scab
+34,0.0,0.0,0.0,eggplant_early blight
+38,1.0,1.0,0.0,ginko_healthy
+22,1.0,1.0,0.0,coffee_rust
+20,1.0,1.0,0.0,coffee_healthy
+24,1.0,1.0,0.0,corn_blight
+37,0.5,0.5,0.0,eggplant_powdery mildew
+12,1.0,1.0,0.0,cassava_healthy
+6,1.0,1.0,0.0,banana_healthy
+59,0.0,0.0,0.0,orange_anthracnose
+42,1.0,1.0,0.0,grape_black rot
+52,0.5,0.5,0.0,lemon_chlorosis
+43,0.5,0.5,0.0,grape_powdery mildew
+47,0.5,0.5,0.0,hops_downy mildew
+48,0.5,0.5,0.0,hops_nutrient deficiency
+76,0.5,0.5,0.0,plum_healthy
+71,0.5,0.5,0.0,pepper_bacterial spot
+57,1.0,1.0,0.0,okra_yellow vein mosaic disease
+61,0.5,0.5,0.0,orange_huanglongbing
+55,0.0,0.0,0.0,okra_healthy
+50,0.5,0.5,0.0,lemon_healthy
+53,1.0,1.0,0.0,lemon_citrus leaf miner
+62,1.0,1.0,0.0,peanut_healthy
+65,1.0,1.0,0.0,peanut_bacterial spot
+70,0.5,0.5,0.0,pepper_healthy
+85,1.0,1.0,0.0,tea_healthy
+84,0.5,0.5,0.0,sunflower_leaf spot
+81,1.0,1.0,0.0,strawberry_leaf scorch
+5,0.0,0.0,0.0,apple_scab
+11,0.0,0.0,0.0,bean_rust
+16,1.0,1.0,0.0,cassava_mosaic disease
+92,1.0,1.0,0.0,tomato_bacterial spot
+93,0.0,0.0,0.0,tomato_mold
+100,0.0,0.0,0.0,whitegourd_healthy
+80,0.5,0.5,0.0,strawberry_calcium deficiency
+86,0.0,0.0,0.0,tea_anthracnose
+30,1.0,0.5,0.5,cucmber_healthy
+7,1.0,0.5,0.5,banana_cordana leaf spot
+63,1.0,0.5,0.5,peanut_rust
+45,1.0,0.5,0.5,hops_healthy
+79,1.0,0.5,0.5,strawberry_healthy
+54,1.0,0.0,1.0,lemon_sooty mold

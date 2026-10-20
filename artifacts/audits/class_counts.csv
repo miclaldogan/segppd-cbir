@@ -1,0 +1,102 @@
+class_id,class_name,crop,healthy_by_name,n_images,n_usable,n_excluded,cohort
+1,apple_healthy,apple,True,25,24,1,primary
+2,apple_powdery mildew,apple,False,29,29,0,primary
+3,apple_frog eye leaf spot,apple,False,18,17,1,primary
+4,apple_rust,apple,False,24,23,1,primary
+5,apple_scab,apple,False,18,18,0,primary
+6,banana_healthy,banana,True,19,19,0,primary
+7,banana_cordana leaf spot,banana,False,21,21,0,primary
+8,banana_sigatoka,banana,False,19,19,0,primary
+9,bean_healthy,bean,True,24,23,1,primary
+10,bean_angular leaf spot,bean,False,25,25,0,primary
+11,bean_rust,bean,False,24,24,0,primary
+12,cassava_healthy,cassava,True,20,20,0,primary
+13,cassava_bacterial blight,cassava,False,21,21,0,primary
+14,cassava_brown streak disease,cassava,False,24,22,2,primary
+15,cassava_green mottle,cassava,False,12,12,0,secondary
+16,cassava_mosaic disease,cassava,False,44,42,2,primary
+17,cauliflower_healthy,cauliflower,True,22,22,0,primary
+18,cauliflower_black rot,cauliflower,False,22,22,0,primary
+19,cauliflower_downy mildew,cauliflower,False,11,11,0,secondary
+20,coffee_healthy,coffee,True,41,41,0,primary
+21,coffee_brown spot,coffee,False,22,21,1,primary
+22,coffee_rust,coffee,False,50,48,2,primary
+23,corn_healthy,corn,True,10,10,0,secondary
+24,corn_blight,corn,False,20,20,0,primary
+25,corn_rust,corn,False,10,10,0,secondary
+26,corn_gray leaf spot,corn,False,10,10,0,secondary
+27,cotton_healthy,cotton,True,27,27,0,primary
+28,cotton_bacterial blight,cotton,False,28,28,0,primary
+29,cotton_fussarium wilt,cotton,False,15,15,0,primary
+30,cucmber_healthy,cucmber,True,30,29,1,primary
+31,cucmber_powdery mildew,cucmber,False,29,29,0,primary
+32,cucmber_gray mold,cucmber,False,11,11,0,secondary
+33,eggplant_healthy,eggplant,True,24,24,0,primary
+34,eggplant_early blight,eggplant,False,16,14,2,primary
+35,eggplant_leaf mold,eggplant,False,12,12,0,secondary
+36,eggplant_necrotic leaf spot,eggplant,False,30,28,2,primary
+37,eggplant_powdery mildew,eggplant,False,19,18,1,primary
+38,ginko_healthy,ginko,True,40,40,0,primary
+39,ginko_blight,ginko,False,10,10,0,secondary
+40,ginko_brown spot,ginko,False,10,10,0,secondary
+41,grape_healthy,grape,True,24,24,0,primary
+42,grape_black rot,grape,False,27,27,0,primary
+43,grape_powdery mildew,grape,False,30,30,0,primary
+44,grape_yellow blight,grape,False,10,10,0,secondary
+45,hops_healthy,hops,True,32,32,0,primary
+46,hops_black rot,hops,False,10,8,2,secondary
+47,hops_downy mildew,hops,False,21,19,2,primary
+48,hops_nutrient deficiency,hops,False,20,20,0,primary
+49,hops_powdery mildew,hops,False,10,10,0,secondary
+50,lemon_healthy,lemon,True,24,24,0,primary
+51,lemon_anthracnose,lemon,False,11,7,4,secondary
+52,lemon_chlorosis,lemon,False,24,24,0,primary
+53,lemon_citrus leaf miner,lemon,False,39,39,0,primary
+54,lemon_sooty mold,lemon,False,18,16,2,primary
+55,okra_healthy,okra,True,24,24,0,primary
+56,okra_powdery mildew,okra,False,17,17,0,primary
+57,okra_yellow vein mosaic disease,okra,False,21,21,0,primary
+58,orange_healthy,orange,True,22,22,0,primary
+59,orange_anthracnose,orange,False,21,17,4,primary
+60,orange_canker,orange,False,24,21,3,primary
+61,orange_huanglongbing,orange,False,30,30,0,primary
+62,peanut_healthy,peanut,True,22,22,0,primary
+63,peanut_rust,peanut,False,46,45,1,primary
+64,peanut_leaf scorch,peanut,False,17,17,0,primary
+65,peanut_bacterial spot,peanut,False,26,26,0,primary
+66,pear_healthy,pear,True,42,41,1,primary
+67,pear_powdery mildew,pear,False,16,16,0,primary
+68,pear_rust,pear,False,68,67,1,primary
+69,pear_scab,pear,False,26,26,0,primary
+70,pepper_healthy,pepper,True,30,29,1,primary
+71,pepper_bacterial spot,pepper,False,31,30,1,primary
+72,pepper_curl,pepper,False,24,24,0,primary
+73,pepper_mosaic virus,pepper,False,20,19,1,primary
+74,persimmon_healthy,persimmon,True,37,37,0,primary
+75,persimmon_diseased,persimmon,False,25,25,0,primary
+76,plum_healthy,plum,True,29,29,0,primary
+77,plum_anthracnose,plum,False,9,9,0,secondary
+78,plum_rust,plum,False,12,12,0,secondary
+79,strawberry_healthy,strawberry,True,33,33,0,primary
+80,strawberry_calcium deficiency,strawberry,False,22,22,0,primary
+81,strawberry_leaf scorch,strawberry,False,18,18,0,primary
+82,sunflower_healthy,sunflower,True,22,22,0,primary
+83,sunflower_downy mildew,sunflower,False,12,12,0,secondary
+84,sunflower_leaf spot,sunflower,False,19,19,0,primary
+85,tea_healthy,tea,True,27,27,0,primary
+86,tea_anthracnose,tea,False,19,19,0,primary
+87,tea_bird eye spot,tea,False,10,10,0,secondary
+88,tea_brown blight,tea,False,10,10,0,secondary
+89,tea_red leaf spot,tea,False,10,10,0,secondary
+90,tea_white spot,tea,False,10,10,0,secondary
+91,tomato_healthy,tomato,True,19,19,0,primary
+92,tomato_bacterial spot,tomato,False,39,38,1,primary
+93,tomato_mold,tomato,False,25,25,0,primary
+94,tomato_late blight,tomato,False,52,50,2,primary
+95,tomato_powdery mildew,tomato,False,10,10,0,secondary
+96,wheat_healthy,wheat,True,10,10,0,secondary
+97,wheat_brown rust,wheat,False,10,10,0,secondary
+98,wheat_stripe rust,wheat,False,10,10,0,secondary
+99,wheat_yellow rust,wheat,False,10,10,0,secondary
+100,whitegourd_healthy,whitegourd,True,31,31,0,primary
+101,whitegourd_diseased,whitegourd,False,10,10,0,secondary

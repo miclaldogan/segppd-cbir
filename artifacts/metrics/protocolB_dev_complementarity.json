@@ -1,0 +1,8 @@
+{
+ "both_correct": 70,
+ "only_ResNet": 9,
+ "only_DINO_ft": 35,
+ "both_wrong": 36,
+ "n": 150,
+ "oracle_union_hit1_NOT_A_SYSTEM": 0.76
+}
