@@ -1,0 +1,16 @@
+{
+ "total_images_S2": 507,
+ "implied_micro_accuracy": 0.8189704142011834,
+ "macro_recall": 80.08888888888889,
+ "macro_f1": 82.71111111111111,
+ "reported_in_text": 0.773,
+ "covered_categories": 5,
+ "covered_paper_images": 242,
+ "chatld_micro_on_covered": 0.8198264462809919,
+ "chatld_macro_recall_on_covered": 82.16,
+ "uncovered_paper_images": 265,
+ "inscope_images": 943,
+ "within_plantseg_dup_pairs": 196,
+ "images_in_multi_groups": 229,
+ "groups_spanning_categories": 10
+}

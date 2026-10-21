@@ -1,0 +1,33 @@
+{
+ "registered_before_any_trackC_run": true,
+ "supervision_labels": {
+  "source_only": "all Track C training uses SegPPD train_B only (772 images); PlantSeg is never used for training, selection or tuning here.",
+  "target_supervised": "NOT run in Track C (Track B M3/M4/M5 already is the PlantSeg-supervised setting, with its own official train/val/test partition).",
+  "cross_source_mixed": "NOT run (would need a cross-dataset duplicate-controlled mixed split; documented as future work)."
+ },
+ "status_of_evaluation_sets": "Protocol B test, C test and the 1,485 strict external PlantSeg queries were all inspected before -> every Track C number on them is EXPLORATORY. The only selection set is the SegPPD dev set (150 queries).",
+ "C1_diagnosis": "error rates of the existing D5ck models on the 1,485 external queries by crop, disease, resolution bin, source host, mask-ratio bin (PlantSeg 'Mask ratio' field), provisional organ labels (121-image random stratified sample annotated by ONE annotator - an AI - so NOT independently verified), top confusions, and in-domain performance on the same 11 classes; organ is never inferred from class names.",
+ "C2_augmentation": {
+  "loss": "Proxy-Anchor alpha=32 delta=0.3 (dev-selected in Track A)",
+  "variants": {
+   "base": "Track A seed-0 run (reference)",
+   "color": "+stronger moderate colour/illumination jitter",
+   "res": "+random down/up-sampling (96-224 px), Gaussian blur, JPEG quality 40-95",
+   "geo": "+scale 0.5-1, rotation 20 deg, aspect 0.75-1.33",
+   "robust": "all moderate families together (crop 0.5-1, rot 15, jitter .3/.3/.25/.03, down/up, blur, JPEG)"
+  },
+  "selection": "SegPPD dev class-macro Hit@1, tie eps 1/150 then dev mAP (same rule as Track A) - external PlantSeg numbers are reported but never used to choose",
+  "seeds": "variants seed 0; the dev-selected variant and 'robust' are repeated with seeds 1,2 for a 3-seed comparison against the existing 3-seed base",
+  "no_mask_background_swap": "controlled background replacement was NOT used (SegPPD masks mark the annotated target region, not a reliable foreground/background split for whole-leaf classes)"
+ },
+ "C3_local_rerank": {
+  "global_stage": "exact squared L2 on the 256-D embedding, top-M",
+  "local_stage": "symmetric Chamfer similarity of L2-normalised last-layer patch tokens (16x16), no flip",
+  "combination": "alpha*cos_global + (1-alpha)*S_local over the top-M; M in {20,50}; alpha in {0,0.25,0.5,0.75}",
+  "selection": "SegPPD dev (Hit@1, tie eps then mAP), mean over 3 seeds",
+  "models": "Track A Proxy-Anchor seeds 0-2 (dev-selected loss)",
+  "inference_inputs": "query image only: no class label, mask or image id",
+  "measured": "latency per query and patch-token memory"
+ },
+ "forbidden": "No Track C decision uses an external PlantSeg or consumed-test number."
+}

@@ -1,0 +1,10 @@
+crop,paper_category,paper_count_S2,plantseg_name,tier,local_total,local_test_split,count_match,ratio_paper_to_local,flagged_vs_segppd,segppd_class,segppd_usable_images,chatld_recall_S5,chatld_precision_S5,chatld_f1_S5
+tomato,Bacterial spot,59,tomato bacterial leaf spot,strict,109,22,False,0.541,7,92.0,38,61.0,87.8,72.0
+tomato,Yellow Leaf Curl Virus,64,tomato yellow leaf curl virus,strict,93,19,False,0.688,0,,0,100.0,69.6,82.1
+tomato,Late Blight,100,tomato late blight,strict,163,33,False,0.613,8,94.0,50,84.4,91.5,87.8
+tomato,Mosaic Virus,43,tomato mosaic virus,strict,63,13,False,0.683,0,,0,48.8,91.3,63.6
+tomato,Early Blight,112,tomato early blight,strict,187,37,False,0.599,8,,0,87.4,80.8,84.0
+grape,Black rot,13,grape black rot,strict,122,24,False,0.107,6,42.0,27,69.2,75.0,72.0
+grape,Leaf Blight,46,grape leaf spot,assumed,91,18,False,0.505,12,,0,73.8,100.0,84.9
+strawberry,Leaf Scorch,26,strawberry leaf scorch,strict,39,8,False,0.667,6,81.0,18,96.2,100.0,98.0
+pepper,Bacterial Spot,44,bell pepper bacterial spot,loose,76,15,False,0.579,21,71.0,30,100.0,100.0,100.0

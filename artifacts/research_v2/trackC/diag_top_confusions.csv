@@ -1,0 +1,13 @@
+t,p,n_mean_per_seed
+tomato_mold,tomato_late blight,79.66666666666667
+apple_rust,pear_rust,51.0
+bean_rust,bean_angular leaf spot,45.333333333333336
+apple_scab,pear_scab,39.333333333333336
+tomato_late blight,tomato_mold,30.333333333333332
+apple_scab,apple_rust,27.0
+apple_scab,apple_frog eye leaf spot,26.333333333333332
+grape_black rot,grape_healthy,24.666666666666668
+apple_scab,persimmon_diseased,19.666666666666668
+bean_rust,peanut_rust,16.333333333333332
+grape_black rot,grape_powdery mildew,15.333333333333334
+apple_rust,apple_scab,15.0

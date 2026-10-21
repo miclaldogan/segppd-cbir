@@ -1,0 +1,42 @@
+{
+ "registered_before_any_model_output_on_these_queries": true,
+ "purpose": "Paper-matched benchmark against ChatLeafDisease (Pan et al., Plant Phenomics 7(3):100094, 2025) PlantSeg experiment (reported 77.3 % accuracy)",
+ "known_overlap_with_history": "Track S/T queries are PlantSeg images that were partly included in the earlier 1,485-query external evaluation (already inspected); that result stays historical evidence and is NOT used to tune anything here.",
+ "fixed_models": "D5ck_dinoB_p4_supcon_lr3e-5_s{0,1,2} (DINOv2-B last-4 blocks + SupCon, trained on SegPPD train_B only; checkpoints in artifacts/checkpoints). Frozen DINOv2-B CLS as feature control. No retraining, no hyper-parameter search, no checkpoint selection.",
+ "audit_inputs": {
+  "category_table": "artifacts/chatleaf/audit_category_table.csv",
+  "groups": "artifacts/chatleaf/audit_inscope_groups.csv",
+  "groups_sha256_12": "63d2b48f0b6d",
+  "leak_screen_sha256_12": "8bfaaf88c31e"
+ },
+ "exclusions": "PlantSeg images flagged as SegPPD copies/crops (hash rule or DINOv2-B cos>=0.85); images in near-duplicate groups that span more than one category (label conflicts) are dropped; within a duplicate group only the lexicographically first image is kept as a query.",
+ "trackS": {
+  "name": "source-only transfer (no PlantSeg label is used anywhere)",
+  "queries": "deduplicated, screened PlantSeg images of the 5 categories that have an equivalent SegPPD class: tomato bacterial leaf spot (->92), tomato late blight (->94), grape black rot (->42), strawberry leaf scorch (->81), bell pepper bacterial spot (->71, loose tier)",
+  "gallery": "all usable SegPPD images (2,220 after duplicate removal) restricted to the classes of the query's crop (crop-conditional, as in the paper where descriptions are given per crop): tomato 91-95, grape 41-44, strawberry 79-81, pepper 70-73. Secondary variant: crop-agnostic gallery = all 101 SegPPD classes.",
+  "label_universe_note": "SegPPD has no equivalent for tomato early blight / mosaic virus / yellow leaf curl virus and grape leaf blight (4 of 9 paper categories, 265 of 507 paper images): they cannot be predicted by a source-only retrieval and are therefore NOT part of the evaluated query set; this is a reduced category coverage, not a like-for-like label universe.",
+  "methods": [
+   "1-NN retrieval with exact L2 on SupCon embeddings (3 seeds)",
+   "1-NN on frozen DINOv2-B CLS",
+   "logistic regression (C=1, standardised features, label-restricted to the crop) on SupCon embeddings",
+   "logistic regression on frozen DINOv2-B CLS"
+  ],
+  "same_supervision": "all methods use exactly the same labelled SegPPD reference images (gallery = LR training set)"
+ },
+ "trackT": {
+  "name": "target-domain k-shot (uses PlantSeg labels; separate track, not comparable to zero-shot ChatLD)",
+  "categories": "all 9 paper categories incl. grape 'Leaf Blight' assumed = PlantSeg 'grape leaf spot' (unverified assumption)",
+  "label_universe": "per crop: tomato {bacterial spot, early blight, late blight, mosaic virus, yellow leaf curl virus, healthy}; grape {black rot, leaf blight(assumed), healthy}; strawberry {leaf scorch, healthy}; pepper {bacterial spot, healthy}. 'healthy' references come from SegPPD (no healthy image exists in PlantSeg).",
+  "references": "k in {1,5,10} PlantSeg images per disease category drawn at random (20 draws, seeds 0-19), plus all usable SegPPD healthy images of the crop",
+  "queries": "remaining deduplicated, screened PlantSeg images, group-disjoint from the references, sampled per category up to the paper's Table S2 count (stratified, same seed)"
+ },
+ "metrics": [
+  "accuracy = Hit@1 of 1-NN",
+  "macro-F1 of top-1 over categories with support",
+  "per-class recall",
+  "P@5, P@10, mAP (relevance = same class label inside the crop gallery)",
+  "bootstrap 95 % CI over images (2,000)",
+  "exact McNemar test between methods on identical queries"
+ ],
+ "not_reproducible": "ChatLD itself is not reproduced: needs paid GPT-4o API (no key / not permitted), the condensed disease-description database and code are unpublished, test image IDs unreleased."
+}

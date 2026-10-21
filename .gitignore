@@ -18,3 +18,29 @@ artifacts/audits/contact_sheet.png
 artifacts/external/plantseg_index.csv
 artifacts/extensions/**/*.npz
 artifacts/extensions/*.npz
+report/figs/dataset_samples.png
+
+# report outputs that embed dataset photographs (local only)
+docs/CBIR_RESEARCH_REPORT.docx
+docs/CBIR_RESEARCH_REPORT.pdf
+report/figs/retrieval_examples.png
+report/SegPPD101_CBIR_Rapor.docx
+report/data.json
+# research_v2: heavy artefacts and dataset-photograph figures stay local
+artifacts/research_v2/**/best.pt
+artifacts/research_v2/**/embeddings.npz
+artifacts/research_v2/**/ext_emb*.npz
+artifacts/research_v2/**/outputs.npz
+artifacts/research_v2/**/features.npz
+artifacts/research_v2/figures/*LOCAL_ONLY*
+artifacts/research_v2/trackC/organ/*.png
+# research_v3: heavy artefacts and report backups (contain dataset photographs) stay local
+artifacts/research_v3/**/best.pt
+artifacts/research_v3/**/embeddings.npz
+artifacts/research_v3/**/emb_single/
+artifacts/research_v3/**/*.npz
+docs/_history/
+# third-party source URLs of PlantSeg web photographs: local only (a URL-free split manifest protocol_P_nourl.csv is published instead)
+artifacts/research_v2/trackB/audit_filtered_images.csv
+artifacts/research_v2/trackB/plantseg_groups.csv
+artifacts/research_v2/trackB/protocol_P.csv

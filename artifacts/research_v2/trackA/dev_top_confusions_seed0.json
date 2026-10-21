@@ -1,0 +1,83 @@
+{
+ "arcface": [
+  {
+   "true": "lemon_sooty mold",
+   "pred": "orange_canker",
+   "n": 2
+  },
+  {
+   "true": "tomato_mold",
+   "pred": "tomato_late blight",
+   "n": 2
+  },
+  {
+   "true": "apple_rust",
+   "pred": "apple_scab",
+   "n": 1
+  },
+  {
+   "true": "banana_cordana leaf spot",
+   "pred": "banana_sigatoka",
+   "n": 1
+  },
+  {
+   "true": "bean_rust",
+   "pred": "peanut_rust",
+   "n": 1
+  }
+ ],
+ "proxyanchor": [
+  {
+   "true": "apple_rust",
+   "pred": "apple_scab",
+   "n": 1
+  },
+  {
+   "true": "apple_scab",
+   "pred": "apple_frog eye leaf spot",
+   "n": 1
+  },
+  {
+   "true": "apple_scab",
+   "pred": "pear_scab",
+   "n": 1
+  },
+  {
+   "true": "banana_cordana leaf spot",
+   "pred": "banana_sigatoka",
+   "n": 1
+  },
+  {
+   "true": "bean_rust",
+   "pred": "peanut_rust",
+   "n": 1
+  }
+ ],
+ "supcon": [
+  {
+   "true": "tomato_mold",
+   "pred": "tomato_late blight",
+   "n": 2
+  },
+  {
+   "true": "orange_huanglongbing",
+   "pred": "lemon_chlorosis",
+   "n": 2
+  },
+  {
+   "true": "lemon_sooty mold",
+   "pred": "orange_canker",
+   "n": 2
+  },
+  {
+   "true": "banana_cordana leaf spot",
+   "pred": "banana_sigatoka",
+   "n": 1
+  },
+  {
+   "true": "bean_rust",
+   "pred": "peanut_rust",
+   "n": 1
+  }
+ ]
+}

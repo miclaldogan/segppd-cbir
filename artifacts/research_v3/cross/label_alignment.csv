@@ -1,0 +1,174 @@
+unified,source,source_label,name,shared
+0,seg,1,apple healthy,False
+1,seg,2,apple powdery mildew,False
+2,seg,3,apple frog eye leaf spot,False
+3,ps,2,apple rust,True
+3,seg,4,apple rust,True
+4,ps,3,apple scab,True
+4,seg,5,apple scab,True
+5,seg,6,banana healthy,False
+6,seg,7,banana cordana leaf spot,False
+7,seg,8,banana sigatoka,False
+8,seg,9,bean healthy,False
+9,seg,10,bean angular leaf spot,False
+10,ps,11,bean rust,True
+10,seg,11,bean rust,True
+11,seg,12,cassava healthy,False
+12,seg,13,cassava bacterial blight,False
+13,seg,14,cassava brown streak disease,False
+14,seg,16,cassava mosaic disease,False
+15,seg,17,cauliflower healthy,False
+16,seg,18,cauliflower black rot,False
+17,seg,20,coffee healthy,False
+18,seg,21,coffee brown spot,False
+19,ps,34,coffee leaf rust,True
+19,seg,22,coffee rust,True
+20,seg,24,corn blight,False
+21,seg,27,cotton healthy,False
+22,seg,28,cotton bacterial blight,False
+23,seg,29,cotton fussarium wilt,False
+24,seg,30,cucmber healthy,False
+25,ps,41,cucumber powdery mildew,True
+25,seg,31,cucmber powdery mildew,True
+26,seg,33,eggplant healthy,False
+27,seg,34,eggplant early blight,False
+28,seg,36,eggplant necrotic leaf spot,False
+29,seg,37,eggplant powdery mildew,False
+30,seg,38,ginko healthy,False
+31,seg,41,grape healthy,False
+32,ps,48,grape black rot,True
+32,seg,42,grape black rot,True
+33,seg,43,grape powdery mildew,False
+34,seg,45,hops healthy,False
+35,seg,47,hops downy mildew,False
+36,seg,48,hops nutrient deficiency,False
+37,seg,50,lemon healthy,False
+38,seg,52,lemon chlorosis,False
+39,seg,53,lemon citrus leaf miner,False
+40,seg,54,lemon sooty mold,False
+41,seg,55,okra healthy,False
+42,seg,56,okra powdery mildew,False
+43,seg,57,okra yellow vein mosaic disease,False
+44,seg,58,orange healthy,False
+45,seg,59,orange anthracnose,False
+46,seg,60,orange canker,False
+47,seg,61,orange huanglongbing,False
+48,seg,62,peanut healthy,False
+49,seg,63,peanut rust,False
+50,seg,64,peanut leaf scorch,False
+51,seg,65,peanut bacterial spot,False
+52,seg,66,pear healthy,False
+53,seg,67,pear powdery mildew,False
+54,seg,68,pear rust,False
+55,seg,69,pear scab,False
+56,seg,70,pepper healthy,False
+57,seg,71,pepper bacterial spot,False
+58,seg,72,pepper curl,False
+59,seg,73,pepper mosaic virus,False
+60,seg,74,persimmon healthy,False
+61,seg,75,persimmon diseased,False
+62,seg,76,plum healthy,False
+63,seg,79,strawberry healthy,False
+64,seg,80,strawberry calcium deficiency,False
+65,ps,75,strawberry leaf scorch,True
+65,seg,81,strawberry leaf scorch,True
+66,seg,82,sunflower healthy,False
+67,seg,84,sunflower leaf spot,False
+68,seg,85,tea healthy,False
+69,seg,86,tea anthracnose,False
+70,seg,91,tomato healthy,False
+71,ps,79,tomato bacterial leaf spot,True
+71,seg,92,tomato bacterial spot,True
+72,ps,82,tomato leaf mold,True
+72,seg,93,tomato mold,True
+73,ps,81,tomato late blight,True
+73,seg,94,tomato late blight,True
+74,seg,100,whitegourd healthy,False
+75,ps,0,apple black rot,False
+76,ps,1,apple mosaic virus,False
+77,ps,4,banana anthracnose,False
+78,ps,5,banana black leaf streak,False
+79,ps,6,banana bunchy top,False
+80,ps,7,banana cigar end rot,False
+81,ps,8,basil downy mildew,False
+82,ps,9,bean halo blight,False
+83,ps,10,bean mosaic virus,False
+84,ps,12,bell pepper bacterial spot,False
+85,ps,13,bell pepper blossom end rot,False
+86,ps,14,blueberry anthracnose,False
+87,ps,15,blueberry botrytis blight,False
+88,ps,16,blueberry mummy berry,False
+89,ps,17,blueberry rust,False
+90,ps,18,blueberry scorch,False
+91,ps,19,broccoli downy mildew,False
+92,ps,20,cabbage alternaria leaf spot,False
+93,ps,21,cabbage black rot,False
+94,ps,22,cabbage downy mildew,False
+95,ps,23,carrot alternaria leaf blight,False
+96,ps,24,carrot cavity spot,False
+97,ps,25,cauliflower alternaria leaf spot,False
+98,ps,26,cauliflower bacterial soft rot,False
+99,ps,27,celery anthracnose,False
+100,ps,28,celery early blight,False
+101,ps,29,cherry leaf spot,False
+102,ps,30,cherry powdery mildew,False
+103,ps,31,citrus canker,False
+104,ps,32,citrus greening disease,False
+105,ps,33,coffee berry blotch,False
+106,ps,35,corn gray leaf spot,False
+107,ps,36,corn northern leaf blight,False
+108,ps,37,corn rust,False
+109,ps,38,corn smut,False
+110,ps,39,cucumber angular leaf spot,False
+111,ps,40,cucumber bacterial wilt,False
+112,ps,42,eggplant cercospora leaf spot,False
+113,ps,43,eggplant phomopsis fruit rot,False
+114,ps,44,eggplant phytophthora blight,False
+115,ps,45,garlic leaf blight,False
+116,ps,46,garlic rust,False
+117,ps,47,ginger sheath blight,False
+118,ps,49,grape downy mildew,False
+119,ps,50,grape leaf spot,False
+120,ps,51,grapevine leafroll disease,False
+121,ps,52,lettuce downy mildew,False
+122,ps,53,lettuce mosaic virus,False
+123,ps,54,maple tar spot,False
+124,ps,55,peach brown rot,False
+125,ps,56,peach leaf curl,False
+126,ps,57,peach scab,False
+127,ps,58,plum brown rot,False
+128,ps,59,plum pocket disease,False
+129,ps,60,plum pox virus,False
+130,ps,61,potato early blight,False
+131,ps,62,potato late blight,False
+132,ps,63,raspberry fire blight,False
+133,ps,64,raspberry gray mold,False
+134,ps,65,raspberry yellow rust,False
+135,ps,66,rice blast,False
+136,ps,67,rice sheath blight,False
+137,ps,68,soybean bacterial blight,False
+138,ps,69,soybean brown spot,False
+139,ps,70,soybean downy mildew,False
+140,ps,71,soybean frog eye leaf spot,False
+141,ps,72,soybean mosaic,False
+142,ps,73,squash powdery mildew,False
+143,ps,74,strawberry anthracnose,False
+144,ps,76,tobacco blue mold,False
+145,ps,77,tobacco brown spot,False
+146,ps,78,tobacco mosaic virus,False
+147,ps,80,tomato early blight,False
+148,ps,83,tomato mosaic virus,False
+149,ps,84,tomato septoria leaf spot,False
+150,ps,85,tomato yellow leaf curl virus,False
+151,ps,86,wheat bacterial leaf streak (black chaff),False
+152,ps,87,wheat head scab,False
+153,ps,88,wheat leaf rust,False
+154,ps,89,wheat loose smut,False
+155,ps,90,wheat powdery mildew,False
+156,ps,91,wheat septoria blotch,False
+157,ps,92,wheat stem rust,False
+158,ps,93,wheat stripe rust,False
+159,ps,94,zucchini bacterial wilt,False
+160,ps,95,zucchini downy mildew,False
+161,ps,96,zucchini powdery mildew,False
+162,ps,97,zucchini yellow mosaic virus,False

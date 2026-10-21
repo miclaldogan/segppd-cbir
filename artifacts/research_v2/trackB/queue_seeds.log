@@ -1,0 +1,68 @@
+[B_M3_metric_proxyanchor_s1] ep1 loss 22.476 dev acc 0.632 sec 0.474 | best ep1 0.632
+[B_M3_metric_proxyanchor_s1] ep2 loss 19.189 dev acc 0.686 sec 0.559 | best ep2 0.686
+[B_M3_metric_proxyanchor_s1] ep3 loss 17.400 dev acc 0.693 sec 0.608 | best ep3 0.693
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[B_M3_metric_proxyanchor_s2] ep1 loss 21.961 dev acc 0.643 sec 0.493 | best ep1 0.643
+[B_M3_metric_proxyanchor_s2] ep2 loss 19.116 dev acc 0.679 sec 0.569 | best ep2 0.679
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/misa/projects/university/myildrim/segppd-cbir/src/segppd_cbir/rv2/plantseg_train.py:87: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  lg = logits_of(net, ce, Xq); acc = float((lg.argmax(1) == yq).mean()); sec_ = -float(F.cross_entropy(torch.from_numpy(lg), torch.from_numpy(yq)))
+[B_M5_ce_finetune_s1] ep1 loss 2.457 dev acc 0.604 sec -1.387 | best ep1 0.604
+[B_M5_ce_finetune_s1] ep2 loss 0.810 dev acc 0.705 sec -0.936 | best ep2 0.705
+[B_M5_ce_finetune_s1] ep3 loss 0.531 dev acc 0.755 sec -0.909 | best ep3 0.755
+[B_M5_ce_finetune_s1] ep4 loss 0.429 dev acc 0.772 sec -0.844 | best ep4 0.772
+[B_M5_ce_finetune_s1] ep5 loss 0.302 dev acc 0.800 sec -0.736 | best ep5 0.800
+[B_M5_ce_finetune_s1] ep6 loss 0.253 dev acc 0.786 sec -0.792 | best ep5 0.800
+[B_M5_ce_finetune_s1] ep7 loss 0.215 dev acc 0.804 sec -0.729 | best ep7 0.804
+[B_M5_ce_finetune_s1] ep8 loss 0.165 dev acc 0.806 sec -0.696 | best ep8 0.806
+[B_M5_ce_finetune_s1] ep9 loss 0.154 dev acc 0.818 sec -0.750 | best ep9 0.818
+[B_M5_ce_finetune_s1] ep10 loss 0.153 dev acc 0.823 sec -0.706 | best ep10 0.823
+[B_M5_ce_finetune_s1] ep11 loss 0.124 dev acc 0.813 sec -0.758 | best ep10 0.823
+[B_M5_ce_finetune_s1] ep12 loss 0.083 dev acc 0.816 sec -0.663 | best ep10 0.823
+[B_M5_ce_finetune_s1] ep13 loss 0.070 dev acc 0.821 sec -0.629 | best ep10 0.823
+[B_M5_ce_finetune_s1] ep14 loss 0.054 dev acc 0.826 sec -0.680 | best ep14 0.826
+[B_M5_ce_finetune_s1] ep15 loss 0.049 dev acc 0.826 sec -0.652 | best ep15 0.826
+[B_M5_ce_finetune_s1] ep16 loss 0.038 dev acc 0.820 sec -0.676 | best ep15 0.826
+[B_M5_ce_finetune_s1] ep17 loss 0.035 dev acc 0.836 sec -0.670 | best ep17 0.836
+[B_M5_ce_finetune_s1] ep18 loss 0.038 dev acc 0.831 sec -0.670 | best ep17 0.836
+[B_M5_ce_finetune_s1] ep19 loss 0.032 dev acc 0.822 sec -0.666 | best ep17 0.836
+[B_M5_ce_finetune_s1] ep20 loss 0.028 dev acc 0.829 sec -0.670 | best ep17 0.836
+[B_M5_ce_finetune_s1] ep21 loss 0.027 dev acc 0.824 sec -0.675 | best ep17 0.836
+[B_M5_ce_finetune_s1] ep22 loss 0.019 dev acc 0.828 sec -0.666 | best ep17 0.836
+[B_M5_ce_finetune_s1] ep23 loss 0.012 dev acc 0.829 sec -0.663 | best ep17 0.836
+[B_M5_ce_finetune_s1] DONE best ep17 dev acc 0.836 669s peak 3.03 GB
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/misa/projects/university/myildrim/segppd-cbir/src/segppd_cbir/rv2/plantseg_train.py:87: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  lg = logits_of(net, ce, Xq); acc = float((lg.argmax(1) == yq).mean()); sec_ = -float(F.cross_entropy(torch.from_numpy(lg), torch.from_numpy(yq)))
+[B_M5_ce_finetune_s2] ep1 loss 2.443 dev acc 0.571 sec -1.438 | best ep1 0.571
+[B_M5_ce_finetune_s2] ep2 loss 0.963 dev acc 0.717 sec -0.996 | best ep2 0.717
+[B_M5_ce_finetune_s2] ep3 loss 0.567 dev acc 0.763 sec -0.817 | best ep3 0.763
+[B_M5_ce_finetune_s2] ep4 loss 0.412 dev acc 0.771 sec -0.837 | best ep4 0.771
+[B_M5_ce_finetune_s2] ep5 loss 0.352 dev acc 0.786 sec -0.746 | best ep5 0.786
+[B_M5_ce_finetune_s2] ep6 loss 0.262 dev acc 0.804 sec -0.709 | best ep6 0.804
+[B_M5_ce_finetune_s2] ep7 loss 0.230 dev acc 0.802 sec -0.709 | best ep6 0.804
+[B_M5_ce_finetune_s2] ep8 loss 0.193 dev acc 0.804 sec -0.698 | best ep8 0.804
+[B_M5_ce_finetune_s2] ep9 loss 0.144 dev acc 0.802 sec -0.722 | best ep8 0.804
+[B_M5_ce_finetune_s2] ep10 loss 0.106 dev acc 0.808 sec -0.702 | best ep10 0.808
+[B_M5_ce_finetune_s2] ep11 loss 0.116 dev acc 0.824 sec -0.688 | best ep11 0.824
+[B_M5_ce_finetune_s2] ep12 loss 0.086 dev acc 0.822 sec -0.700 | best ep11 0.824
+[B_M5_ce_finetune_s2] ep13 loss 0.079 dev acc 0.816 sec -0.686 | best ep11 0.824
+[B_M5_ce_finetune_s2] ep14 loss 0.074 dev acc 0.816 sec -0.691 | best ep11 0.824
+[B_M5_ce_finetune_s2] ep15 loss 0.056 dev acc 0.816 sec -0.679 | best ep11 0.824
+[B_M5_ce_finetune_s2] ep16 loss 0.047 dev acc 0.823 sec -0.669 | best ep16 0.823
+[B_M5_ce_finetune_s2] ep17 loss 0.044 dev acc 0.822 sec -0.700 | best ep16 0.823
+[B_M5_ce_finetune_s2] ep18 loss 0.031 dev acc 0.826 sec -0.682 | best ep18 0.826
+[B_M5_ce_finetune_s2] ep19 loss 0.034 dev acc 0.834 sec -0.657 | best ep19 0.834
+[B_M5_ce_finetune_s2] ep20 loss 0.025 dev acc 0.834 sec -0.653 | best ep20 0.834
+[B_M5_ce_finetune_s2] ep21 loss 0.026 dev acc 0.834 sec -0.666 | best ep20 0.834
+[B_M5_ce_finetune_s2] ep22 loss 0.024 dev acc 0.836 sec -0.645 | best ep22 0.836
+[B_M5_ce_finetune_s2] ep23 loss 0.020 dev acc 0.836 sec -0.634 | best ep23 0.836
+[B_M5_ce_finetune_s2] ep24 loss 0.018 dev acc 0.838 sec -0.639 | best ep23 0.836
+[B_M5_ce_finetune_s2] ep25 loss 0.013 dev acc 0.835 sec -0.640 | best ep23 0.836
+[B_M5_ce_finetune_s2] ep26 loss 0.016 dev acc 0.843 sec -0.634 | best ep26 0.843
+[B_M5_ce_finetune_s2] ep27 loss 0.019 dev acc 0.841 sec -0.638 | best ep26 0.843
+[B_M5_ce_finetune_s2] ep28 loss 0.012 dev acc 0.838 sec -0.641 | best ep26 0.843
+[B_M5_ce_finetune_s2] ep29 loss 0.016 dev acc 0.840 sec -0.642 | best ep26 0.843
+[B_M5_ce_finetune_s2] ep30 loss 0.018 dev acc 0.840 sec -0.642 | best ep26 0.843
+[B_M5_ce_finetune_s2] DONE best ep26 dev acc 0.843 868s peak 3.03 GB
+QUEUE_DONE

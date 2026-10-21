@@ -1,0 +1,68 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[B_M3_metric_proxyanchor_s0] ep1 loss 21.915 dev acc 0.645 sec 0.483 | best ep1 0.645
+[B_M3_metric_proxyanchor_s0] ep2 loss 19.328 dev acc 0.661 sec 0.558 | best ep2 0.661
+[B_M3_metric_proxyanchor_s0] ep3 loss 17.046 dev acc 0.726 sec 0.622 | best ep3 0.726
+[B_M3_metric_proxyanchor_s0] ep4 loss 15.592 dev acc 0.736 sec 0.656 | best ep4 0.736
+[B_M3_metric_proxyanchor_s0] ep5 loss 14.472 dev acc 0.743 sec 0.681 | best ep5 0.743
+[B_M3_metric_proxyanchor_s0] ep6 loss 13.834 dev acc 0.762 sec 0.702 | best ep6 0.762
+[B_M3_metric_proxyanchor_s0] ep7 loss 13.113 dev acc 0.753 sec 0.723 | best ep6 0.762
+[B_M3_metric_proxyanchor_s0] ep8 loss 12.380 dev acc 0.774 sec 0.742 | best ep8 0.774
+[B_M3_metric_proxyanchor_s0] ep9 loss 11.479 dev acc 0.779 sec 0.750 | best ep9 0.779
+[B_M3_metric_proxyanchor_s0] ep10 loss 11.156 dev acc 0.788 sec 0.766 | best ep10 0.788
+[B_M3_metric_proxyanchor_s0] ep11 loss 10.631 dev acc 0.760 sec 0.759 | best ep10 0.788
+[B_M3_metric_proxyanchor_s0] ep12 loss 10.091 dev acc 0.784 sec 0.776 | best ep10 0.788
+[B_M3_metric_proxyanchor_s0] ep13 loss 9.557 dev acc 0.779 sec 0.786 | best ep10 0.788
+[B_M3_metric_proxyanchor_s0] ep14 loss 9.091 dev acc 0.784 sec 0.788 | best ep10 0.788
+[B_M3_metric_proxyanchor_s0] ep15 loss 8.971 dev acc 0.799 sec 0.802 | best ep15 0.799
+[B_M3_metric_proxyanchor_s0] ep16 loss 8.651 dev acc 0.801 sec 0.799 | best ep16 0.801
+[B_M3_metric_proxyanchor_s0] ep17 loss 8.378 dev acc 0.804 sec 0.809 | best ep17 0.804
+[B_M3_metric_proxyanchor_s0] ep18 loss 8.068 dev acc 0.810 sec 0.817 | best ep18 0.810
+[B_M3_metric_proxyanchor_s0] ep19 loss 7.936 dev acc 0.812 sec 0.820 | best ep19 0.812
+[B_M3_metric_proxyanchor_s0] ep20 loss 7.765 dev acc 0.811 sec 0.823 | best ep20 0.811
+[B_M3_metric_proxyanchor_s0] ep21 loss 7.457 dev acc 0.812 sec 0.823 | best ep20 0.811
+[B_M3_metric_proxyanchor_s0] ep22 loss 7.470 dev acc 0.810 sec 0.823 | best ep20 0.811
+[B_M3_metric_proxyanchor_s0] ep23 loss 7.311 dev acc 0.809 sec 0.824 | best ep20 0.811
+[B_M3_metric_proxyanchor_s0] ep24 loss 7.226 dev acc 0.819 sec 0.830 | best ep24 0.819
+[B_M3_metric_proxyanchor_s0] ep25 loss 7.210 dev acc 0.805 sec 0.828 | best ep24 0.819
+[B_M3_metric_proxyanchor_s0] ep26 loss 7.015 dev acc 0.814 sec 0.831 | best ep24 0.819
+[B_M3_metric_proxyanchor_s0] ep27 loss 7.115 dev acc 0.815 sec 0.831 | best ep24 0.819
+[B_M3_metric_proxyanchor_s0] ep28 loss 7.066 dev acc 0.818 sec 0.831 | best ep28 0.818
+[B_M3_metric_proxyanchor_s0] ep29 loss 7.067 dev acc 0.816 sec 0.831 | best ep28 0.818
+[B_M3_metric_proxyanchor_s0] ep30 loss 6.995 dev acc 0.816 sec 0.831 | best ep28 0.818
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/misa/projects/university/myildrim/segppd-cbir/src/segppd_cbir/rv2/plantseg_train.py", line 118, in <module>
+    run(sys.argv[1])
+  File "/home/misa/projects/university/myildrim/segppd-cbir/src/segppd_cbir/rv2/plantseg_train.py", line 57, in run
+    gs = C.gpu_status(); assert gs["free_mb"] > 4300, gs
+                                ^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'used_mb': 3417, 'total_mb': 6141, 'free_mb': 2724, 'compute_apps': '226102, 80\n367875, 3322'}
+QUEUE_DONE
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/misa/projects/university/myildrim/segppd-cbir/src/segppd_cbir/rv2/plantseg_train.py:87: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  lg = logits_of(net, ce, Xq); acc = float((lg.argmax(1) == yq).mean()); sec_ = -float(F.cross_entropy(torch.from_numpy(lg), torch.from_numpy(yq)))
+[B_M5_ce_finetune_s0] ep1 loss 2.389 dev acc 0.585 sec -1.413 | best ep1 0.585
+[B_M5_ce_finetune_s0] ep2 loss 0.846 dev acc 0.722 sec -0.909 | best ep2 0.722
+[B_M5_ce_finetune_s0] ep3 loss 0.504 dev acc 0.744 sec -0.829 | best ep3 0.744
+[B_M5_ce_finetune_s0] ep4 loss 0.328 dev acc 0.758 sec -0.853 | best ep4 0.758
+[B_M5_ce_finetune_s0] ep5 loss 0.305 dev acc 0.786 sec -0.739 | best ep5 0.786
+[B_M5_ce_finetune_s0] ep6 loss 0.295 dev acc 0.769 sec -0.845 | best ep5 0.786
+[B_M5_ce_finetune_s0] ep7 loss 0.232 dev acc 0.781 sec -0.830 | best ep5 0.786
+[B_M5_ce_finetune_s0] ep8 loss 0.191 dev acc 0.816 sec -0.692 | best ep8 0.816
+[B_M5_ce_finetune_s0] ep9 loss 0.151 dev acc 0.805 sec -0.729 | best ep8 0.816
+[B_M5_ce_finetune_s0] ep10 loss 0.129 dev acc 0.795 sec -0.686 | best ep8 0.816
+[B_M5_ce_finetune_s0] ep11 loss 0.107 dev acc 0.831 sec -0.652 | best ep11 0.831
+[B_M5_ce_finetune_s0] ep12 loss 0.077 dev acc 0.820 sec -0.674 | best ep11 0.831
+[B_M5_ce_finetune_s0] ep13 loss 0.069 dev acc 0.819 sec -0.701 | best ep11 0.831
+[B_M5_ce_finetune_s0] ep14 loss 0.058 dev acc 0.829 sec -0.679 | best ep11 0.831
+[B_M5_ce_finetune_s0] ep15 loss 0.065 dev acc 0.831 sec -0.663 | best ep11 0.831
+[B_M5_ce_finetune_s0] ep16 loss 0.050 dev acc 0.846 sec -0.627 | best ep16 0.846
+[B_M5_ce_finetune_s0] ep17 loss 0.051 dev acc 0.843 sec -0.628 | best ep16 0.846
+[B_M5_ce_finetune_s0] ep18 loss 0.036 dev acc 0.841 sec -0.652 | best ep16 0.846
+[B_M5_ce_finetune_s0] ep19 loss 0.034 dev acc 0.834 sec -0.655 | best ep16 0.846
+[B_M5_ce_finetune_s0] ep20 loss 0.031 dev acc 0.838 sec -0.644 | best ep16 0.846
+[B_M5_ce_finetune_s0] ep21 loss 0.023 dev acc 0.834 sec -0.664 | best ep16 0.846
+[B_M5_ce_finetune_s0] ep22 loss 0.019 dev acc 0.842 sec -0.657 | best ep16 0.846
+[B_M5_ce_finetune_s0] DONE best ep16 dev acc 0.846 640s peak 3.03 GB
+QUEUE_DONE

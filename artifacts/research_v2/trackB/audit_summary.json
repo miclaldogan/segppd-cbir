@@ -1,0 +1,23 @@
+{
+ "n_images": 11458,
+ "official_split": {
+  "Training": 7916,
+  "Test": 2295,
+  "Validation": 1247
+ },
+ "n_classes": 114,
+ "n_crops": 35,
+ "dup_pairs": 1773,
+ "images_in_multi_groups": 2561,
+ "groups_spanning_splits": 575,
+ "images_in_cross_split_groups": 1383,
+ "groups_spanning_classes": 256,
+ "images_in_cross_class_groups": 601,
+ "segppd_copies": 867,
+ "url_unique": 8758,
+ "test_images_sharing_url_with_train": 728,
+ "test_images": 2295,
+ "resolution_median_w": 667,
+ "resolution_min_w": 65,
+ "resolution_max_w": 8256
+}

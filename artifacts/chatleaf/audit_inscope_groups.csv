@@ -1,0 +1,944 @@
+Name,Disease,Split,leak_flag,group,group_size
+bell_pepper_bacterial_spot_Bing_0000.jpg,bell pepper bacterial spot,Training,True,49,2
+bell_pepper_bacterial_spot_Bing_0001.jpg,bell pepper bacterial spot,Training,False,1,1
+bell_pepper_bacterial_spot_Bing_0004.jpg,bell pepper bacterial spot,Training,True,2,1
+bell_pepper_bacterial_spot_Bing_0006.jpg,bell pepper bacterial spot,Training,True,14,2
+bell_pepper_bacterial_spot_Bing_0009.jpg,bell pepper bacterial spot,Training,False,53,2
+bell_pepper_bacterial_spot_Bing_0010.jpg,bell pepper bacterial spot,Training,False,45,3
+bell_pepper_bacterial_spot_Bing_0012.jpg,bell pepper bacterial spot,Training,False,6,1
+bell_pepper_bacterial_spot_Bing_0013.jpg,bell pepper bacterial spot,Validation,True,50,2
+bell_pepper_bacterial_spot_Bing_0020.jpg,bell pepper bacterial spot,Training,False,54,2
+bell_pepper_bacterial_spot_Bing_0027.jpg,bell pepper bacterial spot,Validation,True,26,2
+bell_pepper_bacterial_spot_Bing_0029.jpg,bell pepper bacterial spot,Training,False,41,2
+bell_pepper_bacterial_spot_Bing_0031.jpg,bell pepper bacterial spot,Validation,False,11,1
+bell_pepper_bacterial_spot_Bing_0042.jpg,bell pepper bacterial spot,Training,False,12,1
+bell_pepper_bacterial_spot_Bing_0044.jpg,bell pepper bacterial spot,Training,False,756,3
+bell_pepper_bacterial_spot_Bing_0045.jpg,bell pepper bacterial spot,Training,True,14,2
+bell_pepper_bacterial_spot_Bing_0046.jpg,bell pepper bacterial spot,Training,False,15,1
+bell_pepper_bacterial_spot_Bing_0047.jpg,bell pepper bacterial spot,Training,False,16,1
+bell_pepper_bacterial_spot_Bing_0049.jpg,bell pepper bacterial spot,Training,True,17,1
+bell_pepper_bacterial_spot_Bing_0052.jpg,bell pepper bacterial spot,Training,False,18,1
+bell_pepper_bacterial_spot_Bing_0053.jpg,bell pepper bacterial spot,Training,False,19,1
+bell_pepper_bacterial_spot_Bing_0056.jpg,bell pepper bacterial spot,Training,False,20,1
+bell_pepper_bacterial_spot_Bing_0060.jpg,bell pepper bacterial spot,Training,True,21,1
+bell_pepper_bacterial_spot_Bing_0062.jpg,bell pepper bacterial spot,Training,False,22,1
+bell_pepper_bacterial_spot_Bing_0063.jpg,bell pepper bacterial spot,Validation,False,23,1
+bell_pepper_bacterial_spot_Bing_0065.jpg,bell pepper bacterial spot,Training,False,24,1
+bell_pepper_bacterial_spot_Bing_0067.jpg,bell pepper bacterial spot,Training,False,25,1
+bell_pepper_bacterial_spot_Bing_0068.jpg,bell pepper bacterial spot,Training,True,26,2
+bell_pepper_bacterial_spot_Bing_0069.jpg,bell pepper bacterial spot,Training,False,59,2
+bell_pepper_bacterial_spot_Bing_0072.jpg,bell pepper bacterial spot,Training,True,28,1
+bell_pepper_bacterial_spot_Bing_0084.jpg,bell pepper bacterial spot,Training,False,29,1
+bell_pepper_bacterial_spot_Bing_0085.jpg,bell pepper bacterial spot,Training,False,30,1
+bell_pepper_bacterial_spot_Bing_0097.jpg,bell pepper bacterial spot,Training,False,31,1
+bell_pepper_bacterial_spot_Bing_0098.jpg,bell pepper bacterial spot,Training,False,32,1
+bell_pepper_bacterial_spot_Bing_0107.jpg,bell pepper bacterial spot,Training,False,33,1
+bell_pepper_bacterial_spot_Bing_0108.jpg,bell pepper bacterial spot,Training,True,51,2
+bell_pepper_bacterial_spot_Bing_0110.jpg,bell pepper bacterial spot,Validation,True,35,1
+bell_pepper_bacterial_spot_Bing_0112.jpg,bell pepper bacterial spot,Training,False,45,3
+bell_pepper_bacterial_spot_Bing_0113.jpg,bell pepper bacterial spot,Training,False,37,1
+bell_pepper_bacterial_spot_Bing_0125.jpg,bell pepper bacterial spot,Training,False,755,2
+bell_pepper_bacterial_spot_Bing_0142.jpg,bell pepper bacterial spot,Training,False,39,1
+bell_pepper_bacterial_spot_Bing_0144.jpg,bell pepper bacterial spot,Training,False,40,1
+bell_pepper_bacterial_spot_Bing_0148.jpg,bell pepper bacterial spot,Training,False,41,2
+bell_pepper_bacterial_spot_Bing_0153.jpg,bell pepper bacterial spot,Training,False,768,3
+bell_pepper_bacterial_spot_Bing_0156.jpg,bell pepper bacterial spot,Training,False,43,1
+bell_pepper_bacterial_spot_Bing_0159.jpg,bell pepper bacterial spot,Training,False,44,1
+bell_pepper_bacterial_spot_Bing_0161.jpg,bell pepper bacterial spot,Training,False,45,3
+bell_pepper_bacterial_spot_Bing_0174.jpg,bell pepper bacterial spot,Training,False,46,1
+bell_pepper_bacterial_spot_Bing_0221.jpg,bell pepper bacterial spot,Training,True,47,1
+bell_pepper_bacterial_spot_Bing_0227.jpg,bell pepper bacterial spot,Validation,False,756,3
+bell_pepper_bacterial_spot_Google_0000.jpg,bell pepper bacterial spot,Training,True,49,2
+bell_pepper_bacterial_spot_Google_0004.jpg,bell pepper bacterial spot,Training,True,50,2
+bell_pepper_bacterial_spot_Google_0008.jpg,bell pepper bacterial spot,Training,True,51,2
+bell_pepper_bacterial_spot_Google_0022.jpg,bell pepper bacterial spot,Training,False,52,1
+bell_pepper_bacterial_spot_Google_0024.jpg,bell pepper bacterial spot,Training,False,53,2
+bell_pepper_bacterial_spot_Google_0029.jpg,bell pepper bacterial spot,Training,False,54,2
+bell_pepper_bacterial_spot_Google_0032.jpg,bell pepper bacterial spot,Training,True,768,3
+bell_pepper_bacterial_spot_Google_0033.jpg,bell pepper bacterial spot,Validation,False,56,1
+bell_pepper_bacterial_spot_Google_0050.jpg,bell pepper bacterial spot,Training,False,57,1
+bell_pepper_bacterial_spot_Google_0061.jpg,bell pepper bacterial spot,Validation,False,758,2
+bell_pepper_bacterial_spot_Google_0160.jpg,bell pepper bacterial spot,Training,False,59,2
+bell_pepper_bacterial_spot_Google_0311.jpg,bell pepper bacterial spot,Training,False,60,1
+grape_black_rot_1.jpg,grape black rot,Training,False,87,3
+grape_black_rot_10.jpg,grape black rot,Training,False,62,1
+grape_black_rot_13.jpg,grape black rot,Training,False,63,1
+grape_black_rot_141.jpg,grape black rot,Validation,False,64,1
+grape_black_rot_149.jpg,grape black rot,Training,False,65,1
+grape_black_rot_15.jpg,grape black rot,Training,False,66,1
+grape_black_rot_152.jpg,grape black rot,Training,False,67,1
+grape_black_rot_170.jpg,grape black rot,Training,False,68,1
+grape_black_rot_171.jpg,grape black rot,Validation,False,69,1
+grape_black_rot_176.jpg,grape black rot,Training,False,70,1
+grape_black_rot_18.jpg,grape black rot,Training,False,71,1
+grape_black_rot_191.jpg,grape black rot,Training,False,77,2
+grape_black_rot_2.jpg,grape black rot,Training,False,73,1
+grape_black_rot_21.jpg,grape black rot,Validation,False,74,1
+grape_black_rot_25.jpg,grape black rot,Training,False,75,1
+grape_black_rot_29.jpg,grape black rot,Training,False,76,1
+grape_black_rot_37.jpg,grape black rot,Training,False,77,2
+grape_black_rot_4.jpg,grape black rot,Training,False,87,3
+grape_black_rot_40.jpg,grape black rot,Training,False,95,2
+grape_black_rot_42.jpg,grape black rot,Training,False,80,1
+grape_black_rot_45.jpg,grape black rot,Training,False,81,1
+grape_black_rot_49.jpg,grape black rot,Training,False,82,1
+grape_black_rot_5.jpg,grape black rot,Training,False,83,1
+grape_black_rot_50.jpg,grape black rot,Training,False,84,1
+grape_black_rot_6.jpg,grape black rot,Training,False,158,2
+grape_black_rot_68.jpg,grape black rot,Training,False,86,1
+grape_black_rot_7.jpg,grape black rot,Training,False,87,3
+grape_black_rot_8.jpg,grape black rot,Training,False,88,1
+grape_black_rot_9.jpg,grape black rot,Training,False,792,2
+grape_black_rot_google_0000.jpg,grape black rot,Training,False,90,1
+grape_black_rot_google_0001.jpg,grape black rot,Training,False,91,1
+grape_black_rot_google_0005.jpg,grape black rot,Validation,False,92,1
+grape_black_rot_google_0007.jpg,grape black rot,Training,False,124,3
+grape_black_rot_google_0009.jpg,grape black rot,Validation,False,94,1
+grape_black_rot_google_0010.jpg,grape black rot,Training,False,95,2
+grape_black_rot_google_0014.jpg,grape black rot,Validation,False,96,1
+grape_black_rot_google_0019.jpg,grape black rot,Training,False,97,1
+grape_black_rot_google_0021.jpg,grape black rot,Training,False,98,1
+grape_black_rot_google_0024.jpg,grape black rot,Training,False,99,1
+grape_black_rot_google_0027.jpg,grape black rot,Training,False,100,1
+grape_black_rot_google_0028.jpg,grape black rot,Training,False,101,1
+grape_black_rot_google_0029.jpg,grape black rot,Training,True,102,1
+grape_black_rot_google_0039.jpg,grape black rot,Training,True,103,1
+grape_black_rot_google_0041.jpg,grape black rot,Training,False,128,2
+grape_black_rot_google_0043.jpg,grape black rot,Training,False,105,1
+grape_black_rot_google_0046.jpg,grape black rot,Training,False,130,2
+grape_black_rot_google_0049.jpg,grape black rot,Training,False,107,1
+grape_black_rot_google_0051.jpg,grape black rot,Training,False,108,1
+grape_black_rot_google_0053.jpg,grape black rot,Training,False,109,1
+grape_black_rot_google_0064.jpg,grape black rot,Validation,False,110,1
+grape_black_rot_google_0067.jpg,grape black rot,Training,False,137,2
+grape_black_rot_google_0068.jpg,grape black rot,Training,False,112,1
+grape_black_rot_google_0071.jpg,grape black rot,Training,False,113,1
+grape_black_rot_google_0072.jpg,grape black rot,Training,False,114,1
+grape_black_rot_google_0075.jpg,grape black rot,Validation,False,115,1
+grape_black_rot_google_0077.jpg,grape black rot,Training,False,116,1
+grape_black_rot_google_0080.jpg,grape black rot,Training,False,117,1
+grape_black_rot_google_0084.jpg,grape black rot,Training,False,118,1
+grape_black_rot_google_0085.jpg,grape black rot,Training,False,119,1
+grape_black_rot_google_0087.jpg,grape black rot,Validation,False,124,3
+grape_black_rot_google_0089.jpg,grape black rot,Training,False,121,1
+grape_black_rot_google_0090.jpg,grape black rot,Training,False,122,1
+grape_black_rot_google_0095.jpg,grape black rot,Training,False,123,1
+grape_black_rot_google_0101.jpg,grape black rot,Validation,False,124,3
+grape_black_rot_google_0110.jpg,grape black rot,Training,True,125,1
+grape_black_rot_google_0111.jpg,grape black rot,Validation,False,800,4
+grape_black_rot_google_0118.jpg,grape black rot,Training,False,127,1
+grape_black_rot_google_0119.jpg,grape black rot,Validation,False,128,2
+grape_black_rot_google_0123.jpg,grape black rot,Training,False,129,1
+grape_black_rot_google_0124.jpg,grape black rot,Training,True,130,2
+grape_black_rot_google_0130.jpg,grape black rot,Training,False,774,2
+grape_black_rot_google_0132.jpg,grape black rot,Training,False,132,1
+grape_black_rot_google_0133.jpg,grape black rot,Training,False,133,1
+grape_black_rot_google_0147.jpg,grape black rot,Training,False,134,1
+grape_black_rot_google_0149.jpg,grape black rot,Training,True,135,1
+grape_black_rot_google_0156.jpg,grape black rot,Training,False,136,1
+grape_black_rot_google_0158.jpg,grape black rot,Training,False,137,2
+grape_black_rot_google_0161.jpg,grape black rot,Training,False,138,1
+grape_black_rot_google_0162.jpg,grape black rot,Training,False,139,1
+grape_black_rot_google_0204.jpg,grape black rot,Training,False,140,1
+grape_black_rot_google_0209.jpg,grape black rot,Training,False,141,1
+grape_black_rot_google_0219.jpg,grape black rot,Training,False,142,1
+grape_black_rot_google_0220.jpg,grape black rot,Training,False,805,2
+grape_black_rot_google_0223.jpg,grape black rot,Training,False,144,1
+grape_black_rot_google_0230.jpg,grape black rot,Validation,False,145,1
+grape_black_rot_google_0234.jpg,grape black rot,Training,False,146,1
+grape_black_rot_google_0237.jpg,grape black rot,Training,False,147,1
+grape_black_rot_google_0260.jpg,grape black rot,Training,False,148,1
+grape_black_rot_google_0262.jpg,grape black rot,Training,False,149,1
+grape_black_rot_google_0278.jpg,grape black rot,Training,False,150,1
+grape_black_rot_google_0286.jpg,grape black rot,Training,False,151,1
+grape_black_rot_google_0291.jpg,grape black rot,Training,False,152,1
+grape_black_rot_google_0307.jpg,grape black rot,Training,False,153,1
+grape_black_rot_google_0325.jpg,grape black rot,Training,False,154,1
+grape_black_rot_google_0330.jpg,grape black rot,Training,False,155,1
+grape_black_rot_google_0332.jpg,grape black rot,Training,False,156,1
+grape_black_rot_google_0341.jpg,grape black rot,Training,False,157,1
+grape_black_rot_google_0356.jpg,grape black rot,Training,False,158,2
+grape_leaf_spot_1.jpg,grape leaf spot,Training,False,159,1
+grape_leaf_spot_13.jpg,grape leaf spot,Training,False,191,2
+grape_leaf_spot_138.jpg,grape leaf spot,Training,True,794,12
+grape_leaf_spot_14.jpg,grape leaf spot,Training,False,794,12
+grape_leaf_spot_141.jpg,grape leaf spot,Training,False,163,1
+grape_leaf_spot_143.jpg,grape leaf spot,Training,False,164,1
+grape_leaf_spot_144.jpg,grape leaf spot,Training,False,794,12
+grape_leaf_spot_146.jpg,grape leaf spot,Training,False,166,1
+grape_leaf_spot_151.jpg,grape leaf spot,Validation,False,167,1
+grape_leaf_spot_154.jpg,grape leaf spot,Training,False,168,1
+grape_leaf_spot_155.jpg,grape leaf spot,Validation,False,169,1
+grape_leaf_spot_156.jpg,grape leaf spot,Training,False,170,1
+grape_leaf_spot_16.jpg,grape leaf spot,Training,False,171,1
+grape_leaf_spot_161.jpg,grape leaf spot,Training,False,209,2
+grape_leaf_spot_167.jpg,grape leaf spot,Validation,False,173,1
+grape_leaf_spot_17.jpg,grape leaf spot,Training,True,794,12
+grape_leaf_spot_171.jpg,grape leaf spot,Training,False,181,2
+grape_leaf_spot_198.jpg,grape leaf spot,Training,True,794,12
+grape_leaf_spot_2.jpg,grape leaf spot,Training,False,794,12
+grape_leaf_spot_20.jpg,grape leaf spot,Training,False,178,1
+grape_leaf_spot_205.jpg,grape leaf spot,Training,False,195,2
+grape_leaf_spot_207.jpg,grape leaf spot,Training,False,180,1
+grape_leaf_spot_21.jpg,grape leaf spot,Validation,False,181,2
+grape_leaf_spot_226.jpg,grape leaf spot,Training,False,794,12
+grape_leaf_spot_227.jpg,grape leaf spot,Training,False,183,1
+grape_leaf_spot_228.jpg,grape leaf spot,Training,False,184,1
+grape_leaf_spot_233.jpg,grape leaf spot,Training,False,185,1
+grape_leaf_spot_24.jpg,grape leaf spot,Training,False,800,4
+grape_leaf_spot_26.jpg,grape leaf spot,Training,False,187,1
+grape_leaf_spot_27.jpg,grape leaf spot,Training,False,188,1
+grape_leaf_spot_281.jpg,grape leaf spot,Training,True,189,1
+grape_leaf_spot_33.jpg,grape leaf spot,Training,True,190,1
+grape_leaf_spot_36.jpg,grape leaf spot,Training,False,191,2
+grape_leaf_spot_38.jpg,grape leaf spot,Validation,False,794,12
+grape_leaf_spot_4.jpg,grape leaf spot,Training,False,193,1
+grape_leaf_spot_40.jpg,grape leaf spot,Training,True,194,1
+grape_leaf_spot_41.jpg,grape leaf spot,Training,False,195,2
+grape_leaf_spot_42.jpg,grape leaf spot,Training,False,196,1
+grape_leaf_spot_43.jpg,grape leaf spot,Training,True,213,2
+grape_leaf_spot_5.jpg,grape leaf spot,Training,False,198,1
+grape_leaf_spot_51.jpg,grape leaf spot,Training,False,199,1
+grape_leaf_spot_7.jpg,grape leaf spot,Training,False,200,1
+grape_leaf_spot_75.jpg,grape leaf spot,Training,False,201,1
+grape_leaf_spot_8.jpg,grape leaf spot,Training,False,202,1
+grape_leaf_spot_97.jpg,grape leaf spot,Training,False,203,1
+grape_leaf_spot_google_0000.jpg,grape leaf spot,Training,False,204,1
+grape_leaf_spot_google_0001.jpg,grape leaf spot,Training,False,800,4
+grape_leaf_spot_google_0002.jpg,grape leaf spot,Training,False,206,1
+grape_leaf_spot_google_0003.jpg,grape leaf spot,Training,False,218,2
+grape_leaf_spot_google_0007.jpg,grape leaf spot,Training,False,208,1
+grape_leaf_spot_google_0008.jpg,grape leaf spot,Training,False,209,2
+grape_leaf_spot_google_0013.jpg,grape leaf spot,Training,False,210,1
+grape_leaf_spot_google_0016.jpg,grape leaf spot,Training,False,211,1
+grape_leaf_spot_google_0018.jpg,grape leaf spot,Training,False,212,1
+grape_leaf_spot_google_0025.jpg,grape leaf spot,Training,True,213,2
+grape_leaf_spot_google_0030.jpg,grape leaf spot,Validation,False,464,2
+grape_leaf_spot_google_0031.jpg,grape leaf spot,Training,False,226,2
+grape_leaf_spot_google_0034.jpg,grape leaf spot,Training,False,794,12
+grape_leaf_spot_google_0036.jpg,grape leaf spot,Validation,False,834,2
+grape_leaf_spot_google_0038.jpg,grape leaf spot,Training,False,218,2
+grape_leaf_spot_google_0041.jpg,grape leaf spot,Training,False,219,1
+grape_leaf_spot_google_0047.jpg,grape leaf spot,Training,False,220,1
+grape_leaf_spot_google_0049.jpg,grape leaf spot,Validation,False,221,1
+grape_leaf_spot_google_0060.jpg,grape leaf spot,Training,False,222,1
+grape_leaf_spot_google_0063.jpg,grape leaf spot,Validation,False,223,1
+grape_leaf_spot_google_0070.jpg,grape leaf spot,Training,False,224,1
+grape_leaf_spot_google_0076.jpg,grape leaf spot,Training,False,225,1
+grape_leaf_spot_google_0077.jpg,grape leaf spot,Training,False,226,2
+grape_leaf_spot_google_0078.jpg,grape leaf spot,Training,False,227,1
+grape_leaf_spot_google_0090.jpg,grape leaf spot,Validation,False,228,1
+grape_leaf_spot_google_0154.jpg,grape leaf spot,Training,False,229,1
+grape_leaf_spot_google_0156.jpg,grape leaf spot,Training,False,230,1
+grape_leaf_spot_google_0161.jpg,grape leaf spot,Training,False,231,1
+strawberry_leaf_scorch_11.jpg,strawberry leaf scorch,Training,False,232,1
+strawberry_leaf_scorch_6.jpg,strawberry leaf scorch,Training,False,812,4
+strawberry_leaf_scorch_google_0000.jpg,strawberry leaf scorch,Training,True,812,4
+strawberry_leaf_scorch_google_0001.jpg,strawberry leaf scorch,Training,False,235,1
+strawberry_leaf_scorch_google_0002.jpg,strawberry leaf scorch,Training,False,236,1
+strawberry_leaf_scorch_google_0003.jpg,strawberry leaf scorch,Training,False,237,1
+strawberry_leaf_scorch_google_0006.jpg,strawberry leaf scorch,Training,False,815,3
+strawberry_leaf_scorch_google_0007.jpg,strawberry leaf scorch,Validation,False,239,1
+strawberry_leaf_scorch_google_0008.jpg,strawberry leaf scorch,Training,False,240,1
+strawberry_leaf_scorch_google_0010.jpg,strawberry leaf scorch,Validation,False,261,2
+strawberry_leaf_scorch_google_0014.jpg,strawberry leaf scorch,Training,False,242,1
+strawberry_leaf_scorch_google_0015.jpg,strawberry leaf scorch,Validation,True,243,1
+strawberry_leaf_scorch_google_0016.jpg,strawberry leaf scorch,Training,False,244,1
+strawberry_leaf_scorch_google_0018.jpg,strawberry leaf scorch,Training,False,245,1
+strawberry_leaf_scorch_google_0020.jpg,strawberry leaf scorch,Training,False,262,3
+strawberry_leaf_scorch_google_0022.jpg,strawberry leaf scorch,Training,False,815,3
+strawberry_leaf_scorch_google_0025.jpg,strawberry leaf scorch,Training,True,248,1
+strawberry_leaf_scorch_google_0026.jpg,strawberry leaf scorch,Training,False,249,1
+strawberry_leaf_scorch_google_0030.jpg,strawberry leaf scorch,Training,False,250,1
+strawberry_leaf_scorch_google_0031.jpg,strawberry leaf scorch,Training,False,251,1
+strawberry_leaf_scorch_google_0035.jpg,strawberry leaf scorch,Training,False,252,1
+strawberry_leaf_scorch_google_0045.jpg,strawberry leaf scorch,Validation,True,812,4
+strawberry_leaf_scorch_google_0068.jpg,strawberry leaf scorch,Training,False,254,1
+strawberry_leaf_scorch_google_0074.jpg,strawberry leaf scorch,Training,False,260,3
+strawberry_leaf_scorch_google_0082.jpg,strawberry leaf scorch,Training,False,811,2
+strawberry_leaf_scorch_google_0109.jpg,strawberry leaf scorch,Validation,False,262,3
+strawberry_leaf_scorch_google_0123.jpg,strawberry leaf scorch,Training,False,260,3
+strawberry_leaf_scorch_google_0159.jpg,strawberry leaf scorch,Training,False,816,2
+strawberry_leaf_scorch_google_0171.jpg,strawberry leaf scorch,Training,False,260,3
+strawberry_leaf_scorch_google_0175.jpg,strawberry leaf scorch,Training,False,261,2
+strawberry_leaf_scorch_google_0187.jpg,strawberry leaf scorch,Training,False,262,3
+tomato_bacterial_leaf_spot_1.jpg,tomato bacterial leaf spot,Training,False,263,1
+tomato_bacterial_leaf_spot_10.jpg,tomato bacterial leaf spot,Training,False,264,1
+tomato_bacterial_leaf_spot_102.jpg,tomato bacterial leaf spot,Training,False,265,1
+tomato_bacterial_leaf_spot_104.jpg,tomato bacterial leaf spot,Training,False,266,1
+tomato_bacterial_leaf_spot_11.jpg,tomato bacterial leaf spot,Training,False,267,1
+tomato_bacterial_leaf_spot_12.jpg,tomato bacterial leaf spot,Validation,False,268,1
+tomato_bacterial_leaf_spot_122.jpg,tomato bacterial leaf spot,Training,False,269,1
+tomato_bacterial_leaf_spot_127.jpg,tomato bacterial leaf spot,Training,False,270,1
+tomato_bacterial_leaf_spot_128.jpg,tomato bacterial leaf spot,Training,False,271,1
+tomato_bacterial_leaf_spot_147.jpg,tomato bacterial leaf spot,Training,False,304,3
+tomato_bacterial_leaf_spot_15.jpg,tomato bacterial leaf spot,Training,False,273,1
+tomato_bacterial_leaf_spot_153.jpg,tomato bacterial leaf spot,Training,False,274,1
+tomato_bacterial_leaf_spot_16.jpg,tomato bacterial leaf spot,Training,False,275,1
+tomato_bacterial_leaf_spot_168.jpg,tomato bacterial leaf spot,Training,False,315,6
+tomato_bacterial_leaf_spot_169.jpg,tomato bacterial leaf spot,Training,False,277,1
+tomato_bacterial_leaf_spot_17.jpg,tomato bacterial leaf spot,Training,False,278,1
+tomato_bacterial_leaf_spot_175.jpg,tomato bacterial leaf spot,Training,False,315,6
+tomato_bacterial_leaf_spot_176.jpg,tomato bacterial leaf spot,Training,False,280,1
+tomato_bacterial_leaf_spot_177.jpg,tomato bacterial leaf spot,Validation,False,303,2
+tomato_bacterial_leaf_spot_18.jpg,tomato bacterial leaf spot,Training,False,282,1
+tomato_bacterial_leaf_spot_184.jpg,tomato bacterial leaf spot,Training,False,283,1
+tomato_bacterial_leaf_spot_185.jpg,tomato bacterial leaf spot,Training,False,315,6
+tomato_bacterial_leaf_spot_187.jpg,tomato bacterial leaf spot,Training,False,285,1
+tomato_bacterial_leaf_spot_198.jpg,tomato bacterial leaf spot,Training,False,286,1
+tomato_bacterial_leaf_spot_20.jpg,tomato bacterial leaf spot,Validation,False,315,6
+tomato_bacterial_leaf_spot_22.jpg,tomato bacterial leaf spot,Validation,True,288,1
+tomato_bacterial_leaf_spot_24.jpg,tomato bacterial leaf spot,Training,False,289,1
+tomato_bacterial_leaf_spot_28.jpg,tomato bacterial leaf spot,Validation,False,290,1
+tomato_bacterial_leaf_spot_3.jpg,tomato bacterial leaf spot,Validation,False,291,1
+tomato_bacterial_leaf_spot_30.jpg,tomato bacterial leaf spot,Validation,False,292,1
+tomato_bacterial_leaf_spot_32.jpg,tomato bacterial leaf spot,Training,False,293,1
+tomato_bacterial_leaf_spot_33.jpg,tomato bacterial leaf spot,Training,False,304,3
+tomato_bacterial_leaf_spot_36.jpg,tomato bacterial leaf spot,Training,False,295,1
+tomato_bacterial_leaf_spot_4.jpg,tomato bacterial leaf spot,Training,False,296,1
+tomato_bacterial_leaf_spot_41.jpg,tomato bacterial leaf spot,Training,False,297,1
+tomato_bacterial_leaf_spot_42.jpg,tomato bacterial leaf spot,Training,False,822,2
+tomato_bacterial_leaf_spot_43.jpg,tomato bacterial leaf spot,Training,False,299,1
+tomato_bacterial_leaf_spot_44.jpg,tomato bacterial leaf spot,Training,False,300,1
+tomato_bacterial_leaf_spot_48.jpg,tomato bacterial leaf spot,Training,False,301,1
+tomato_bacterial_leaf_spot_5.jpg,tomato bacterial leaf spot,Training,False,302,1
+tomato_bacterial_leaf_spot_51.jpg,tomato bacterial leaf spot,Training,False,303,2
+tomato_bacterial_leaf_spot_57.jpg,tomato bacterial leaf spot,Training,False,304,3
+tomato_bacterial_leaf_spot_6.jpg,tomato bacterial leaf spot,Training,False,305,1
+tomato_bacterial_leaf_spot_64.jpg,tomato bacterial leaf spot,Training,False,306,1
+tomato_bacterial_leaf_spot_65.jpg,tomato bacterial leaf spot,Training,False,307,1
+tomato_bacterial_leaf_spot_7.jpg,tomato bacterial leaf spot,Training,False,315,6
+tomato_bacterial_leaf_spot_76.jpg,tomato bacterial leaf spot,Training,False,309,1
+tomato_bacterial_leaf_spot_77.jpg,tomato bacterial leaf spot,Training,False,310,1
+tomato_bacterial_leaf_spot_79.jpg,tomato bacterial leaf spot,Validation,False,311,1
+tomato_bacterial_leaf_spot_8.jpg,tomato bacterial leaf spot,Training,False,312,1
+tomato_bacterial_leaf_spot_80.jpg,tomato bacterial leaf spot,Training,False,313,1
+tomato_bacterial_leaf_spot_81.jpg,tomato bacterial leaf spot,Training,False,314,1
+tomato_bacterial_leaf_spot_97.jpg,tomato bacterial leaf spot,Training,False,315,6
+tomato_bacterial_leaf_spot_99.jpg,tomato bacterial leaf spot,Training,False,316,1
+tomato_bacterial_leaf_spot_google_0000.jpg,tomato bacterial leaf spot,Training,False,317,1
+tomato_bacterial_leaf_spot_google_0004.jpg,tomato bacterial leaf spot,Training,True,318,1
+tomato_bacterial_leaf_spot_google_0017.jpg,tomato bacterial leaf spot,Training,False,319,1
+tomato_bacterial_leaf_spot_google_0021.jpg,tomato bacterial leaf spot,Training,False,320,1
+tomato_bacterial_leaf_spot_google_0033.jpg,tomato bacterial leaf spot,Training,False,321,1
+tomato_bacterial_leaf_spot_google_0034.jpg,tomato bacterial leaf spot,Training,False,322,1
+tomato_bacterial_leaf_spot_google_0036.jpg,tomato bacterial leaf spot,Training,False,323,1
+tomato_bacterial_leaf_spot_google_0037.jpg,tomato bacterial leaf spot,Training,False,324,1
+tomato_bacterial_leaf_spot_google_0040.jpg,tomato bacterial leaf spot,Training,True,334,2
+tomato_bacterial_leaf_spot_google_0044.jpg,tomato bacterial leaf spot,Training,False,326,1
+tomato_bacterial_leaf_spot_google_0050.jpg,tomato bacterial leaf spot,Training,False,327,1
+tomato_bacterial_leaf_spot_google_0051.jpg,tomato bacterial leaf spot,Training,False,348,2
+tomato_bacterial_leaf_spot_google_0053.jpg,tomato bacterial leaf spot,Training,False,329,1
+tomato_bacterial_leaf_spot_google_0060.jpg,tomato bacterial leaf spot,Training,False,330,1
+tomato_bacterial_leaf_spot_google_0061.jpg,tomato bacterial leaf spot,Training,False,331,1
+tomato_bacterial_leaf_spot_google_0065.jpg,tomato bacterial leaf spot,Validation,False,332,1
+tomato_bacterial_leaf_spot_google_0066.jpg,tomato bacterial leaf spot,Validation,False,333,1
+tomato_bacterial_leaf_spot_google_0077.jpg,tomato bacterial leaf spot,Training,True,334,2
+tomato_bacterial_leaf_spot_google_0091.jpg,tomato bacterial leaf spot,Training,True,335,1
+tomato_bacterial_leaf_spot_google_0095.jpg,tomato bacterial leaf spot,Training,False,336,1
+tomato_bacterial_leaf_spot_google_0111.jpg,tomato bacterial leaf spot,Training,False,337,1
+tomato_bacterial_leaf_spot_google_0113.jpg,tomato bacterial leaf spot,Training,False,338,1
+tomato_bacterial_leaf_spot_google_0144.jpg,tomato bacterial leaf spot,Training,False,339,1
+tomato_bacterial_leaf_spot_google_0150.jpg,tomato bacterial leaf spot,Training,False,340,1
+tomato_bacterial_leaf_spot_google_0188.jpg,tomato bacterial leaf spot,Validation,False,341,1
+tomato_bacterial_leaf_spot_google_0224.jpg,tomato bacterial leaf spot,Training,False,342,1
+tomato_bacterial_leaf_spot_google_0254.jpg,tomato bacterial leaf spot,Training,False,343,1
+tomato_bacterial_leaf_spot_google_0262.jpg,tomato bacterial leaf spot,Training,False,344,1
+tomato_bacterial_leaf_spot_google_0315.jpg,tomato bacterial leaf spot,Training,False,345,1
+tomato_bacterial_leaf_spot_google_0324.jpg,tomato bacterial leaf spot,Training,False,346,1
+tomato_bacterial_leaf_spot_google_0338.jpg,tomato bacterial leaf spot,Training,True,347,1
+tomato_bacterial_leaf_spot_google_0351.jpg,tomato bacterial leaf spot,Validation,False,348,2
+tomato_bacterial_leaf_spot_google_0411.jpg,tomato bacterial leaf spot,Training,False,349,1
+tomato_early_blight_1.jpg,tomato early blight,Validation,False,350,1
+tomato_early_blight_12.jpg,tomato early blight,Training,False,400,7
+tomato_early_blight_120.jpg,tomato early blight,Training,False,368,2
+tomato_early_blight_121.jpg,tomato early blight,Training,False,847,4
+tomato_early_blight_127.jpg,tomato early blight,Training,False,396,3
+tomato_early_blight_13.jpg,tomato early blight,Training,False,355,1
+tomato_early_blight_130.jpg,tomato early blight,Training,False,356,1
+tomato_early_blight_137.jpg,tomato early blight,Training,False,847,4
+tomato_early_blight_140.jpg,tomato early blight,Training,False,395,2
+tomato_early_blight_143.jpg,tomato early blight,Validation,False,359,1
+tomato_early_blight_165.jpg,tomato early blight,Training,False,360,1
+tomato_early_blight_177.jpg,tomato early blight,Validation,False,855,7
+tomato_early_blight_178.jpg,tomato early blight,Training,False,362,1
+tomato_early_blight_179.jpg,tomato early blight,Training,True,363,1
+tomato_early_blight_182.jpg,tomato early blight,Training,False,853,2
+tomato_early_blight_183.jpg,tomato early blight,Training,False,365,1
+tomato_early_blight_186.jpg,tomato early blight,Training,False,366,1
+tomato_early_blight_189.jpg,tomato early blight,Training,False,367,1
+tomato_early_blight_19.jpg,tomato early blight,Training,False,368,2
+tomato_early_blight_193.jpg,tomato early blight,Training,False,843,5
+tomato_early_blight_2.jpg,tomato early blight,Training,False,370,1
+tomato_early_blight_21.jpg,tomato early blight,Training,False,371,1
+tomato_early_blight_210.jpg,tomato early blight,Training,False,855,7
+tomato_early_blight_212.jpg,tomato early blight,Training,False,855,7
+tomato_early_blight_216.jpg,tomato early blight,Training,False,843,5
+tomato_early_blight_219.jpg,tomato early blight,Training,False,396,3
+tomato_early_blight_221.jpg,tomato early blight,Training,False,847,4
+tomato_early_blight_227.jpg,tomato early blight,Training,False,852,2
+tomato_early_blight_242.jpg,tomato early blight,Training,False,378,1
+tomato_early_blight_246.jpg,tomato early blight,Training,False,379,1
+tomato_early_blight_25.jpg,tomato early blight,Training,False,400,7
+tomato_early_blight_251.jpg,tomato early blight,Training,False,381,1
+tomato_early_blight_28.jpg,tomato early blight,Validation,False,400,7
+tomato_early_blight_287.jpg,tomato early blight,Training,False,383,1
+tomato_early_blight_29.jpg,tomato early blight,Training,False,855,7
+tomato_early_blight_3.jpg,tomato early blight,Validation,False,385,1
+tomato_early_blight_316.jpg,tomato early blight,Training,False,386,1
+tomato_early_blight_38.jpg,tomato early blight,Training,False,387,1
+tomato_early_blight_39.jpg,tomato early blight,Training,False,388,1
+tomato_early_blight_43.jpg,tomato early blight,Training,False,389,1
+tomato_early_blight_47.jpg,tomato early blight,Validation,False,843,5
+tomato_early_blight_52.jpg,tomato early blight,Training,False,391,1
+tomato_early_blight_53.jpg,tomato early blight,Training,False,392,1
+tomato_early_blight_55.jpg,tomato early blight,Training,False,393,1
+tomato_early_blight_6.jpg,tomato early blight,Training,False,394,1
+tomato_early_blight_66.jpg,tomato early blight,Training,False,395,2
+tomato_early_blight_67.jpg,tomato early blight,Training,False,396,3
+tomato_early_blight_7.jpg,tomato early blight,Training,False,397,1
+tomato_early_blight_86.jpg,tomato early blight,Training,False,398,1
+tomato_early_blight_87.jpg,tomato early blight,Training,False,399,1
+tomato_early_blight_89.jpg,tomato early blight,Validation,False,400,7
+tomato_early_blight_93.jpg,tomato early blight,Training,False,842,2
+tomato_early_blight_google_0002.jpg,tomato early blight,Training,False,402,1
+tomato_early_blight_google_0003.jpg,tomato early blight,Training,False,403,1
+tomato_early_blight_google_0005.jpg,tomato early blight,Validation,False,404,1
+tomato_early_blight_google_0007.jpg,tomato early blight,Training,False,405,1
+tomato_early_blight_google_0013.jpg,tomato early blight,Training,False,406,1
+tomato_early_blight_google_0014.jpg,tomato early blight,Training,False,407,1
+tomato_early_blight_google_0015.jpg,tomato early blight,Training,False,408,1
+tomato_early_blight_google_0018.jpg,tomato early blight,Training,False,476,4
+tomato_early_blight_google_0020.jpg,tomato early blight,Training,False,410,1
+tomato_early_blight_google_0021.jpg,tomato early blight,Training,False,411,1
+tomato_early_blight_google_0024.jpg,tomato early blight,Training,False,875,2
+tomato_early_blight_google_0032.jpg,tomato early blight,Training,True,871,3
+tomato_early_blight_google_0033.jpg,tomato early blight,Training,False,414,1
+tomato_early_blight_google_0036.jpg,tomato early blight,Training,True,415,1
+tomato_early_blight_google_0040.jpg,tomato early blight,Training,False,416,1
+tomato_early_blight_google_0042.jpg,tomato early blight,Training,False,417,1
+tomato_early_blight_google_0043.jpg,tomato early blight,Training,False,418,1
+tomato_early_blight_google_0044.jpg,tomato early blight,Training,False,476,4
+tomato_early_blight_google_0047.jpg,tomato early blight,Training,False,420,1
+tomato_early_blight_google_0048.jpg,tomato early blight,Validation,False,421,1
+tomato_early_blight_google_0052.jpg,tomato early blight,Validation,False,422,1
+tomato_early_blight_google_0053.jpg,tomato early blight,Training,False,423,1
+tomato_early_blight_google_0054.jpg,tomato early blight,Training,False,872,4
+tomato_early_blight_google_0055.jpg,tomato early blight,Training,False,425,1
+tomato_early_blight_google_0071.jpg,tomato early blight,Training,False,426,1
+tomato_early_blight_google_0073.jpg,tomato early blight,Training,False,427,1
+tomato_early_blight_google_0074.jpg,tomato early blight,Training,False,428,1
+tomato_early_blight_google_0076.jpg,tomato early blight,Training,False,872,4
+tomato_early_blight_google_0077.jpg,tomato early blight,Training,False,430,1
+tomato_early_blight_google_0080.jpg,tomato early blight,Validation,False,431,1
+tomato_early_blight_google_0081.jpg,tomato early blight,Training,False,872,4
+tomato_early_blight_google_0088.jpg,tomato early blight,Validation,False,433,1
+tomato_early_blight_google_0091.jpg,tomato early blight,Validation,False,434,1
+tomato_early_blight_google_0093.jpg,tomato early blight,Training,False,435,1
+tomato_early_blight_google_0098.jpg,tomato early blight,Training,False,436,1
+tomato_early_blight_google_0099.jpg,tomato early blight,Training,False,437,1
+tomato_early_blight_google_0101.jpg,tomato early blight,Training,False,476,4
+tomato_early_blight_google_0103.jpg,tomato early blight,Training,False,439,1
+tomato_early_blight_google_0110.jpg,tomato early blight,Training,False,440,1
+tomato_early_blight_google_0111.jpg,tomato early blight,Training,False,441,1
+tomato_early_blight_google_0117.jpg,tomato early blight,Training,False,442,1
+tomato_early_blight_google_0120.jpg,tomato early blight,Training,False,443,1
+tomato_early_blight_google_0123.jpg,tomato early blight,Training,False,444,1
+tomato_early_blight_google_0130.jpg,tomato early blight,Training,False,445,1
+tomato_early_blight_google_0133.jpg,tomato early blight,Training,False,446,1
+tomato_early_blight_google_0139.jpg,tomato early blight,Training,False,447,1
+tomato_early_blight_google_0140.jpg,tomato early blight,Training,False,448,1
+tomato_early_blight_google_0143.jpg,tomato early blight,Training,False,449,1
+tomato_early_blight_google_0145.jpg,tomato early blight,Training,False,450,1
+tomato_early_blight_google_0146.jpg,tomato early blight,Training,False,451,1
+tomato_early_blight_google_0149.jpg,tomato early blight,Training,False,452,1
+tomato_early_blight_google_0160.jpg,tomato early blight,Validation,True,453,1
+tomato_early_blight_google_0173.jpg,tomato early blight,Training,False,454,1
+tomato_early_blight_google_0178.jpg,tomato early blight,Training,False,455,1
+tomato_early_blight_google_0179.jpg,tomato early blight,Training,False,466,2
+tomato_early_blight_google_0181.jpg,tomato early blight,Training,True,457,1
+tomato_early_blight_google_0183.jpg,tomato early blight,Training,False,458,1
+tomato_early_blight_google_0185.jpg,tomato early blight,Training,False,459,1
+tomato_early_blight_google_0200.jpg,tomato early blight,Training,False,460,1
+tomato_early_blight_google_0211.jpg,tomato early blight,Training,False,461,1
+tomato_early_blight_google_0219.jpg,tomato early blight,Training,False,462,1
+tomato_early_blight_google_0220.jpg,tomato early blight,Training,False,463,1
+tomato_early_blight_google_0223.jpg,tomato early blight,Training,False,464,2
+tomato_early_blight_google_0224.jpg,tomato early blight,Training,False,465,1
+tomato_early_blight_google_0226.jpg,tomato early blight,Training,False,466,2
+tomato_early_blight_google_0227.jpg,tomato early blight,Training,False,467,1
+tomato_early_blight_google_0230.jpg,tomato early blight,Validation,False,468,1
+tomato_early_blight_google_0233.jpg,tomato early blight,Training,False,469,1
+tomato_early_blight_google_0235.jpg,tomato early blight,Training,False,470,1
+tomato_early_blight_google_0246.jpg,tomato early blight,Training,False,471,1
+tomato_early_blight_google_0250.jpg,tomato early blight,Validation,False,472,1
+tomato_early_blight_google_0258.jpg,tomato early blight,Training,False,473,1
+tomato_early_blight_google_0259.jpg,tomato early blight,Training,False,474,1
+tomato_early_blight_google_0260.jpg,tomato early blight,Training,False,855,7
+tomato_early_blight_google_0271.jpg,tomato early blight,Training,False,476,4
+tomato_early_blight_google_0280.jpg,tomato early blight,Training,False,477,1
+tomato_early_blight_google_0290.jpg,tomato early blight,Validation,False,478,1
+tomato_early_blight_google_0305.jpg,tomato early blight,Training,False,479,1
+tomato_early_blight_google_0310.jpg,tomato early blight,Validation,False,480,1
+tomato_early_blight_google_0322.jpg,tomato early blight,Training,False,481,1
+tomato_early_blight_google_0343.jpg,tomato early blight,Training,False,482,1
+tomato_early_blight_google_0344.jpg,tomato early blight,Training,False,483,1
+tomato_early_blight_google_0345.jpg,tomato early blight,Training,False,484,1
+tomato_early_blight_google_0347.jpg,tomato early blight,Training,False,860,2
+tomato_early_blight_google_0349.jpg,tomato early blight,Training,False,486,1
+tomato_early_blight_google_0350.jpg,tomato early blight,Training,False,487,1
+tomato_early_blight_google_0353.jpg,tomato early blight,Training,False,488,1
+tomato_early_blight_google_0358.jpg,tomato early blight,Training,False,489,1
+tomato_early_blight_google_0362.jpg,tomato early blight,Training,False,490,1
+tomato_early_blight_google_0374.jpg,tomato early blight,Training,False,491,1
+tomato_early_blight_google_0383.jpg,tomato early blight,Validation,False,492,1
+tomato_early_blight_google_0386.jpg,tomato early blight,Training,False,493,1
+tomato_early_blight_google_0390.jpg,tomato early blight,Training,False,494,1
+tomato_early_blight_google_0394.jpg,tomato early blight,Training,False,495,1
+tomato_early_blight_google_0397.jpg,tomato early blight,Training,False,866,2
+tomato_early_blight_google_0400.jpg,tomato early blight,Training,False,497,1
+tomato_early_blight_google_0406.jpg,tomato early blight,Validation,False,498,1
+tomato_early_blight_google_0432.jpg,tomato early blight,Training,False,499,1
+tomato_late_blight_100.jpg,tomato late blight,Training,False,500,1
+tomato_late_blight_104.jpg,tomato late blight,Validation,False,501,1
+tomato_late_blight_107.jpg,tomato late blight,Training,False,502,1
+tomato_late_blight_122.jpg,tomato late blight,Training,False,503,1
+tomato_late_blight_127.jpg,tomato late blight,Training,False,504,1
+tomato_late_blight_13.jpg,tomato late blight,Training,False,505,1
+tomato_late_blight_130.jpg,tomato late blight,Training,False,506,1
+tomato_late_blight_135.jpg,tomato late blight,Training,False,507,1
+tomato_late_blight_137.jpg,tomato late blight,Training,False,508,1
+tomato_late_blight_143.jpg,tomato late blight,Training,False,509,1
+tomato_late_blight_149.jpg,tomato late blight,Training,False,510,1
+tomato_late_blight_159.jpg,tomato late blight,Training,False,511,1
+tomato_late_blight_16.jpg,tomato late blight,Training,False,512,1
+tomato_late_blight_162.jpg,tomato late blight,Training,False,513,1
+tomato_late_blight_163.jpg,tomato late blight,Training,False,514,1
+tomato_late_blight_166.jpg,tomato late blight,Training,False,515,1
+tomato_late_blight_168.jpg,tomato late blight,Training,False,516,1
+tomato_late_blight_170.jpg,tomato late blight,Training,False,517,1
+tomato_late_blight_171.jpg,tomato late blight,Training,False,518,1
+tomato_late_blight_173.jpg,tomato late blight,Training,False,519,1
+tomato_late_blight_175.jpg,tomato late blight,Training,False,520,1
+tomato_late_blight_179.jpg,tomato late blight,Training,False,521,1
+tomato_late_blight_18.jpg,tomato late blight,Training,False,522,1
+tomato_late_blight_186.jpg,tomato late blight,Training,False,523,1
+tomato_late_blight_189.jpg,tomato late blight,Training,False,524,1
+tomato_late_blight_190.jpg,tomato late blight,Training,False,525,1
+tomato_late_blight_198.jpg,tomato late blight,Training,False,526,1
+tomato_late_blight_203.jpg,tomato late blight,Training,False,527,1
+tomato_late_blight_216.jpg,tomato late blight,Training,False,528,1
+tomato_late_blight_217.jpg,tomato late blight,Training,False,892,2
+tomato_late_blight_220.jpg,tomato late blight,Training,False,530,1
+tomato_late_blight_223.jpg,tomato late blight,Training,False,531,1
+tomato_late_blight_234.jpg,tomato late blight,Training,False,593,2
+tomato_late_blight_238.jpg,tomato late blight,Training,False,533,1
+tomato_late_blight_24.jpg,tomato late blight,Training,True,534,1
+tomato_late_blight_246.jpg,tomato late blight,Training,False,535,1
+tomato_late_blight_25.jpg,tomato late blight,Training,False,552,2
+tomato_late_blight_3.jpg,tomato late blight,Training,False,537,1
+tomato_late_blight_30.jpg,tomato late blight,Training,False,538,1
+tomato_late_blight_31.jpg,tomato late blight,Training,False,539,1
+tomato_late_blight_33.jpg,tomato late blight,Validation,False,540,1
+tomato_late_blight_36.jpg,tomato late blight,Training,False,541,1
+tomato_late_blight_39.jpg,tomato late blight,Training,False,542,1
+tomato_late_blight_4.jpg,tomato late blight,Training,False,543,1
+tomato_late_blight_41.jpg,tomato late blight,Validation,False,544,1
+tomato_late_blight_44.jpg,tomato late blight,Training,False,545,1
+tomato_late_blight_5.jpg,tomato late blight,Training,False,546,1
+tomato_late_blight_50.jpg,tomato late blight,Training,False,547,1
+tomato_late_blight_51.jpg,tomato late blight,Training,False,548,1
+tomato_late_blight_56.jpg,tomato late blight,Training,False,549,1
+tomato_late_blight_57.jpg,tomato late blight,Training,False,550,1
+tomato_late_blight_6.jpg,tomato late blight,Training,True,551,1
+tomato_late_blight_66.jpg,tomato late blight,Training,False,552,2
+tomato_late_blight_68.jpg,tomato late blight,Training,False,553,1
+tomato_late_blight_69.jpg,tomato late blight,Validation,False,908,3
+tomato_late_blight_7.jpg,tomato late blight,Training,False,555,1
+tomato_late_blight_75.jpg,tomato late blight,Training,False,556,1
+tomato_late_blight_77.jpg,tomato late blight,Training,False,557,1
+tomato_late_blight_78.jpg,tomato late blight,Training,False,558,1
+tomato_late_blight_79.jpg,tomato late blight,Validation,False,559,1
+tomato_late_blight_8.jpg,tomato late blight,Training,False,560,1
+tomato_late_blight_81.jpg,tomato late blight,Training,False,887,2
+tomato_late_blight_83.jpg,tomato late blight,Training,False,562,1
+tomato_late_blight_84.jpg,tomato late blight,Training,False,563,1
+tomato_late_blight_86.jpg,tomato late blight,Training,False,884,2
+tomato_late_blight_90.jpg,tomato late blight,Training,False,565,1
+tomato_late_blight_98.jpg,tomato late blight,Training,False,566,1
+tomato_late_blight_google_0000.jpg,tomato late blight,Training,False,567,1
+tomato_late_blight_google_0005.jpg,tomato late blight,Training,True,568,1
+tomato_late_blight_google_0007.jpg,tomato late blight,Validation,False,569,1
+tomato_late_blight_google_0012.jpg,tomato late blight,Training,False,570,1
+tomato_late_blight_google_0013.jpg,tomato late blight,Training,False,571,1
+tomato_late_blight_google_0015.jpg,tomato late blight,Training,False,572,1
+tomato_late_blight_google_0016.jpg,tomato late blight,Training,True,573,1
+tomato_late_blight_google_0021.jpg,tomato late blight,Training,True,574,1
+tomato_late_blight_google_0031.jpg,tomato late blight,Training,False,575,1
+tomato_late_blight_google_0032.jpg,tomato late blight,Validation,False,576,1
+tomato_late_blight_google_0035.jpg,tomato late blight,Training,False,577,1
+tomato_late_blight_google_0043.jpg,tomato late blight,Training,False,578,1
+tomato_late_blight_google_0044.jpg,tomato late blight,Training,False,579,1
+tomato_late_blight_google_0048.jpg,tomato late blight,Validation,False,580,1
+tomato_late_blight_google_0050.jpg,tomato late blight,Training,False,581,1
+tomato_late_blight_google_0056.jpg,tomato late blight,Training,False,582,1
+tomato_late_blight_google_0058.jpg,tomato late blight,Training,False,903,2
+tomato_late_blight_google_0065.jpg,tomato late blight,Training,False,584,1
+tomato_late_blight_google_0066.jpg,tomato late blight,Training,False,585,1
+tomato_late_blight_google_0074.jpg,tomato late blight,Training,False,586,1
+tomato_late_blight_google_0077.jpg,tomato late blight,Training,False,587,1
+tomato_late_blight_google_0083.jpg,tomato late blight,Training,False,588,1
+tomato_late_blight_google_0085.jpg,tomato late blight,Training,False,589,1
+tomato_late_blight_google_0087.jpg,tomato late blight,Validation,False,590,1
+tomato_late_blight_google_0091.jpg,tomato late blight,Training,False,591,1
+tomato_late_blight_google_0092.jpg,tomato late blight,Training,False,592,1
+tomato_late_blight_google_0096.jpg,tomato late blight,Training,False,593,2
+tomato_late_blight_google_0100.jpg,tomato late blight,Validation,False,594,1
+tomato_late_blight_google_0101.jpg,tomato late blight,Training,False,595,1
+tomato_late_blight_google_0107.jpg,tomato late blight,Training,False,596,1
+tomato_late_blight_google_0110.jpg,tomato late blight,Training,True,597,1
+tomato_late_blight_google_0116.jpg,tomato late blight,Training,False,598,1
+tomato_late_blight_google_0117.jpg,tomato late blight,Training,False,599,1
+tomato_late_blight_google_0120.jpg,tomato late blight,Validation,False,600,1
+tomato_late_blight_google_0124.jpg,tomato late blight,Validation,False,601,1
+tomato_late_blight_google_0133.jpg,tomato late blight,Validation,False,602,1
+tomato_late_blight_google_0134.jpg,tomato late blight,Training,False,603,1
+tomato_late_blight_google_0138.jpg,tomato late blight,Training,False,604,1
+tomato_late_blight_google_0140.jpg,tomato late blight,Validation,False,605,1
+tomato_late_blight_google_0142.jpg,tomato late blight,Training,False,606,1
+tomato_late_blight_google_0149.jpg,tomato late blight,Training,False,607,1
+tomato_late_blight_google_0150.jpg,tomato late blight,Validation,False,608,1
+tomato_late_blight_google_0156.jpg,tomato late blight,Training,False,609,1
+tomato_late_blight_google_0157.jpg,tomato late blight,Training,False,610,1
+tomato_late_blight_google_0159.jpg,tomato late blight,Training,False,611,1
+tomato_late_blight_google_0181.jpg,tomato late blight,Training,False,612,1
+tomato_late_blight_google_0184.jpg,tomato late blight,Training,False,613,1
+tomato_late_blight_google_0188.jpg,tomato late blight,Training,True,614,1
+tomato_late_blight_google_0189.jpg,tomato late blight,Training,True,615,1
+tomato_late_blight_google_0194.jpg,tomato late blight,Training,False,616,1
+tomato_late_blight_google_0205.jpg,tomato late blight,Training,False,617,1
+tomato_late_blight_google_0206.jpg,tomato late blight,Training,False,618,1
+tomato_late_blight_google_0219.jpg,tomato late blight,Validation,False,619,1
+tomato_late_blight_google_0220.jpg,tomato late blight,Training,False,620,1
+tomato_late_blight_google_0235.jpg,tomato late blight,Training,False,621,1
+tomato_late_blight_google_0240.jpg,tomato late blight,Validation,False,622,1
+tomato_late_blight_google_0244.jpg,tomato late blight,Training,False,623,1
+tomato_late_blight_google_0246.jpg,tomato late blight,Training,False,624,1
+tomato_late_blight_google_0256.jpg,tomato late blight,Training,False,625,1
+tomato_late_blight_google_0262.jpg,tomato late blight,Training,False,626,1
+tomato_late_blight_google_0263.jpg,tomato late blight,Training,False,627,1
+tomato_late_blight_google_0269.jpg,tomato late blight,Training,False,628,1
+tomato_late_blight_google_0271.jpg,tomato late blight,Training,False,629,1
+tomato_mosaic_virus_1.jpg,tomato mosaic virus,Validation,False,682,2
+tomato_mosaic_virus_112.jpg,tomato mosaic virus,Training,False,644,3
+tomato_mosaic_virus_117.jpg,tomato mosaic virus,Training,False,632,1
+tomato_mosaic_virus_125.jpg,tomato mosaic virus,Training,False,636,2
+tomato_mosaic_virus_13.jpg,tomato mosaic virus,Training,False,928,2
+tomato_mosaic_virus_132.jpg,tomato mosaic virus,Training,False,637,2
+tomato_mosaic_virus_147.jpg,tomato mosaic virus,Training,False,636,2
+tomato_mosaic_virus_152.jpg,tomato mosaic virus,Training,False,637,2
+tomato_mosaic_virus_154.jpg,tomato mosaic virus,Training,False,638,1
+tomato_mosaic_virus_173.jpg,tomato mosaic virus,Training,False,644,3
+tomato_mosaic_virus_184.jpg,tomato mosaic virus,Training,False,640,1
+tomato_mosaic_virus_19.jpg,tomato mosaic virus,Validation,False,641,1
+tomato_mosaic_virus_2.jpg,tomato mosaic virus,Training,False,680,2
+tomato_mosaic_virus_228.jpg,tomato mosaic virus,Training,False,931,3
+tomato_mosaic_virus_23.jpg,tomato mosaic virus,Training,False,644,3
+tomato_mosaic_virus_230.jpg,tomato mosaic virus,Training,False,916,2
+tomato_mosaic_virus_24.jpg,tomato mosaic virus,Training,False,646,1
+tomato_mosaic_virus_249.jpg,tomato mosaic virus,Training,False,647,1
+tomato_mosaic_virus_28.jpg,tomato mosaic virus,Training,False,649,2
+tomato_mosaic_virus_3.jpg,tomato mosaic virus,Validation,False,649,2
+tomato_mosaic_virus_32.jpg,tomato mosaic virus,Training,False,650,1
+tomato_mosaic_virus_35.jpg,tomato mosaic virus,Training,False,651,1
+tomato_mosaic_virus_4.jpg,tomato mosaic virus,Training,False,652,1
+tomato_mosaic_virus_5.jpg,tomato mosaic virus,Training,False,653,1
+tomato_mosaic_virus_google_0005.jpg,tomato mosaic virus,Training,False,654,1
+tomato_mosaic_virus_google_0008.jpg,tomato mosaic virus,Training,False,655,1
+tomato_mosaic_virus_google_0009.jpg,tomato mosaic virus,Training,False,656,1
+tomato_mosaic_virus_google_0020.jpg,tomato mosaic virus,Validation,False,657,1
+tomato_mosaic_virus_google_0021.jpg,tomato mosaic virus,Training,False,658,1
+tomato_mosaic_virus_google_0022.jpg,tomato mosaic virus,Training,False,659,1
+tomato_mosaic_virus_google_0024.jpg,tomato mosaic virus,Validation,False,660,1
+tomato_mosaic_virus_google_0045.jpg,tomato mosaic virus,Training,False,661,1
+tomato_mosaic_virus_google_0046.jpg,tomato mosaic virus,Training,False,662,1
+tomato_mosaic_virus_google_0053.jpg,tomato mosaic virus,Validation,False,663,1
+tomato_mosaic_virus_google_0063.jpg,tomato mosaic virus,Training,False,664,1
+tomato_mosaic_virus_google_0066.jpg,tomato mosaic virus,Training,False,665,1
+tomato_mosaic_virus_google_0070.jpg,tomato mosaic virus,Training,False,666,1
+tomato_mosaic_virus_google_0073.jpg,tomato mosaic virus,Training,False,667,1
+tomato_mosaic_virus_google_0077.jpg,tomato mosaic virus,Training,False,668,1
+tomato_mosaic_virus_google_0083.jpg,tomato mosaic virus,Training,False,669,1
+tomato_mosaic_virus_google_0092.jpg,tomato mosaic virus,Training,False,670,1
+tomato_mosaic_virus_google_0093.jpg,tomato mosaic virus,Training,False,671,1
+tomato_mosaic_virus_google_0106.jpg,tomato mosaic virus,Training,False,672,1
+tomato_mosaic_virus_google_0117.jpg,tomato mosaic virus,Training,False,918,2
+tomato_mosaic_virus_google_0131.jpg,tomato mosaic virus,Training,False,674,1
+tomato_mosaic_virus_google_0136.jpg,tomato mosaic virus,Training,False,675,1
+tomato_mosaic_virus_google_0142.jpg,tomato mosaic virus,Training,False,676,1
+tomato_mosaic_virus_google_0164.jpg,tomato mosaic virus,Training,False,677,1
+tomato_mosaic_virus_google_0190.jpg,tomato mosaic virus,Training,False,678,1
+tomato_mosaic_virus_google_0204.jpg,tomato mosaic virus,Validation,False,679,1
+tomato_yellow_leaf_curl_virus_1.jpg,tomato yellow leaf curl virus,Training,False,680,2
+tomato_yellow_leaf_curl_virus_10.jpg,tomato yellow leaf curl virus,Training,False,681,1
+tomato_yellow_leaf_curl_virus_11.jpg,tomato yellow leaf curl virus,Training,False,682,2
+tomato_yellow_leaf_curl_virus_12.jpg,tomato yellow leaf curl virus,Training,False,927,2
+tomato_yellow_leaf_curl_virus_13.jpg,tomato yellow leaf curl virus,Training,False,684,1
+tomato_yellow_leaf_curl_virus_149.jpg,tomato yellow leaf curl virus,Training,False,685,1
+tomato_yellow_leaf_curl_virus_151.jpg,tomato yellow leaf curl virus,Validation,False,686,1
+tomato_yellow_leaf_curl_virus_152.jpg,tomato yellow leaf curl virus,Training,False,687,1
+tomato_yellow_leaf_curl_virus_162.jpg,tomato yellow leaf curl virus,Training,False,688,1
+tomato_yellow_leaf_curl_virus_19.jpg,tomato yellow leaf curl virus,Training,False,709,2
+tomato_yellow_leaf_curl_virus_2.jpg,tomato yellow leaf curl virus,Training,False,690,1
+tomato_yellow_leaf_curl_virus_21.jpg,tomato yellow leaf curl virus,Training,False,691,1
+tomato_yellow_leaf_curl_virus_23.jpg,tomato yellow leaf curl virus,Training,False,692,1
+tomato_yellow_leaf_curl_virus_24.jpg,tomato yellow leaf curl virus,Training,False,693,1
+tomato_yellow_leaf_curl_virus_25.jpg,tomato yellow leaf curl virus,Training,False,694,1
+tomato_yellow_leaf_curl_virus_27.jpg,tomato yellow leaf curl virus,Training,False,695,1
+tomato_yellow_leaf_curl_virus_28.jpg,tomato yellow leaf curl virus,Training,False,696,1
+tomato_yellow_leaf_curl_virus_3.jpg,tomato yellow leaf curl virus,Training,False,697,1
+tomato_yellow_leaf_curl_virus_31.jpg,tomato yellow leaf curl virus,Training,False,698,1
+tomato_yellow_leaf_curl_virus_35.jpg,tomato yellow leaf curl virus,Training,False,699,1
+tomato_yellow_leaf_curl_virus_37.jpg,tomato yellow leaf curl virus,Training,False,700,1
+tomato_yellow_leaf_curl_virus_45.jpg,tomato yellow leaf curl virus,Training,False,701,1
+tomato_yellow_leaf_curl_virus_47.jpg,tomato yellow leaf curl virus,Training,False,702,1
+tomato_yellow_leaf_curl_virus_5.jpg,tomato yellow leaf curl virus,Training,False,703,1
+tomato_yellow_leaf_curl_virus_50.jpg,tomato yellow leaf curl virus,Validation,False,704,1
+tomato_yellow_leaf_curl_virus_51.jpg,tomato yellow leaf curl virus,Training,False,705,1
+tomato_yellow_leaf_curl_virus_6.jpg,tomato yellow leaf curl virus,Validation,False,706,1
+tomato_yellow_leaf_curl_virus_64.jpg,tomato yellow leaf curl virus,Validation,False,707,1
+tomato_yellow_leaf_curl_virus_68.jpg,tomato yellow leaf curl virus,Training,False,708,1
+tomato_yellow_leaf_curl_virus_69.jpg,tomato yellow leaf curl virus,Training,False,709,2
+tomato_yellow_leaf_curl_virus_7.jpg,tomato yellow leaf curl virus,Training,False,710,1
+tomato_yellow_leaf_curl_virus_78.jpg,tomato yellow leaf curl virus,Training,False,711,1
+tomato_yellow_leaf_curl_virus_8.jpg,tomato yellow leaf curl virus,Training,False,712,1
+tomato_yellow_leaf_curl_virus_9.jpg,tomato yellow leaf curl virus,Training,False,713,1
+tomato_yellow_leaf_curl_virus_google_0000.jpg,tomato yellow leaf curl virus,Training,False,714,1
+tomato_yellow_leaf_curl_virus_google_0001.jpg,tomato yellow leaf curl virus,Training,False,715,1
+tomato_yellow_leaf_curl_virus_google_0004.jpg,tomato yellow leaf curl virus,Training,False,733,2
+tomato_yellow_leaf_curl_virus_google_0005.jpg,tomato yellow leaf curl virus,Training,False,717,1
+tomato_yellow_leaf_curl_virus_google_0007.jpg,tomato yellow leaf curl virus,Validation,False,718,1
+tomato_yellow_leaf_curl_virus_google_0012.jpg,tomato yellow leaf curl virus,Training,False,719,1
+tomato_yellow_leaf_curl_virus_google_0013.jpg,tomato yellow leaf curl virus,Training,False,720,1
+tomato_yellow_leaf_curl_virus_google_0027.jpg,tomato yellow leaf curl virus,Training,False,721,1
+tomato_yellow_leaf_curl_virus_google_0029.jpg,tomato yellow leaf curl virus,Validation,False,722,1
+tomato_yellow_leaf_curl_virus_google_0031.jpg,tomato yellow leaf curl virus,Training,False,723,1
+tomato_yellow_leaf_curl_virus_google_0048.jpg,tomato yellow leaf curl virus,Training,False,724,1
+tomato_yellow_leaf_curl_virus_google_0049.jpg,tomato yellow leaf curl virus,Training,False,725,1
+tomato_yellow_leaf_curl_virus_google_0053.jpg,tomato yellow leaf curl virus,Training,False,726,1
+tomato_yellow_leaf_curl_virus_google_0056.jpg,tomato yellow leaf curl virus,Training,False,727,1
+tomato_yellow_leaf_curl_virus_google_0062.jpg,tomato yellow leaf curl virus,Validation,False,728,1
+tomato_yellow_leaf_curl_virus_google_0065.jpg,tomato yellow leaf curl virus,Training,False,729,1
+tomato_yellow_leaf_curl_virus_google_0066.jpg,tomato yellow leaf curl virus,Training,False,730,1
+tomato_yellow_leaf_curl_virus_google_0067.jpg,tomato yellow leaf curl virus,Validation,False,731,1
+tomato_yellow_leaf_curl_virus_google_0068.jpg,tomato yellow leaf curl virus,Training,False,732,1
+tomato_yellow_leaf_curl_virus_google_0074.jpg,tomato yellow leaf curl virus,Training,False,733,2
+tomato_yellow_leaf_curl_virus_google_0075.jpg,tomato yellow leaf curl virus,Training,False,734,1
+tomato_yellow_leaf_curl_virus_google_0077.jpg,tomato yellow leaf curl virus,Training,False,735,1
+tomato_yellow_leaf_curl_virus_google_0080.jpg,tomato yellow leaf curl virus,Validation,False,736,1
+tomato_yellow_leaf_curl_virus_google_0089.jpg,tomato yellow leaf curl virus,Training,False,737,1
+tomato_yellow_leaf_curl_virus_google_0094.jpg,tomato yellow leaf curl virus,Training,False,738,1
+tomato_yellow_leaf_curl_virus_google_0095.jpg,tomato yellow leaf curl virus,Training,False,739,1
+tomato_yellow_leaf_curl_virus_google_0096.jpg,tomato yellow leaf curl virus,Training,False,740,1
+tomato_yellow_leaf_curl_virus_google_0111.jpg,tomato yellow leaf curl virus,Training,False,741,1
+tomato_yellow_leaf_curl_virus_google_0120.jpg,tomato yellow leaf curl virus,Training,False,742,1
+tomato_yellow_leaf_curl_virus_google_0121.jpg,tomato yellow leaf curl virus,Training,False,743,1
+tomato_yellow_leaf_curl_virus_google_0122.jpg,tomato yellow leaf curl virus,Training,False,744,1
+tomato_yellow_leaf_curl_virus_google_0124.jpg,tomato yellow leaf curl virus,Training,False,745,1
+tomato_yellow_leaf_curl_virus_google_0138.jpg,tomato yellow leaf curl virus,Training,False,746,1
+tomato_yellow_leaf_curl_virus_google_0139.jpg,tomato yellow leaf curl virus,Training,False,747,1
+tomato_yellow_leaf_curl_virus_google_0147.jpg,tomato yellow leaf curl virus,Training,False,748,1
+tomato_yellow_leaf_curl_virus_google_0150.jpg,tomato yellow leaf curl virus,Training,False,749,1
+tomato_yellow_leaf_curl_virus_google_0151.jpg,tomato yellow leaf curl virus,Training,False,750,1
+tomato_yellow_leaf_curl_virus_google_0171.jpg,tomato yellow leaf curl virus,Validation,False,751,1
+tomato_yellow_leaf_curl_virus_google_0172.jpg,tomato yellow leaf curl virus,Training,False,752,1
+tomato_yellow_leaf_curl_virus_google_0173.jpg,tomato yellow leaf curl virus,Training,False,753,1
+bell_pepper_bacterial_spot_Bing_0002.jpg,bell pepper bacterial spot,Test,True,754,1
+bell_pepper_bacterial_spot_Bing_0003.jpg,bell pepper bacterial spot,Test,False,755,2
+bell_pepper_bacterial_spot_Bing_0005.jpg,bell pepper bacterial spot,Test,False,756,3
+bell_pepper_bacterial_spot_Bing_0008.jpg,bell pepper bacterial spot,Test,True,761,2
+bell_pepper_bacterial_spot_Bing_0019.jpg,bell pepper bacterial spot,Test,False,758,2
+bell_pepper_bacterial_spot_Bing_0022.jpg,bell pepper bacterial spot,Test,False,759,1
+bell_pepper_bacterial_spot_Bing_0028.jpg,bell pepper bacterial spot,Test,False,760,1
+bell_pepper_bacterial_spot_Bing_0036.jpg,bell pepper bacterial spot,Test,True,761,2
+bell_pepper_bacterial_spot_Bing_0054.jpg,bell pepper bacterial spot,Test,False,762,1
+bell_pepper_bacterial_spot_Bing_0055.jpg,bell pepper bacterial spot,Test,False,763,1
+bell_pepper_bacterial_spot_Bing_0079.jpg,bell pepper bacterial spot,Test,False,764,1
+bell_pepper_bacterial_spot_Bing_0105.jpg,bell pepper bacterial spot,Test,False,765,1
+bell_pepper_bacterial_spot_Bing_0111.jpg,bell pepper bacterial spot,Test,False,766,1
+bell_pepper_bacterial_spot_Bing_0119.jpg,bell pepper bacterial spot,Test,False,767,1
+bell_pepper_bacterial_spot_Bing_0164.jpg,bell pepper bacterial spot,Test,True,768,3
+grape_black_rot_12.jpg,grape black rot,Test,False,769,1
+grape_black_rot_216.jpg,grape black rot,Test,False,770,1
+grape_black_rot_23.jpg,grape black rot,Test,False,771,1
+grape_black_rot_3.jpg,grape black rot,Test,False,772,1
+grape_black_rot_33.jpg,grape black rot,Test,False,773,1
+grape_black_rot_google_0003.jpg,grape black rot,Test,False,774,2
+grape_black_rot_google_0011.jpg,grape black rot,Test,False,775,1
+grape_black_rot_google_0013.jpg,grape black rot,Test,False,776,1
+grape_black_rot_google_0018.jpg,grape black rot,Test,False,777,1
+grape_black_rot_google_0036.jpg,grape black rot,Test,False,778,1
+grape_black_rot_google_0040.jpg,grape black rot,Test,False,779,1
+grape_black_rot_google_0050.jpg,grape black rot,Test,False,780,1
+grape_black_rot_google_0052.jpg,grape black rot,Test,True,781,1
+grape_black_rot_google_0066.jpg,grape black rot,Test,False,782,1
+grape_black_rot_google_0081.jpg,grape black rot,Test,False,783,1
+grape_black_rot_google_0088.jpg,grape black rot,Test,False,784,1
+grape_black_rot_google_0096.jpg,grape black rot,Test,False,785,1
+grape_black_rot_google_0097.jpg,grape black rot,Test,False,786,1
+grape_black_rot_google_0108.jpg,grape black rot,Test,False,787,1
+grape_black_rot_google_0166.jpg,grape black rot,Test,False,788,1
+grape_black_rot_google_0188.jpg,grape black rot,Test,False,789,1
+grape_black_rot_google_0233.jpg,grape black rot,Test,False,790,1
+grape_black_rot_google_0239.jpg,grape black rot,Test,False,791,1
+grape_black_rot_google_0320.jpg,grape black rot,Test,False,792,2
+grape_leaf_spot_101.jpg,grape leaf spot,Test,False,793,1
+grape_leaf_spot_11.jpg,grape leaf spot,Test,True,794,12
+grape_leaf_spot_140.jpg,grape leaf spot,Test,False,795,1
+grape_leaf_spot_142.jpg,grape leaf spot,Test,True,796,1
+grape_leaf_spot_145.jpg,grape leaf spot,Test,False,797,1
+grape_leaf_spot_157.jpg,grape leaf spot,Test,False,798,1
+grape_leaf_spot_168.jpg,grape leaf spot,Test,False,794,12
+grape_leaf_spot_170.jpg,grape leaf spot,Test,False,800,4
+grape_leaf_spot_22.jpg,grape leaf spot,Test,False,801,1
+grape_leaf_spot_47.jpg,grape leaf spot,Test,False,802,1
+grape_leaf_spot_53.jpg,grape leaf spot,Test,False,803,1
+grape_leaf_spot_9.jpg,grape leaf spot,Test,True,794,12
+grape_leaf_spot_google_0004.jpg,grape leaf spot,Test,False,805,2
+grape_leaf_spot_google_0028.jpg,grape leaf spot,Test,False,806,1
+grape_leaf_spot_google_0046.jpg,grape leaf spot,Test,True,862,2
+grape_leaf_spot_google_0098.jpg,grape leaf spot,Test,False,808,1
+grape_leaf_spot_google_0124.jpg,grape leaf spot,Test,False,809,1
+grape_leaf_spot_google_0173.jpg,grape leaf spot,Test,False,810,1
+strawberry_leaf_scorch_google_0017.jpg,strawberry leaf scorch,Test,False,811,2
+strawberry_leaf_scorch_google_0037.jpg,strawberry leaf scorch,Test,True,812,4
+strawberry_leaf_scorch_google_0043.jpg,strawberry leaf scorch,Test,False,813,1
+strawberry_leaf_scorch_google_0062.jpg,strawberry leaf scorch,Test,False,814,1
+strawberry_leaf_scorch_google_0117.jpg,strawberry leaf scorch,Test,False,815,3
+strawberry_leaf_scorch_google_0122.jpg,strawberry leaf scorch,Test,False,816,2
+strawberry_leaf_scorch_google_0133.jpg,strawberry leaf scorch,Test,False,817,1
+strawberry_leaf_scorch_google_0186.jpg,strawberry leaf scorch,Test,True,818,1
+tomato_bacterial_leaf_spot_120.jpg,tomato bacterial leaf spot,Test,False,819,1
+tomato_bacterial_leaf_spot_14.jpg,tomato bacterial leaf spot,Test,False,820,1
+tomato_bacterial_leaf_spot_19.jpg,tomato bacterial leaf spot,Test,False,821,1
+tomato_bacterial_leaf_spot_2.jpg,tomato bacterial leaf spot,Test,False,822,2
+tomato_bacterial_leaf_spot_200.jpg,tomato bacterial leaf spot,Test,False,823,1
+tomato_bacterial_leaf_spot_27.jpg,tomato bacterial leaf spot,Test,False,824,1
+tomato_bacterial_leaf_spot_31.jpg,tomato bacterial leaf spot,Test,True,825,1
+tomato_bacterial_leaf_spot_63.jpg,tomato bacterial leaf spot,Test,False,826,1
+tomato_bacterial_leaf_spot_70.jpg,tomato bacterial leaf spot,Test,False,827,1
+tomato_bacterial_leaf_spot_71.jpg,tomato bacterial leaf spot,Test,False,828,1
+tomato_bacterial_leaf_spot_78.jpg,tomato bacterial leaf spot,Test,False,829,1
+tomato_bacterial_leaf_spot_9.jpg,tomato bacterial leaf spot,Test,False,830,1
+tomato_bacterial_leaf_spot_google_0014.jpg,tomato bacterial leaf spot,Test,False,831,1
+tomato_bacterial_leaf_spot_google_0020.jpg,tomato bacterial leaf spot,Test,False,832,1
+tomato_bacterial_leaf_spot_google_0043.jpg,tomato bacterial leaf spot,Test,False,833,1
+tomato_bacterial_leaf_spot_google_0087.jpg,tomato bacterial leaf spot,Test,False,834,2
+tomato_bacterial_leaf_spot_google_0103.jpg,tomato bacterial leaf spot,Test,False,835,1
+tomato_bacterial_leaf_spot_google_0163.jpg,tomato bacterial leaf spot,Test,False,836,1
+tomato_bacterial_leaf_spot_google_0195.jpg,tomato bacterial leaf spot,Test,False,837,1
+tomato_bacterial_leaf_spot_google_0276.jpg,tomato bacterial leaf spot,Test,False,838,1
+tomato_bacterial_leaf_spot_google_0319.jpg,tomato bacterial leaf spot,Test,False,839,1
+tomato_bacterial_leaf_spot_google_0405.jpg,tomato bacterial leaf spot,Test,False,840,1
+tomato_early_blight_10.jpg,tomato early blight,Test,False,843,5
+tomato_early_blight_118.jpg,tomato early blight,Test,False,842,2
+tomato_early_blight_136.jpg,tomato early blight,Test,False,843,5
+tomato_early_blight_14.jpg,tomato early blight,Test,False,844,1
+tomato_early_blight_155.jpg,tomato early blight,Test,False,845,1
+tomato_early_blight_159.jpg,tomato early blight,Test,False,400,7
+tomato_early_blight_160.jpg,tomato early blight,Test,False,847,4
+tomato_early_blight_172.jpg,tomato early blight,Test,False,848,1
+tomato_early_blight_173.jpg,tomato early blight,Test,False,400,7
+tomato_early_blight_191.jpg,tomato early blight,Test,False,855,7
+tomato_early_blight_202.jpg,tomato early blight,Test,False,400,7
+tomato_early_blight_321.jpg,tomato early blight,Test,False,852,2
+tomato_early_blight_4.jpg,tomato early blight,Test,False,853,2
+tomato_early_blight_62.jpg,tomato early blight,Test,True,871,3
+tomato_early_blight_671.jpg,tomato early blight,Test,False,855,7
+tomato_early_blight_96.jpg,tomato early blight,Test,False,856,1
+tomato_early_blight_google_0000.jpg,tomato early blight,Test,False,857,1
+tomato_early_blight_google_0041.jpg,tomato early blight,Test,False,858,1
+tomato_early_blight_google_0056.jpg,tomato early blight,Test,False,859,1
+tomato_early_blight_google_0059.jpg,tomato early blight,Test,False,860,2
+tomato_early_blight_google_0152.jpg,tomato early blight,Test,False,861,1
+tomato_early_blight_google_0163.jpg,tomato early blight,Test,True,862,2
+tomato_early_blight_google_0177.jpg,tomato early blight,Test,False,863,1
+tomato_early_blight_google_0188.jpg,tomato early blight,Test,False,864,1
+tomato_early_blight_google_0198.jpg,tomato early blight,Test,False,865,1
+tomato_early_blight_google_0209.jpg,tomato early blight,Test,False,866,2
+tomato_early_blight_google_0247.jpg,tomato early blight,Test,False,867,1
+tomato_early_blight_google_0249.jpg,tomato early blight,Test,False,868,1
+tomato_early_blight_google_0267.jpg,tomato early blight,Test,False,869,1
+tomato_early_blight_google_0273.jpg,tomato early blight,Test,False,870,1
+tomato_early_blight_google_0291.jpg,tomato early blight,Test,True,871,3
+tomato_early_blight_google_0319.jpg,tomato early blight,Test,False,872,4
+tomato_early_blight_google_0326.jpg,tomato early blight,Test,False,873,1
+tomato_early_blight_google_0341.jpg,tomato early blight,Test,False,874,1
+tomato_early_blight_google_0355.jpg,tomato early blight,Test,False,875,2
+tomato_early_blight_google_0411.jpg,tomato early blight,Test,False,876,1
+tomato_early_blight_google_0427.jpg,tomato early blight,Test,False,877,1
+tomato_late_blight_10.jpg,tomato late blight,Test,False,878,1
+tomato_late_blight_109.jpg,tomato late blight,Test,False,879,1
+tomato_late_blight_113.jpg,tomato late blight,Test,False,880,1
+tomato_late_blight_142.jpg,tomato late blight,Test,False,881,1
+tomato_late_blight_147.jpg,tomato late blight,Test,False,882,1
+tomato_late_blight_182.jpg,tomato late blight,Test,False,908,3
+tomato_late_blight_185.jpg,tomato late blight,Test,False,884,2
+tomato_late_blight_19.jpg,tomato late blight,Test,False,885,1
+tomato_late_blight_199.jpg,tomato late blight,Test,False,886,1
+tomato_late_blight_204.jpg,tomato late blight,Test,False,887,2
+tomato_late_blight_205.jpg,tomato late blight,Test,False,888,1
+tomato_late_blight_207.jpg,tomato late blight,Test,False,889,1
+tomato_late_blight_209.jpg,tomato late blight,Test,False,890,1
+tomato_late_blight_233.jpg,tomato late blight,Test,False,891,1
+tomato_late_blight_61.jpg,tomato late blight,Test,False,892,2
+tomato_late_blight_65.jpg,tomato late blight,Test,False,893,1
+tomato_late_blight_76.jpg,tomato late blight,Test,False,894,1
+tomato_late_blight_99.jpg,tomato late blight,Test,False,895,1
+tomato_late_blight_google_0024.jpg,tomato late blight,Test,False,896,1
+tomato_late_blight_google_0045.jpg,tomato late blight,Test,False,897,1
+tomato_late_blight_google_0059.jpg,tomato late blight,Test,False,898,1
+tomato_late_blight_google_0067.jpg,tomato late blight,Test,False,899,1
+tomato_late_blight_google_0080.jpg,tomato late blight,Test,False,900,1
+tomato_late_blight_google_0081.jpg,tomato late blight,Test,False,901,1
+tomato_late_blight_google_0084.jpg,tomato late blight,Test,False,902,1
+tomato_late_blight_google_0095.jpg,tomato late blight,Test,False,903,2
+tomato_late_blight_google_0118.jpg,tomato late blight,Test,False,904,1
+tomato_late_blight_google_0137.jpg,tomato late blight,Test,False,905,1
+tomato_late_blight_google_0175.jpg,tomato late blight,Test,False,906,1
+tomato_late_blight_google_0217.jpg,tomato late blight,Test,False,907,1
+tomato_late_blight_google_0221.jpg,tomato late blight,Test,False,908,3
+tomato_late_blight_google_0224.jpg,tomato late blight,Test,False,909,1
+tomato_late_blight_google_0226.jpg,tomato late blight,Test,False,910,1
+tomato_mosaic_virus_143.jpg,tomato mosaic virus,Test,False,929,2
+tomato_mosaic_virus_15.jpg,tomato mosaic virus,Test,False,912,1
+tomato_mosaic_virus_16.jpg,tomato mosaic virus,Test,False,931,3
+tomato_mosaic_virus_194.jpg,tomato mosaic virus,Test,False,914,1
+tomato_mosaic_virus_25.jpg,tomato mosaic virus,Test,False,915,1
+tomato_mosaic_virus_33.jpg,tomato mosaic virus,Test,False,916,2
+tomato_mosaic_virus_55.jpg,tomato mosaic virus,Test,False,917,1
+tomato_mosaic_virus_google_0031.jpg,tomato mosaic virus,Test,False,918,2
+tomato_mosaic_virus_google_0042.jpg,tomato mosaic virus,Test,False,919,1
+tomato_mosaic_virus_google_0049.jpg,tomato mosaic virus,Test,False,920,1
+tomato_mosaic_virus_google_0113.jpg,tomato mosaic virus,Test,False,921,1
+tomato_mosaic_virus_google_0126.jpg,tomato mosaic virus,Test,False,922,1
+tomato_mosaic_virus_google_0140.jpg,tomato mosaic virus,Test,False,923,1
+tomato_yellow_leaf_curl_virus_15.jpg,tomato yellow leaf curl virus,Test,False,924,1
+tomato_yellow_leaf_curl_virus_17.jpg,tomato yellow leaf curl virus,Test,False,925,1
+tomato_yellow_leaf_curl_virus_18.jpg,tomato yellow leaf curl virus,Test,False,926,1
+tomato_yellow_leaf_curl_virus_227.jpg,tomato yellow leaf curl virus,Test,False,927,2
+tomato_yellow_leaf_curl_virus_4.jpg,tomato yellow leaf curl virus,Test,False,928,2
+tomato_yellow_leaf_curl_virus_40.jpg,tomato yellow leaf curl virus,Test,False,929,2
+tomato_yellow_leaf_curl_virus_44.jpg,tomato yellow leaf curl virus,Test,False,930,1
+tomato_yellow_leaf_curl_virus_62.jpg,tomato yellow leaf curl virus,Test,False,931,3
+tomato_yellow_leaf_curl_virus_99.jpg,tomato yellow leaf curl virus,Test,False,932,1
+tomato_yellow_leaf_curl_virus_google_0010.jpg,tomato yellow leaf curl virus,Test,False,933,1
+tomato_yellow_leaf_curl_virus_google_0021.jpg,tomato yellow leaf curl virus,Test,False,934,1
+tomato_yellow_leaf_curl_virus_google_0032.jpg,tomato yellow leaf curl virus,Test,False,935,1
+tomato_yellow_leaf_curl_virus_google_0037.jpg,tomato yellow leaf curl virus,Test,False,936,1
+tomato_yellow_leaf_curl_virus_google_0061.jpg,tomato yellow leaf curl virus,Test,False,937,1
+tomato_yellow_leaf_curl_virus_google_0072.jpg,tomato yellow leaf curl virus,Test,False,938,1
+tomato_yellow_leaf_curl_virus_google_0078.jpg,tomato yellow leaf curl virus,Test,False,939,1
+tomato_yellow_leaf_curl_virus_google_0114.jpg,tomato yellow leaf curl virus,Test,False,940,1
+tomato_yellow_leaf_curl_virus_google_0146.jpg,tomato yellow leaf curl virus,Test,False,941,1
+tomato_yellow_leaf_curl_virus_google_0162.jpg,tomato yellow leaf curl virus,Test,False,942,1

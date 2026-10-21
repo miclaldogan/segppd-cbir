@@ -24,7 +24,7 @@ Occupancy median 0.249 (all), 0.194 (non-healthy); bins small/medium/large = 910
 * **16 groups (32 images) show the same photo under different class labels** (e.g. lemon vs orange anthracnose, hops black rot vs downy mildew, eggplant early blight vs necrotic leaf spot). These are source-data label conflicts; all members are **excluded** (no ground truth exists). 11 same-class duplicates are excluded (lowest id kept). **43 excluded, 2,220 usable.** Nothing was deleted from disk.
 
 ## Class support (usable images)
-75 classes have >=13 usable images (primary cohort); 26 classes have 2-12 (secondary). Per-class counts: `artifacts/audits/class_counts.csv`; mask checks: `artifacts/audits/mask_integrity.csv`; full manifest: `dataset_manifest.csv`.
+75 classes have >=13 usable images (primary cohort); 26 classes have 7-12 (secondary). Per-class counts: `artifacts/audits/class_counts.csv`; mask checks: `artifacts/audits/mask_integrity.csv`; full manifest: `dataset_manifest.csv`.
 
 ## Rights
 The Zenodo record's license field states **MIT** (the task text said no clear license was shown). The record does not document the rights of the underlying internet-sourced photographs, so MIT on the record is **not** assumed to cover them. Raw images are not redistributed; `artifacts/retrieval_examples/*_LOCAL_ONLY.png` contain dataset images and must not be published.

@@ -1,0 +1,16 @@
+Disease,organ,n,hit1
+apple rust,L,7,0.3333333333333333
+apple scab,F,7,0.14285714285714285
+apple scab,L,1,0.6666666666666666
+banana cordana leaf spot,L,8,0.8333333333333334
+bean rust,L,10,0.4333333333333333
+coffee leaf rust,L,9,0.7777777777777778
+cucumber powdery mildew,L,10,1.0
+grape black rot,F,7,0.19047619047619047
+grape black rot,L,4,1.0
+strawberry leaf scorch,L,9,1.0
+tomato bacterial leaf spot,F,2,0.0
+tomato bacterial leaf spot,L,8,0.5833333333333333
+tomato late blight,F,7,0.4761904761904762
+tomato late blight,L,1,1.0
+tomato leaf mold,L,9,0.18518518518518517

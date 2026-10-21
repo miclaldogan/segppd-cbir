@@ -1,0 +1,11 @@
+fold 0 base-trained
+fold 0 frozen-DINOv2-B
+fold 1 base-trained
+fold 1 frozen-DINOv2-B
+fold 2 base-trained
+fold 2 frozen-DINOv2-B
+fold 3 base-trained
+fold 3 frozen-DINOv2-B
+fold 4 base-trained
+fold 4 frozen-DINOv2-B
+saved 395040 per-query rows

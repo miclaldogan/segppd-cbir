@@ -1,0 +1,56 @@
+{
+ "registered_before_any_model_on_plantseg_protocol_P": true,
+ "question": "Given equal training information and a common PlantSeg evaluation set, does nearest-neighbour CBIR beat a direct classification head?",
+ "data": {
+  "n_classes": 98,
+  "dropped_classes": [
+   "banana cordana leaf spot",
+   "banana panama disease",
+   "bell pepper frogeye leaf spot",
+   "bell pepper powdery mildew",
+   "broccoli alternaria leaf spot",
+   "broccoli ring spot",
+   "carrot cercospora leaf blight",
+   "coffee black rot",
+   "coffee brown eye spot",
+   "ginger leaf spot",
+   "peach anthracnose",
+   "peach rust",
+   "plum bacterial spot",
+   "plum rust",
+   "raspberry leaf spot",
+   "tobacco frogeye leaf spot"
+  ],
+  "n_train": 6744,
+  "n_dev": 899,
+  "n_test": 1646,
+  "test_url_disjoint": 1267,
+  "crops": 35,
+  "min_train_per_class": 16,
+  "min_test_per_class": 5
+ },
+ "protocol_file": "artifacts/research_v2/trackB/protocol_P.csv",
+ "protocol_sha256_12": "7c545a881b97",
+ "split_policy": "official PlantSeg Training/Validation/Test fields; cross-split duplicate groups resolved by dropping the later-split members (never by moving images); SegPPD copies removed everywhere; label-conflict groups removed; dev = official Validation (selection of epochs and of regularisation), test = official Test.",
+ "status_of_test": "The official Test split was NOT used for any model selection, but PlantSeg images of 11 mapped classes (all splits) were already evaluated in the earlier external and ChatLeaf-matched experiments (inspected, never tuned on). This track is therefore a CONTROLLED EXPLORATORY comparison; an untouched external confirmation set does not exist.",
+ "methods": {
+  "M1": "frozen DINOv2-B CLS + L2-regularised logistic regression (C chosen on dev from {0.01,0.1,1,10,100})",
+  "M2": "frozen DINOv2-B CLS + exact-L2 1-NN over the training images (gallery = training set)",
+  "M3": "DINOv2-B (last 4 blocks) metric-learned on PlantSeg train with the loss selected in Track A (dev Hit@1) + exact-L2 1-NN over the training images",
+  "M4": "logistic regression on the same M3 embedding (same training images)",
+  "M5": "supervised fine-tuning of the same last-4 blocks with a linear head + cross-entropy, same budget (classification baseline)",
+  "M3-src": "extra, separate label: embedding trained on SegPPD only (D5ck) with PlantSeg training images as gallery"
+ },
+ "identical_for_all": "eligible classes, training/dev/test images, labels, 224 px preprocessing from the 256x256 cache (data/external/plantseg_256), flip-averaged embeddings",
+ "metrics": [
+  "accuracy/Hit@1",
+  "macro-F1",
+  "per-class precision/recall",
+  "confusion matrix",
+  "exact McNemar on identical test images",
+  "image-level bootstrap 95% CI",
+  "P@5, P@10, Recall@K, mAP (retrieval methods only)",
+  "latency and storage"
+ ],
+ "sensitivity": "URL-disjoint test subset (test images whose source URL is not shared with a training image)."
+}

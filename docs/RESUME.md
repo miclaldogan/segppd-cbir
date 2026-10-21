@@ -38,3 +38,21 @@ All steps above were completed except the optional external validation and demo.
 - External validation candidate: PlantSeg (Zenodo 13958858, plantsegv2.zip 1.7 GB, md5 16cb69a5d97a61bc553a572f929490bf, CC BY-NC-ND 4.0: research evaluation only, never redistribute). Download: `data/external/dl.sh` (background, resumable with curl -C -; ~55 KB/s). Completion marker `data/external/dl.done`.
   TODO after download: verify md5; map class names to SegPPD-101 classes; screen ALL external images against all 2,263 SegPPD images (SHA, pHash/dHash, plus DINOv2 near-neighbour check) because provenance of SegPPD-101 images is not documented and may overlap PlantSeg; drop overlaps; evaluate frozen models once as a pre-registered extra test.
 - External PlantSeg evaluation DONE (one shot). Models retrained with checkpoints: `data/processed/run_D5ck.sh` -> `artifacts/checkpoints/` (gitignored). Results `artifacts/metrics/external_plantseg/`.
+
+## UPDATE (ChatLeafDisease paper-matched benchmark)
+Audit `docs/CHATLEAF_BENCHMARK_AUDIT.md`, protocol (pre-registered) `artifacts/chatleaf/benchmark_registered.json`, results `docs/CHATLEAF_MATCHED_RESULTS.md` / `artifacts/metrics/chatleaf_matched/`. Run order: `python -m segppd_cbir.chatleaf_audit` -> `.venv-gpu/bin/python -m segppd_cbir.chatleaf_benchmark embed` -> `uv run python -m segppd_cbir.chatleaf_benchmark run` -> `uv run python -m segppd_cbir.chatleaf_report`. Exact comparison impossible (unreleased test ids, unreproducible GPT-4o pipeline); matched CBIR: Track S 0.637 (5/9 categories, source-only), Track T k=10 0.674. Supplementary file of the paper is in `data/external/chatleaf_supp/` (local only).
+
+## UPDATE (research_v2: loss study, PlantSeg classification-vs-CBIR, domain robustness)
+Everything lives under `artifacts/research_v2/` (registered.json per track, configs, per-run `result.json` with checkpoint sha256, curves, per-query CSVs; `figures/`). Docs: `docs/RESEARCH_V2_SUMMARY.md` (answers to the 8 questions), `LOSS_FUNCTION_STUDY.md`, `PLANTSEG_CLASSIFICATION_VS_CBIR.md`, `DOMAIN_ROBUST_CBIR.md`, `CBIR_RESEARCH_REPORT_V2_SECTIONS_TR.md`. Code: `src/segppd_cbir/rv2/`. Number checks: `report/verify_research_v2.py` (54 claims). Heavy files (checkpoints, embeddings, ~10 GB) are git-ignored; `C5_external_examples_LOCAL_ONLY.png` holds dataset photographs.
+Run one GPU job at a time (an earlier concurrent run was OOM-killed on the 15 GB host). Queue runners: `artifacts/research_v2/run_queue_generic.sh`. B_M3 seed 0 was finalised from its saved best.pt (`plantseg_train.py --finalize`) after the process died during embedding; seeds 1-2 were re-run.
+
+## Research V3 / Experiment A (incremental novel-class retrieval) - interrupted by the user
+- Registered: `artifacts/research_v3/incr/registered.json` (folds, support draws, methods). V2 artefacts hashed and read-only: `artifacts/research_v3/PRESERVATION_MANIFEST.json`.
+- Encoders finished for folds 0-3 (`artifacts/research_v3/incr/runs/foldN_s0/`: best.pt, embeddings.npz, result.json). Fold 4 was cut at epoch 7 by the user: no checkpoint, nothing from it is used.
+- To resume: `nohup artifacts/research_v3/incr/run_queue.sh &` (skips finished folds, trains fold 4), then `uv run python -m segppd_cbir.rv2.incr_eval` (evaluates the folds that have result.json; with 4 folds only 78 of 98 classes are covered as novel).
+- Not yet run: incr_eval, statistics, figures, docs/INCREMENTAL_CLASS_CBIR.md; Experiment B feasibility audit and runs.
+
+## Research V3 / Experiment A done, Experiment B postponed (user request)
+- Experiment A finished and documented: `docs/INCREMENTAL_CLASS_CBIR.md` (all 5 folds, stats, figures A1/A2 in `artifacts/research_v3/figures/`).
+- Experiment B: registered (`artifacts/research_v3/cross/registered.json`, label_alignment.csv, manifest_all.csv) and code written (`rv2/cross_{protocol,train,embed,eval}.py`), but NO mixed model trained. Queue stopped by the user; only `emb_single/S0_s0.npz` exists.
+- To resume: `nohup artifacts/research_v3/cross/run_queue.sh &` (embeds S0/T0, then trains X1,X2,X3 x seeds 0-2, ~3 h), then `uv run python -m segppd_cbir.rv2.cross_eval`; write docs/CROSS_SOURCE_CBIR.md afterwards.

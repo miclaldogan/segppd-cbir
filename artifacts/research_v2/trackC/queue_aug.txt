@@ -1,0 +1,4 @@
+C_pa_augcolor_s0
+C_pa_augres_s0
+C_pa_auggeo_s0
+C_pa_augrobust_s0

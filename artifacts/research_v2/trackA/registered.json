@@ -1,0 +1,13 @@
+{
+ "registered_before_any_new_run": true,
+ "question": "On DINOv2-B, does ArcFace or Proxy-Anchor give better Top-1 retrieval (Hit@1) than SupCon under one controlled protocol?",
+ "provenance_of_historical_table": "DINOv2-SMALL (vit_small_patch14_dinov2), last 4 blocks, d_emb 256, lr_bb 3e-5, Protocol B LOCKED TEST (225 queries, 75 classes, gallery 809). ArcFace = 1 seed (s0, m=0.3, s=30); Proxy-Anchor and SupCon = mean of 3 seeds. Selection (loss choice, early stopping) used dev mAP. DINOv2-B was trained with SupCon only. The test set is consumed.",
+ "fixed_across_losses": "official LVD-142M DINOv2-B init, last 4 blocks + final norm trainable, layer-wise lr decay 0.8, lr_bb 3e-5, lr_head 1e-3, d_emb 256, 224 px bicubic, flip-averaged L2-normalised embedding, 16 classes x 4 images class-balanced batches, 20 steps/epoch, max 60 epochs, patience 10, AdamW wd 1e-4, cosine lr, bf16, same augmentation ('base'), seeds 0/1/2, exact squared-L2 retrieval, relevance = same class label",
+ "protocol": "train_B (772) for training; dev_query_B (150, 2/class) vs gallery_B (809) for ALL selection; Protocol B test (225) and C test (142) are CONSUMED -> reported as EXPLORATORY only, never used for any choice.",
+ "selection_rule": {"primary": "dev class-macro Hit@1", "tie_tolerance": 0.006667, "tie_tolerance_meaning": "one dev query (1/150)", "secondary_for_ties": "dev class-macro mAP", "applies_to": "epoch selection / early stopping inside a run and configuration selection across the hyper-parameter grid"},
+ "hyperparameter_grid_dev_only_seed0": {"arcface": "margin m in {0.2,0.3,0.5}, s=30", "proxyanchor": "(alpha,delta) in {(32,0.1),(16,0.1),(32,0.3)} and (32,0.1) with proxy lr x10", "supcon": "temperature tau in {0.05,0.1,0.2}"},
+ "final_stage": "best configuration per loss (by the selection rule on seed-0 dev) is rerun with seeds 1 and 2; three matched seeds per loss.",
+ "reported": ["Hit@1", "P@5", "P@10", "Hit@5", "Hit@10", "Recall@K", "full mAP", "class-macro and query-weighted", "seed mean/SD", "class-bootstrap 95% CI", "intra/inter distances", "top confusions", "train GPU seconds, VRAM, embedding ms/image"],
+ "historical_baseline": "original mAP-selected SupCon (tau 0.1) checkpoints D5/D5ck seeds 0-2 are kept untouched and listed separately from the new Hit@1-selected checkpoints.",
+ "forbidden": "No decision uses B-test/C-test numbers. No claim of a new independent test."
+}

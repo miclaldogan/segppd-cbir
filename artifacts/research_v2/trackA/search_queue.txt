@@ -1,0 +1,10 @@
+A_arc_s30_m0.2_s0
+A_arc_s30_m0.3_s0
+A_arc_s30_m0.5_s0
+A_pro_alpha32_delta0.1_s0
+A_pro_alpha16_delta0.1_s0
+A_pro_alpha32_delta0.3_s0
+A_pro_alpha32_delta0.1_plr10_s0
+A_sup_tau0.05_s0
+A_sup_tau0.1_s0
+A_sup_tau0.2_s0

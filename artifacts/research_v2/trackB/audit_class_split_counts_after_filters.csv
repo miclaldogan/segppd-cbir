@@ -1,0 +1,115 @@
+Disease,Training,Validation,Test
+apple black rot,52,9,14
+apple mosaic virus,61,9,18
+apple rust,90,15,27
+apple scab,172,23,50
+banana anthracnose,49,7,14
+banana black leaf streak,51,6,10
+banana bunchy top,50,6,12
+banana cigar end rot,40,6,9
+banana cordana leaf spot,23,1,8
+banana panama disease,7,1,6
+basil downy mildew,43,7,13
+bean halo blight,37,6,10
+bean mosaic virus,39,6,10
+bean rust,151,23,38
+bell pepper bacterial spot,37,4,8
+bell pepper blossom end rot,78,11,15
+bell pepper frogeye leaf spot,12,2,2
+bell pepper powdery mildew,18,2,4
+blueberry anthracnose,28,4,7
+blueberry botrytis blight,25,3,7
+blueberry mummy berry,33,5,8
+blueberry rust,28,5,9
+blueberry scorch,29,5,8
+broccoli alternaria leaf spot,31,4,3
+broccoli downy mildew,16,3,5
+broccoli ring spot,4,1,0
+cabbage alternaria leaf spot,25,2,6
+cabbage black rot,58,2,11
+cabbage downy mildew,51,5,10
+carrot alternaria leaf blight,39,4,6
+carrot cavity spot,49,8,13
+carrot cercospora leaf blight,11,1,2
+cauliflower alternaria leaf spot,18,2,6
+cauliflower bacterial soft rot,20,2,5
+celery anthracnose,20,3,5
+celery early blight,24,4,7
+cherry leaf spot,70,12,21
+cherry powdery mildew,21,4,7
+citrus canker,254,27,55
+citrus greening disease,85,13,27
+coffee berry blotch,69,6,12
+coffee black rot,5,1,0
+coffee brown eye spot,6,2,1
+coffee leaf rust,74,13,22
+corn gray leaf spot,26,4,13
+corn northern leaf blight,28,6,10
+corn rust,61,10,17
+corn smut,139,22,36
+cucumber angular leaf spot,127,15,32
+cucumber bacterial wilt,66,12,19
+cucumber powdery mildew,106,14,28
+eggplant cercospora leaf spot,32,7,6
+eggplant phomopsis fruit rot,30,4,8
+eggplant phytophthora blight,22,2,7
+garlic leaf blight,63,10,17
+garlic rust,71,12,17
+ginger leaf spot,17,3,4
+ginger sheath blight,38,8,9
+grape black rot,79,13,22
+grape downy mildew,162,23,39
+grape leaf spot,50,7,12
+grapevine leafroll disease,48,8,14
+lettuce downy mildew,56,9,17
+lettuce mosaic virus,26,5,8
+maple tar spot,78,10,21
+peach anthracnose,8,2,3
+peach brown rot,117,13,28
+peach leaf curl,126,19,36
+peach rust,5,1,2
+peach scab,52,6,11
+plum bacterial spot,11,2,1
+plum brown rot,54,5,11
+plum pocket disease,39,6,10
+plum pox virus,22,4,5
+plum rust,18,1,5
+potato early blight,71,9,21
+potato late blight,75,12,22
+raspberry fire blight,23,2,5
+raspberry gray mold,27,3,5
+raspberry leaf spot,13,2,3
+raspberry yellow rust,25,4,5
+rice blast,57,9,13
+rice sheath blight,44,8,12
+soybean bacterial blight,56,7,12
+soybean brown spot,43,8,9
+soybean downy mildew,106,10,17
+soybean frog eye leaf spot,155,14,25
+soybean mosaic,80,9,18
+squash powdery mildew,101,15,26
+strawberry anthracnose,40,6,12
+strawberry leaf scorch,24,3,5
+tobacco blue mold,38,6,8
+tobacco brown spot,40,5,7
+tobacco frogeye leaf spot,11,1,4
+tobacco mosaic virus,27,5,8
+tomato bacterial leaf spot,67,6,17
+tomato early blight,109,17,22
+tomato late blight,104,17,29
+tomato leaf mold,99,13,27
+tomato mosaic virus,39,5,10
+tomato septoria leaf spot,75,10,20
+tomato yellow leaf curl virus,62,10,16
+wheat bacterial leaf streak (black chaff),72,10,19
+wheat head scab,219,20,34
+wheat leaf rust,83,12,22
+wheat loose smut,148,13,32
+wheat powdery mildew,188,24,43
+wheat septoria blotch,153,14,29
+wheat stem rust,102,12,19
+wheat stripe rust,236,25,50
+zucchini bacterial wilt,41,6,12
+zucchini downy mildew,28,4,9
+zucchini powdery mildew,117,12,30
+zucchini yellow mosaic virus,66,10,18

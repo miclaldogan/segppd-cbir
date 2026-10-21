@@ -1,0 +1,34 @@
+{
+ "name": "B_M3_metric_proxyanchor_s0",
+ "cfg": {
+  "blocks": 4,
+  "lr_bb": 3e-05,
+  "lr_head": 0.001,
+  "layer_decay": 0.8,
+  "d_emb": 256,
+  "epochs": 30,
+  "patience": 6,
+  "steps": 60,
+  "P": 16,
+  "K": 4,
+  "aug": "base",
+  "seed": 0,
+  "proxy_lr_mult": 1.0,
+  "method": "metric",
+  "loss": {
+   "type": "proxyanchor",
+   "alpha": 32.0,
+   "delta": 0.3
+  },
+  "name": "B_M3_metric_proxyanchor_s0",
+  "out_dir": "artifacts/research_v2/trackB/runs/B_M3_metric_proxyanchor_s0"
+ },
+ "best": {
+  "epoch": 28,
+  "acc": 0.8175750834260289,
+  "secondary": 0.8310189549283877
+ },
+ "note": "finalised from best.pt after the process died during the embedding stage; training log is in queue.log (epochs 1-30)",
+ "embed_ms_per_image": 11.552224799369839,
+ "ckpt_sha256": "7d18304ef557a54c30b1e5729ccdffce208951d8ea2a897d301cdff8c3038207"
+}

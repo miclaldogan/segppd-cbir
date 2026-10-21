@@ -1,0 +1,19 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+seed 0 dev done
+seed 0 testB_exploratory done
+seed 0 testC_exploratory done
+seed 0 external_plantseg_exploratory done
+seed 1 dev done
+seed 1 testB_exploratory done
+seed 1 testC_exploratory done
+seed 1 external_plantseg_exploratory done
+seed 2 dev done
+seed 2 testB_exploratory done
+seed 2 testC_exploratory done
+seed 2 external_plantseg_exploratory done
+selected on dev: {'M': 0, 'alpha': 1.0, 'dev_hit1': 0.82, 'dev_mAP': 0.7571802434249107}
+                          set  M  alpha   hit1    p10    mAP  latency_ms
+                          dev  0    1.0 0.8200 0.6629 0.7572         0.0
+external_plantseg_exploratory  0    1.0 0.6175 0.5220 0.5835         0.0
+            testB_exploratory  0    1.0 0.8252 0.6564 0.7526         0.0
+            testC_exploratory  0    1.0 0.7822 0.5982 0.7514         0.0

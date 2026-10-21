@@ -1,0 +1,414 @@
+{
+ "S|crop|1nn|supcon_mean3": {
+  "n": 410,
+  "acc": 0.6365853658536585,
+  "lo": 0.5967479674796748,
+  "hi": 0.6772357723577235,
+  "macro_class_recall": 0.7329703719509545,
+  "per_class": {
+   "bell pepper bacterial spot": 0.9703703703703703,
+   "grape black rot": 0.36893203883495146,
+   "strawberry leaf scorch": 0.9861111111111112,
+   "tomato bacterial leaf spot": 0.7362637362637363,
+   "tomato late blight": 0.6031746031746033
+  },
+  "per_seed": [
+   0.6780487804878049,
+   0.6390243902439025,
+   0.5926829268292683
+  ],
+  "p5": 0.6323577235772359,
+  "p10": 0.6380487804878049,
+  "ap": 0.7058251625034039
+ },
+ "S|crop|1nn|frozen": {
+  "n": 410,
+  "acc": 0.5756097560975609,
+  "ci": [
+   0.526829268292683,
+   0.6220121951219509
+  ]
+ },
+ "S|crop|lr|supcon_mean3": {
+  "n": 410,
+  "acc": 0.6317073170731707,
+  "lo": 0.5894308943089431,
+  "hi": 0.675609756097561,
+  "macro_class_recall": 0.7293006169358458,
+  "per_class": {
+   "bell pepper bacterial spot": 0.9777777777777777,
+   "grape black rot": 0.3592233009708738,
+   "strawberry leaf scorch": 0.9861111111111112,
+   "tomato bacterial leaf spot": 0.717948717948718,
+   "tomato late blight": 0.6054421768707483
+  },
+  "per_seed": [
+   0.6878048780487804,
+   0.6073170731707317,
+   0.6
+  ]
+ },
+ "S|crop|lr|frozen": {
+  "n": 410,
+  "acc": 0.6487804878048781,
+  "ci": [
+   0.6024390243902439,
+   0.6951219512195121
+  ]
+ },
+ "S|agnostic|1nn|supcon_mean3": {
+  "n": 410,
+  "acc": 0.5430894308943089,
+  "lo": 0.5,
+  "hi": 0.5861788617886179,
+  "macro_class_recall": 0.6588183299209651,
+  "per_class": {
+   "bell pepper bacterial spot": 0.9111111111111111,
+   "grape black rot": 0.2880258899676375,
+   "strawberry leaf scorch": 0.9861111111111112,
+   "tomato bacterial leaf spot": 0.6190476190476191,
+   "tomato late blight": 0.4897959183673469
+  },
+  "per_seed": [
+   0.5682926829268292,
+   0.5463414634146342,
+   0.5146341463414634
+  ],
+  "p5": 0.5408130081300814,
+  "p10": 0.5459349593495935,
+  "ap": 0.5879024677477647
+ },
+ "S|agnostic|1nn|frozen": {
+  "n": 410,
+  "acc": 0.524390243902439,
+  "ci": [
+   0.47798780487804876,
+   0.573170731707317
+  ]
+ },
+ "S|agnostic|lr|supcon_mean3": {
+  "n": 410,
+  "acc": 0.5,
+  "lo": 0.45607723577235776,
+  "hi": 0.5455284552845528,
+  "macro_class_recall": 0.6293644301966077,
+  "per_class": {
+   "bell pepper bacterial spot": 0.9259259259259258,
+   "grape black rot": 0.23624595469255663,
+   "strawberry leaf scorch": 1.0,
+   "tomato bacterial leaf spot": 0.5311355311355311,
+   "tomato late blight": 0.45351473922902497
+  },
+  "per_seed": [
+   0.5073170731707317,
+   0.48292682926829267,
+   0.5097560975609756
+  ]
+ },
+ "S|agnostic|lr|frozen": {
+  "n": 410,
+  "acc": 0.6073170731707317,
+  "ci": [
+   0.5609146341463416,
+   0.6536585365853659
+  ]
+ },
+ "paired_S": [
+  {
+   "variant": "crop",
+   "comparison": "1nn vs lr (frozen)",
+   "a_only": 30,
+   "b_only": 60,
+   "p": 0.002060265680963
+  },
+  {
+   "variant": "crop",
+   "comparison": "1nn vs lr (s0)",
+   "a_only": 29,
+   "b_only": 33,
+   "p": 0.7035366713552733
+  },
+  {
+   "variant": "crop",
+   "comparison": "1nn vs lr (s1)",
+   "a_only": 36,
+   "b_only": 23,
+   "p": 0.1174773502450584
+  },
+  {
+   "variant": "crop",
+   "comparison": "1nn vs lr (s2)",
+   "a_only": 26,
+   "b_only": 29,
+   "p": 0.7877061896700431
+  },
+  {
+   "variant": "crop",
+   "comparison": "supcon s0 1nn vs frozen 1nn",
+   "a_only": 101,
+   "b_only": 59,
+   "p": 0.001122905196234
+  },
+  {
+   "variant": "crop",
+   "comparison": "supcon s1 1nn vs frozen 1nn",
+   "a_only": 83,
+   "b_only": 57,
+   "p": 0.0342356618731953
+  },
+  {
+   "variant": "crop",
+   "comparison": "supcon s2 1nn vs frozen 1nn",
+   "a_only": 74,
+   "b_only": 67,
+   "p": 0.6135127096954123
+  },
+  {
+   "variant": "agnostic",
+   "comparison": "1nn vs lr (frozen)",
+   "a_only": 26,
+   "b_only": 60,
+   "p": 0.0003169992822776
+  },
+  {
+   "variant": "agnostic",
+   "comparison": "1nn vs lr (s0)",
+   "a_only": 43,
+   "b_only": 18,
+   "p": 0.0018681010309752
+  },
+  {
+   "variant": "agnostic",
+   "comparison": "1nn vs lr (s1)",
+   "a_only": 45,
+   "b_only": 19,
+   "p": 0.001562789344828
+  },
+  {
+   "variant": "agnostic",
+   "comparison": "1nn vs lr (s2)",
+   "a_only": 35,
+   "b_only": 33,
+   "p": 0.9035973456835128
+  },
+  {
+   "variant": "agnostic",
+   "comparison": "supcon s0 1nn vs frozen 1nn",
+   "a_only": 84,
+   "b_only": 66,
+   "p": 0.164906982656443
+  },
+  {
+   "variant": "agnostic",
+   "comparison": "supcon s1 1nn vs frozen 1nn",
+   "a_only": 79,
+   "b_only": 70,
+   "p": 0.5123564769095189
+  },
+  {
+   "variant": "agnostic",
+   "comparison": "supcon s2 1nn vs frozen 1nn",
+   "a_only": 69,
+   "b_only": 73,
+   "p": 0.8013390218104018
+  }
+ ],
+ "S_countmatched_supcon_1nn": {
+  "n_per_draw": 240,
+  "micro_mean": 0.7291888888888889,
+  "micro_sd": 0.013323762768864794,
+  "macro_mean": 0.7332077387170268
+ },
+ "S_excl_grape_supcon_1nn_post_hoc": {
+  "n": 307,
+  "acc": 0.7263843648208469,
+  "ci": [
+   0.6829533116178067,
+   0.7676438653637351
+  ]
+ },
+ "chatld_context": {
+  "reported_overall": 0.773,
+  "S5_implied_micro": 0.8189704142011834,
+  "S5_macro_recall": 80.08888888888889,
+  "on_covered_micro": 0.8198264462809919,
+  "on_covered_macro_recall": 82.16,
+  "per_class_recall": {
+   "tomato bacterial leaf spot": 61.0,
+   "tomato late blight": 84.4,
+   "grape black rot": 69.2,
+   "strawberry leaf scorch": 96.2,
+   "bell pepper bacterial spot": 100.0
+  }
+ },
+ "trackT": [
+  {
+   "feature": "frozen",
+   "k": 1,
+   "method": "1nn",
+   "mean": 0.2866071428571428,
+   "std": 0.0533698324790644
+  },
+  {
+   "feature": "frozen",
+   "k": 1,
+   "method": "lr",
+   "mean": 0.0870039682539682,
+   "std": 0.031141613299586
+  },
+  {
+   "feature": "frozen",
+   "k": 5,
+   "method": "1nn",
+   "mean": 0.4977822580645161,
+   "std": 0.0372037700000696
+  },
+  {
+   "feature": "frozen",
+   "k": 5,
+   "method": "lr",
+   "mean": 0.5188508064516129,
+   "std": 0.0393194133034569
+  },
+  {
+   "feature": "frozen",
+   "k": 10,
+   "method": "1nn",
+   "mean": 0.5625258799171842,
+   "std": 0.0232895643712658
+  },
+  {
+   "feature": "frozen",
+   "k": 10,
+   "method": "lr",
+   "mean": 0.6314699792960663,
+   "std": 0.0315066629504216
+  },
+  {
+   "feature": "s0",
+   "k": 1,
+   "method": "1nn",
+   "mean": 0.5458333333333333,
+   "std": 0.0588583661246738
+  },
+  {
+   "feature": "s0",
+   "k": 1,
+   "method": "lr",
+   "mean": 0.5048611111111111,
+   "std": 0.0652986599848947
+  },
+  {
+   "feature": "s0",
+   "k": 5,
+   "method": "1nn",
+   "mean": 0.646875,
+   "std": 0.0355895543318519
+  },
+  {
+   "feature": "s0",
+   "k": 5,
+   "method": "lr",
+   "mean": 0.6778225806451613,
+   "std": 0.0327947711559419
+  },
+  {
+   "feature": "s0",
+   "k": 10,
+   "method": "1nn",
+   "mean": 0.6696687370600414,
+   "std": 0.0241024099509803
+  },
+  {
+   "feature": "s0",
+   "k": 10,
+   "method": "lr",
+   "mean": 0.7280538302277433,
+   "std": 0.0247835777369657
+  },
+  {
+   "feature": "s1",
+   "k": 1,
+   "method": "1nn",
+   "mean": 0.5387896825396825,
+   "std": 0.0498281240146567
+  },
+  {
+   "feature": "s1",
+   "k": 1,
+   "method": "lr",
+   "mean": 0.5051587301587301,
+   "std": 0.052838907193267
+  },
+  {
+   "feature": "s1",
+   "k": 5,
+   "method": "1nn",
+   "mean": 0.6484879032258065,
+   "std": 0.0417319229715231
+  },
+  {
+   "feature": "s1",
+   "k": 5,
+   "method": "lr",
+   "mean": 0.6712701612903226,
+   "std": 0.0335485388672778
+  },
+  {
+   "feature": "s1",
+   "k": 10,
+   "method": "1nn",
+   "mean": 0.6756728778467909,
+   "std": 0.0285326712410333
+  },
+  {
+   "feature": "s1",
+   "k": 10,
+   "method": "lr",
+   "mean": 0.7124223602484472,
+   "std": 0.027383787154995
+  },
+  {
+   "feature": "s2",
+   "k": 1,
+   "method": "1nn",
+   "mean": 0.5536706349206348,
+   "std": 0.0548365991080997
+  },
+  {
+   "feature": "s2",
+   "k": 1,
+   "method": "lr",
+   "mean": 0.5213293650793651,
+   "std": 0.0600742959128562
+  },
+  {
+   "feature": "s2",
+   "k": 5,
+   "method": "1nn",
+   "mean": 0.6549395161290322,
+   "std": 0.043083905033861
+  },
+  {
+   "feature": "s2",
+   "k": 5,
+   "method": "lr",
+   "mean": 0.6731854838709677,
+   "std": 0.0340198291178502
+  },
+  {
+   "feature": "s2",
+   "k": 10,
+   "method": "1nn",
+   "mean": 0.6760869565217391,
+   "std": 0.027837887707191
+  },
+  {
+   "feature": "s2",
+   "k": 10,
+   "method": "lr",
+   "mean": 0.7128364389233954,
+   "std": 0.0287282910130536
+  }
+ ]
+}

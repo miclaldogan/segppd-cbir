@@ -1,0 +1,54 @@
+{
+ "registered_before_any_training": true,
+ "experiment": "A incremental novel-class retrieval",
+ "salt": "segppd-cbir/expA/v1",
+ "folds": 5,
+ "fold_sizes": {
+  "0": 20,
+  "1": 20,
+  "2": 19,
+  "3": 20,
+  "4": 19
+ },
+ "primary_fold": 0,
+ "support_draws": 5,
+ "shots": [
+  1,
+  3,
+  5,
+  10
+ ],
+ "data": "PlantSeg protocol P (artifacts/research_v2/trackB/protocol_P.csv, sha256[:12] 7c545a881b97): 98 classes. Novel classes: only their TRAIN images as support (1/3/5/10) and their official TEST images as queries. Novel dev images are never used.",
+ "encoder_training": {
+  "init": "DINOv2-B lvd142m (no plant labels)",
+  "data": "TRAIN images of BASE classes only",
+  "selection": "epoch chosen on BASE-class official-validation images only (Hit@1, tie = 1 query, then mAP); config = Track B M3 config with NO tuning (Proxy-Anchor a32 d0.3, last 4 blocks, 30 epochs max, patience 6, seed 0)",
+  "frozen_after": "best.pt saved; embeddings of every image computed once; no further training of any kind"
+ },
+ "scenarios": {
+  "S1_novel_only": "gallery = k supports per novel class; queries = novel test; chance = 1/n_novel",
+  "S2_open_gallery": "gallery = ALL base-class train images + k supports per novel class; queries = novel test (the headline setting); 98-way",
+  "S2_base_check": "same gallery, queries = base test: measures interference/forgetting vs the same base queries against the base-only gallery"
+ },
+ "methods": {
+  "CBIR": "exact squared-L2 ranking, 1-NN label; ties by image id",
+  "NCP": "nearest class prototype: mean embedding of the class's reference images (base: all base train, novel: its k supports); exact L2 to prototypes; no learned parameters",
+  "LR": "multinomial logistic regression on the same L2-normalised 256-d embeddings, trained on gallery images (base train + supports), C=10 FIXED in advance (not tuned), balanced class weights; this is the 'retrain the classifier head' alternative",
+  "frozen_reference": "same three methods on raw frozen DINOv2-B CLS (never fine-tuned) to isolate what base-class metric learning contributes",
+  "oracle_reference": "Track B M3 (trained on ALL 98 classes incl. these as labelled) restricted to the same classes: an upper bound that violates the novel-class rule; NOT a competitor"
+ },
+ "metrics": [
+  "Hit@1 (class-macro over novel classes, headline)",
+  "Hit@5",
+  "P@5 (upper bound min(k,5)/5)",
+  "Recall@10",
+  "mAP (relevant = reference images of the class in the gallery)",
+  "base Hit@1 before/after insertion",
+  "gallery insertion seconds",
+  "memory bytes",
+  "retraining required (yes/no)"
+ ],
+ "statistics": "class-level bootstrap (2000) over novel classes pooled across folds, averaged over support draws; paired differences between methods on identical queries and identical supports; exact McNemar on pooled queries as a secondary check. No multiplicity claims beyond the paired CIs.",
+ "status": "Exploratory class-level cross-validation inside PlantSeg. The official Test images were not used for any selection, but part of PlantSeg was inspected in earlier experiments (see registered.json of Track B), so this is NOT an independent external test.",
+ "hypotheses": "H1: with k>=1, base-trained CBIR retrieves novel classes far above chance without retraining. H2: NCP >= CBIR at k>=5 (prototype averaging suppresses noisy supports); we make no prediction at k=1. H3: LR on 256-d embeddings is competitive with CBIR at k>=5 but costs a refit per insertion. No hypothesis about superiority is assumed."
+}

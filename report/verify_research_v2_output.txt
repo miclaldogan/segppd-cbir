@@ -1,0 +1,55 @@
+54/54
+PASS arcface dev hit1: doc=0.7756 artifact=0.7756
+PASS arcface testB_exploratory hit1: doc=0.7926 artifact=0.7926
+PASS arcface testC_exploratory hit1: doc=0.7444 artifact=0.7444
+PASS proxyanchor dev hit1: doc=0.82 artifact=0.82
+PASS proxyanchor testB_exploratory hit1: doc=0.8252 artifact=0.8252
+PASS proxyanchor testC_exploratory hit1: doc=0.7822 artifact=0.7822
+PASS supcon (Hit dev hit1: doc=0.82 artifact=0.82
+PASS supcon (Hit testB_exploratory hit1: doc=0.8059 artifact=0.8059
+PASS supcon (Hit testC_exploratory hit1: doc=0.7711 artifact=0.7711
+PASS arcface dev mAP: doc=0.7034 artifact=0.7034
+PASS arcface testB_exploratory mAP: doc=0.7076 artifact=0.7076
+PASS arcface testC_exploratory mAP: doc=0.6961 artifact=0.6961
+PASS proxyanchor dev mAP: doc=0.7572 artifact=0.7572
+PASS proxyanchor testB_exploratory mAP: doc=0.7526 artifact=0.7526
+PASS proxyanchor testC_exploratory mAP: doc=0.7514 artifact=0.7514
+PASS supcon (Hit dev mAP: doc=0.7474 artifact=0.7474
+PASS supcon (Hit testB_exploratory mAP: doc=0.7403 artifact=0.7403
+PASS supcon (Hit testC_exploratory mAP: doc=0.7309 artifact=0.7309
+PASS PA-SC B hit1: doc=0.019 artifact=0.0193
+PASS AF-SC dev mAP: doc=-0.044 artifact=-0.0439
+PASS AF-SC B mAP hi: doc=-0.0138 artifact=-0.0138
+PASS dev PA hit1: doc=0.82 artifact=0.82
+PASS dev SC hit1: doc=0.82 artifact=0.82
+PASS B M1 acc: doc=0.794 artifact=0.794
+PASS B M2 acc: doc=0.6883 artifact=0.6883
+PASS B M3 acc: doc=0.8471 artifact=0.8471
+PASS B M4 acc: doc=0.8522 artifact=0.8522
+PASS B M5 acc: doc=0.8471 artifact=0.8471
+PASS B M3 mAP: doc=0.834 artifact=0.8338
+PASS B M3 p10: doc=0.836 artifact=0.8355
+PASS B M2 hit10: doc=0.933 artifact=0.9332
+PASS B M3-M4 p seed0: doc=0.2461 artifact=0.2461
+PASS B M3-M5 p seed2: doc=0.0433 artifact=0.0433
+PASS P train: doc=6744 artifact=6744.0
+PASS P dev: doc=899 artifact=899.0
+PASS P test: doc=1646 artifact=1646.0
+PASS P classes: doc=98 artifact=98.0
+PASS dup pairs: doc=1773 artifact=1773.0
+PASS groups span splits: doc=575 artifact=575.0
+PASS groups span classes: doc=256 artifact=256.0
+PASS test url share: doc=728 artifact=728.0
+PASS aug base ext: doc=0.6175 artifact=0.6175
+PASS aug color ext: doc=0.622 artifact=0.622
+PASS aug robust ext: doc=0.6192 artifact=0.6192
+PASS aug res ext: doc=0.6001 artifact=0.6001
+PASS aug geo ext: doc=0.5806 artifact=0.5806
+PASS ext macro: doc=0.6081 artifact=0.6081
+PASS ext micro: doc=0.5403 artifact=0.5403
+PASS organ leaf: doc=0.675 artifact=0.675
+PASS organ fruit: doc=0.246 artifact=0.246
+PASS rerank B diff: doc=0.0252 artifact=0.0252
+PASS rerank B lo: doc=0.003 artifact=0.003
+PASS rerank ext diff: doc=0.018 artifact=0.018
+PASS rerank dev diff: doc=-0.0044 artifact=-0.0044

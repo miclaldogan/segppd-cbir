@@ -1,0 +1,188 @@
+{
+ "M3": [
+  {
+   "true": "squash powdery mildew",
+   "pred": "zucchini powdery mildew",
+   "n": 13
+  },
+  {
+   "true": "zucchini powdery mildew",
+   "pred": "squash powdery mildew",
+   "n": 8
+  },
+  {
+   "true": "cucumber powdery mildew",
+   "pred": "squash powdery mildew",
+   "n": 6
+  },
+  {
+   "true": "cucumber bacterial wilt",
+   "pred": "zucchini bacterial wilt",
+   "n": 5
+  },
+  {
+   "true": "grape downy mildew",
+   "pred": "grape leaf spot",
+   "n": 5
+  },
+  {
+   "true": "potato early blight",
+   "pred": "potato late blight",
+   "n": 5
+  },
+  {
+   "true": "ginger sheath blight",
+   "pred": "rice sheath blight",
+   "n": 4
+  },
+  {
+   "true": "corn gray leaf spot",
+   "pred": "corn northern leaf blight",
+   "n": 4
+  },
+  {
+   "true": "tomato septoria leaf spot",
+   "pred": "tomato bacterial leaf spot",
+   "n": 4
+  },
+  {
+   "true": "tomato yellow leaf curl virus",
+   "pred": "tomato mosaic virus",
+   "n": 4
+  },
+  {
+   "true": "wheat bacterial leaf streak (black chaff)",
+   "pred": "wheat septoria blotch",
+   "n": 4
+  },
+  {
+   "true": "tomato bacterial leaf spot",
+   "pred": "tomato septoria leaf spot",
+   "n": 3
+  }
+ ],
+ "M4": [
+  {
+   "true": "squash powdery mildew",
+   "pred": "zucchini powdery mildew",
+   "n": 16
+  },
+  {
+   "true": "zucchini downy mildew",
+   "pred": "cucumber angular leaf spot",
+   "n": 6
+  },
+  {
+   "true": "ginger sheath blight",
+   "pred": "rice sheath blight",
+   "n": 5
+  },
+  {
+   "true": "cucumber powdery mildew",
+   "pred": "zucchini powdery mildew",
+   "n": 5
+  },
+  {
+   "true": "zucchini bacterial wilt",
+   "pred": "cucumber bacterial wilt",
+   "n": 5
+  },
+  {
+   "true": "tomato septoria leaf spot",
+   "pred": "tomato early blight",
+   "n": 4
+  },
+  {
+   "true": "zucchini powdery mildew",
+   "pred": "squash powdery mildew",
+   "n": 4
+  },
+  {
+   "true": "potato early blight",
+   "pred": "potato late blight",
+   "n": 4
+  },
+  {
+   "true": "apple rust",
+   "pred": "apple scab",
+   "n": 3
+  },
+  {
+   "true": "tomato septoria leaf spot",
+   "pred": "tomato bacterial leaf spot",
+   "n": 3
+  },
+  {
+   "true": "cucumber bacterial wilt",
+   "pred": "zucchini bacterial wilt",
+   "n": 3
+  },
+  {
+   "true": "squash powdery mildew",
+   "pred": "cucumber powdery mildew",
+   "n": 3
+  }
+ ],
+ "M5": [
+  {
+   "true": "zucchini powdery mildew",
+   "pred": "squash powdery mildew",
+   "n": 11
+  },
+  {
+   "true": "squash powdery mildew",
+   "pred": "zucchini powdery mildew",
+   "n": 10
+  },
+  {
+   "true": "cucumber bacterial wilt",
+   "pred": "zucchini bacterial wilt",
+   "n": 8
+  },
+  {
+   "true": "cucumber powdery mildew",
+   "pred": "squash powdery mildew",
+   "n": 7
+  },
+  {
+   "true": "tomato septoria leaf spot",
+   "pred": "tomato bacterial leaf spot",
+   "n": 7
+  },
+  {
+   "true": "apple scab",
+   "pred": "apple rust",
+   "n": 5
+  },
+  {
+   "true": "potato early blight",
+   "pred": "potato late blight",
+   "n": 5
+  },
+  {
+   "true": "tomato septoria leaf spot",
+   "pred": "tomato early blight",
+   "n": 4
+  },
+  {
+   "true": "apple scab",
+   "pred": "apple black rot",
+   "n": 4
+  },
+  {
+   "true": "corn northern leaf blight",
+   "pred": "corn rust",
+   "n": 3
+  },
+  {
+   "true": "ginger sheath blight",
+   "pred": "rice sheath blight",
+   "n": 3
+  },
+  {
+   "true": "corn gray leaf spot",
+   "pred": "corn rust",
+   "n": 3
+  }
+ ]
+}

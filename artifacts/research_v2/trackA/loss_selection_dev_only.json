@@ -1,0 +1,40 @@
+{
+ "per_loss": {
+  "arcface": {
+   "hit1": 0.7733333333333333,
+   "mAP": 0.7035278378237718,
+   "sd": 0.013333333333333308,
+   "seeds": [
+    0.773,
+    0.76,
+    0.787
+   ]
+  },
+  "proxyanchor": {
+   "hit1": 0.82,
+   "mAP": 0.7570824055955705,
+   "sd": 0.006666666666666654,
+   "seeds": [
+    0.82,
+    0.813,
+    0.827
+   ]
+  },
+  "supcon": {
+   "hit1": 0.82,
+   "mAP": 0.7473256951088753,
+   "sd": 0.024037008503093246,
+   "seeds": [
+    0.8,
+    0.847,
+    0.813
+   ]
+  }
+ },
+ "tied": [
+  "proxyanchor",
+  "supcon"
+ ],
+ "selected_loss": "proxyanchor",
+ "rule": "dev class-macro Hit@1 (3-seed mean), tie eps 1/150, then dev mAP"
+}

@@ -1,0 +1,99 @@
+{
+ "registered_before_any_mixed_training": true,
+ "experiment": "B cross-source representation learning",
+ "labels": {
+  "unified_classes_in_training": 163,
+  "seg_train_classes": 75,
+  "plantseg_classes": 98,
+  "shared_strict": [
+   {
+    "plantseg": "apple rust",
+    "seg_class_id": 4,
+    "plantseg_label": 2
+   },
+   {
+    "plantseg": "apple scab",
+    "seg_class_id": 5,
+    "plantseg_label": 3
+   },
+   {
+    "plantseg": "bean rust",
+    "seg_class_id": 11,
+    "plantseg_label": 11
+   },
+   {
+    "plantseg": "coffee leaf rust",
+    "seg_class_id": 22,
+    "plantseg_label": 34
+   },
+   {
+    "plantseg": "cucumber powdery mildew",
+    "seg_class_id": 31,
+    "plantseg_label": 41
+   },
+   {
+    "plantseg": "grape black rot",
+    "seg_class_id": 42,
+    "plantseg_label": 48
+   },
+   {
+    "plantseg": "strawberry leaf scorch",
+    "seg_class_id": 81,
+    "plantseg_label": 75
+   },
+   {
+    "plantseg": "tomato bacterial leaf spot",
+    "seg_class_id": 92,
+    "plantseg_label": 79
+   },
+   {
+    "plantseg": "tomato leaf mold",
+    "seg_class_id": 93,
+    "plantseg_label": 82
+   },
+   {
+    "plantseg": "tomato late blight",
+    "seg_class_id": 94,
+    "plantseg_label": 81
+   }
+  ],
+  "strict_pairs_unusable": [
+   [
+    "banana cordana leaf spot",
+    "not in PlantSeg protocol P"
+   ]
+  ],
+  "same_name_unmapped": [],
+  "policy": "only strict pairs are merged; loose pairs, and any same-name pair not in the reviewed strict list, stay separate classes"
+ },
+ "splits": {
+  "seg": "Protocol B (artifacts/splits/protocolB_seed4242.csv): train_B only for training; dev_query_B vs gallery_B for selection; test_query_B exploratory (consumed)",
+  "plantseg": "protocol P (official Training/Validation/Test, duplicate-group disjoint; sha256[:12] 7c545a881b97)",
+  "train_images": {
+   "ps": 6744,
+   "seg": 772
+  },
+  "note": "no image is moved between splits; no SegPPD or PlantSeg dev/test image is used for training"
+ },
+ "duplicates": {
+  "cross_source_pairs_cos_ge_0p85": "0 (frozen DINOv2-B CLS; all 9,289 protocol-P images vs all 2,263 SegPPD images; PlantSeg copies of SegPPD images were already removed by the Track B audit, rule hash OR cos>=0.85)",
+  "pairs_cos_ge_0p80": 744
+ },
+ "conditions": {
+  "S0": "SegPPD-only (existing Track A Proxy-Anchor a32 d0.3, seeds 0-2) [source-only encoder]",
+  "T0": "PlantSeg-only (existing Track B M3 Proxy-Anchor, seeds 0-2) [target-supervised encoder]",
+  "X1": "mixed: SegPPD train_B + PlantSeg train, unified labels, Proxy-Anchor a32 d0.3, 60 steps/epoch, class-balanced PK batches (same budget as T0), 3 seeds",
+  "X2": "X1 + ONE change: domain-balanced batches (8 classes drawn from the SegPPD pool + 8 from the PlantSeg pool, images from that source), 3 seeds",
+  "X3": "X1 + ONE change: colour/lighting augmentation ('color', the only augmentation within the dev tie band in Track C), 3 seeds"
+ },
+ "selection": "epoch: mean of (SegPPD dev class-macro Hit@1 [dev_query_B vs gallery_B], PlantSeg dev accuracy [official Validation vs <=10 train images per class]); tie band 1/300; inside the band higher mean mAP; patience 6, 30 epochs max. Nothing else is tuned.",
+ "evaluation": {
+  "E1_plantseg_target": "queries = protocol-P Test (1,646; 10 shared-class subset reported separately), gallery = protocol-P train (98 classes), relevance = PlantSeg label",
+  "E2_segppd_target": "queries = Protocol B test (225, 75 classes), gallery = gallery_B (809)",
+  "E3_cross_domain_gallery": "queries = protocol-P Test images of the 10 shared classes, gallery = SegPPD gallery_B (75 classes), relevance = unified id (needs no PlantSeg gallery: tests transfer into the SegPPD gallery)"
+ },
+ "regimes": "S0 is source-only for E1 and E3; T0 is target-supervised for E1 and source-only for E2/E3; X* are mixed (supervised on both sources) and are never mixed with S0/T0 in one claim. Reported separately per evaluation.",
+ "comparisons": "X1 vs T0 (budget-matched: same steps/epoch/classes sampler, PlantSeg-only) on E1/E2/E3; X2 vs X1; X3 vs X1; paired on identical queries, class-bootstrap CIs, 3 seeds averaged per query.",
+ "status": "EXPLORATORY. No untouched labelled data exists: Protocol B/C tests and the PlantSeg test were inspected earlier. Selection uses only dev sets. Not a confirmatory test.",
+ "organ_analysis": "Only verified organ labels may be used. None exist (the 121 provisional labels have a single AI annotator, unverified). No organ result is produced; a blank verification worksheet is exported instead."
+}

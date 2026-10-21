@@ -1,0 +1,24 @@
+{
+ "dataset": "segppd_B",
+ "backbone": "dinov2_base",
+ "blocks": 4,
+ "lr_bb": 3e-05,
+ "lr_head": 0.001,
+ "layer_decay": 0.8,
+ "d_emb": 256,
+ "epochs": 60,
+ "patience": 10,
+ "steps": 20,
+ "P": 16,
+ "K": 4,
+ "aug": "base",
+ "seed": 0,
+ "proxy_lr_mult": 1.0,
+ "name": "A_arc_s30_m0.3_s0",
+ "loss": {
+  "type": "arcface",
+  "s": 30.0,
+  "m": 0.3
+ },
+ "out_dir": "artifacts/research_v2/trackA/runs/A_arc_s30_m0.3_s0"
+}

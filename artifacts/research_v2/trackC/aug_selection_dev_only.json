@@ -1,0 +1,36 @@
+{
+ "table": [
+  {
+   "aug": "base",
+   "dev_hit1": 0.82,
+   "dev_mAP": 0.7637553349694249
+  },
+  {
+   "aug": "color",
+   "dev_hit1": 0.8266666666666667,
+   "dev_mAP": 0.7666919518091804
+  },
+  {
+   "aug": "res",
+   "dev_hit1": 0.82,
+   "dev_mAP": 0.7578532192194236
+  },
+  {
+   "aug": "geo",
+   "dev_hit1": 0.74,
+   "dev_mAP": 0.596822341918582
+  },
+  {
+   "aug": "robust",
+   "dev_hit1": 0.7933333333333333,
+   "dev_mAP": 0.7476758755945371
+  }
+ ],
+ "tied": [
+  "base",
+  "color",
+  "res"
+ ],
+ "selected": "color",
+ "rule": "dev Hit@1, tie eps 1/150, then dev mAP; SegPPD dev only"
+}

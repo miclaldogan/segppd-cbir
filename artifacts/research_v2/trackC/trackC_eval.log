@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+variant  n_seeds  dev_hit1_mean  dev_mAP_mean  testB_hit1_mean  testB_mAP_mean  testC_hit1_mean  testC_mAP_mean  ext_macro_hit1_mean  ext_micro_hit1_mean  ext_macro_p10_mean  ext_macro_mAP_mean  dev_hit1_sd  testB_hit1_sd  testC_hit1_sd  ext_macro_hit1_sd
+   base        3         0.8200        0.7572           0.8252          0.7526           0.7822          0.7514               0.6175               0.5609              0.5220              0.5835       0.0067         0.0103         0.0252              0.025
+  color        3         0.8178        0.7602           0.8296          0.7582           0.7911          0.7541               0.6220               0.5645              0.5196              0.5809       0.0077         0.0143         0.0336              0.024
+    geo        1         0.7400        0.5970           0.7644          0.6035           0.6667          0.6113               0.5806               0.4976              0.4530              0.4988          NaN            NaN            NaN                NaN
+    res        1         0.8200        0.7579           0.8178          0.7565           0.7333          0.7431               0.6001               0.5360              0.5045              0.5638          NaN            NaN            NaN                NaN
+ robust        3         0.7867        0.7471           0.8237          0.7414           0.7556          0.7383               0.6192               0.5603              0.5155              0.5733       0.0115         0.0093         0.0102              0.014
+variant   vs  n_seeds  ext_hit1_diff      lo     hi  queries_better  queries_worse
+  color base        3         0.0046 -0.0021 0.0105             142            131
+ robust base        3         0.0018 -0.0163 0.0234             236            231

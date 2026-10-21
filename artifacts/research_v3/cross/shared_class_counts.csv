@@ -1,0 +1,13 @@
+source,name,ps,ps,ps,seg,seg,seg,seg
+role,,dev,test,train,dev,gallery,test,train
+unified,,,,,,,,
+3,apple rust,15,27,90,2,9,3,9
+4,apple scab,23,50,172,2,7,3,6
+10,bean rust,23,38,151,2,10,3,9
+19,coffee leaf rust,13,22,74,2,22,3,21
+25,cucumber powdery mildew,14,28,106,2,12,3,12
+32,grape black rot,13,22,79,2,11,3,11
+65,strawberry leaf scorch,3,5,24,2,7,3,6
+71,tomato bacterial leaf spot,6,17,67,2,17,3,16
+72,tomato leaf mold,13,27,99,2,10,3,10
+73,tomato late blight,17,29,104,2,23,3,22

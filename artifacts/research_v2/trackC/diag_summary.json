@@ -1,0 +1,31 @@
+{
+ "n_queries": 1485,
+ "external_hit1_seed_mean": 0.5402918069584736,
+ "external_hit1_class_macro": 0.608068150343329,
+ "indomain": {
+  "hit1_11classes": {
+   "testB_exploratory": 0.7878787878787877,
+   "testC_exploratory": 0.7727272727272728
+  },
+  "hit1_all75": {
+   "testB_exploratory": 0.8148148148148149,
+   "testC_exploratory": 0.7755555555555556
+  }
+ },
+ "organ_counts": {
+  "F": 23,
+  "L": 76,
+  "M": 9,
+  "O": 5,
+  "S": 1,
+  "W": 7
+ },
+ "organ_hit1": {
+  "F": 0.246,
+  "L": 0.675,
+  "M": 0.296,
+  "O": 1.0,
+  "S": 0.0,
+  "W": 0.429
+ }
+}

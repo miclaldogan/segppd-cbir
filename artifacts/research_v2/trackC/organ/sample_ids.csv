@@ -1,0 +1,122 @@
+idx,Name,Disease,Plant
+1,cucumber_powdery_mildew_130.jpg,cucumber powdery mildew,Cucumber
+2,cucumber_powdery_mildew_42.jpg,cucumber powdery mildew,Cucumber
+3,tomato_bacterial_leaf_spot_google_0037.jpg,tomato bacterial leaf spot,Tomato
+4,tomato_leaf_mold_277.jpg,tomato leaf mold,Tomato
+5,apple_scab_google_0106.jpg,apple scab,Apple
+6,soybean_rust_Bing_0042.jpg,bean rust,Soybean
+7,strawberry_leaf_scorch_google_0117.jpg,strawberry leaf scorch,Strawberry
+8,soybean_rust_Bing_0106.jpg,bean rust,Soybean
+9,soybean_rust_Bing_0119.jpg,bean rust,Soybean
+10,apple_rust_19.jpg,apple rust,Apple
+11,tomato_bacterial_leaf_spot_77.jpg,tomato bacterial leaf spot,Tomato
+12,cucumber_powdery_mildew_google_0051.jpg,cucumber powdery mildew,Cucumber
+13,banana_cordana_leaf_spot_Bing_0020.jpg,banana cordana leaf spot,Banana
+14,grape_black_rot_google_0080.jpg,grape black rot,Grape
+15,strawberry_leaf_scorch_google_0017.jpg,strawberry leaf scorch,Strawberry
+16,cucumber_powdery_mildew_google_0021.jpg,cucumber powdery mildew,Cucumber
+17,apple_rust_30.jpg,apple rust,Apple
+18,tomato_late_blight_186.jpg,tomato late blight,Tomato
+19,tomato_bacterial_leaf_spot_28.jpg,tomato bacterial leaf spot,Tomato
+20,bean_rust_174.jpg,bean rust,Bean
+21,banana_cordana_leaf_spot_Bing_0010.jpg,banana cordana leaf spot,Banana
+22,apple_scab_google_0206.jpg,apple scab,Apple
+23,coffee_leaf_rust_google_0317.jpg,coffee leaf rust,Coffee
+24,strawberry_leaf_scorch_google_0022.jpg,strawberry leaf scorch,Strawberry
+25,grape_black_rot_google_0097.jpg,grape black rot,Grape
+26,coffee_leaf_rust_26.jpg,coffee leaf rust,Coffee
+27,bean_rust_41.jpg,bean rust,Bean
+28,coffee_leaf_rust_google_0153.jpg,coffee leaf rust,Coffee
+29,tomato_leaf_mold_23.jpg,tomato leaf mold,Tomato
+30,coffee_leaf_rust_google_0117.jpg,coffee leaf rust,Coffee
+31,coffee_leaf_rust_google_0016.jpg,coffee leaf rust,Coffee
+32,tomato_leaf_mold_48.jpg,tomato leaf mold,Tomato
+33,banana_cordana_leaf_spot_Google_0111.jpg,banana cordana leaf spot,Banana
+34,cucumber_powdery_mildew_150.jpg,cucumber powdery mildew,Cucumber
+35,strawberry_leaf_scorch_google_0008.jpg,strawberry leaf scorch,Strawberry
+36,grape_black_rot_google_0223.jpg,grape black rot,Grape
+37,coffee_leaf_rust_177.jpg,coffee leaf rust,Coffee
+38,tomato_leaf_mold_21.jpg,tomato leaf mold,Tomato
+39,coffee_leaf_rust_google_0234.jpg,coffee leaf rust,Coffee
+40,apple_scab_google_0007.jpg,apple scab,Apple
+41,banana_cordana_leaf_spot_Bing_0249.jpg,banana cordana leaf spot,Banana
+42,strawberry_leaf_scorch_google_0171.jpg,strawberry leaf scorch,Strawberry
+43,bean_rust_google_0067.jpg,bean rust,Bean
+44,apple_scab_google_0021.jpg,apple scab,Apple
+45,banana_cordana_leaf_spot_Bing_0009.jpg,banana cordana leaf spot,Banana
+46,soybean_rust_Bing_0157.jpg,bean rust,Soybean
+47,tomato_bacterial_leaf_spot_google_0103.jpg,tomato bacterial leaf spot,Tomato
+48,grape_black_rot_google_0161.jpg,grape black rot,Grape
+49,tomato_bacterial_leaf_spot_200.jpg,tomato bacterial leaf spot,Tomato
+50,tomato_leaf_mold_google_0020.jpg,tomato leaf mold,Tomato
+51,tomato_bacterial_leaf_spot_google_0188.jpg,tomato bacterial leaf spot,Tomato
+52,tomato_late_blight_google_0045.jpg,tomato late blight,Tomato
+53,banana_cordana_leaf_spot_Google_0034.jpg,banana cordana leaf spot,Banana
+54,grape_black_rot_google_0111.jpg,grape black rot,Grape
+55,grape_black_rot_40.jpg,grape black rot,Grape
+56,tomato_bacterial_leaf_spot_128.jpg,tomato bacterial leaf spot,Tomato
+57,grape_black_rot_google_0053.jpg,grape black rot,Grape
+58,apple_scab_6.jpg,apple scab,Apple
+59,banana_cordana_leaf_spot_Baidu_0128.jpg,banana cordana leaf spot,Banana
+60,bean_rust_218.jpg,bean rust,Bean
+61,banana_cordana_leaf_spot_Bing_0034.jpg,banana cordana leaf spot,Banana
+62,cucumber_powdery_mildew_194.jpg,cucumber powdery mildew,Cucumber
+63,apple_scab_69.jpg,apple scab,Apple
+64,tomato_leaf_mold_180.jpg,tomato leaf mold,Tomato
+65,apple_rust_google_0218.jpg,apple rust,Apple
+66,cucumber_powdery_mildew_google_0164.jpg,cucumber powdery mildew,Cucumber
+67,tomato_bacterial_leaf_spot_10.jpg,tomato bacterial leaf spot,Tomato
+68,apple_scab_google_0099.jpg,apple scab,Apple
+69,tomato_bacterial_leaf_spot_51.jpg,tomato bacterial leaf spot,Tomato
+70,tomato_bacterial_leaf_spot_google_0319.jpg,tomato bacterial leaf spot,Tomato
+71,tomato_late_blight_google_0134.jpg,tomato late blight,Tomato
+72,tomato_bacterial_leaf_spot_71.jpg,tomato bacterial leaf spot,Tomato
+73,apple_scab_43.jpg,apple scab,Apple
+74,soybean_rust_Bing_0113.jpg,bean rust,Soybean
+75,grape_black_rot_google_0330.jpg,grape black rot,Grape
+76,apple_rust_google_0139.jpg,apple rust,Apple
+77,banana_cordana_leaf_spot_Bing_0026.jpg,banana cordana leaf spot,Banana
+78,tomato_late_blight_google_0000.jpg,tomato late blight,Tomato
+79,coffee_leaf_rust_google_0331.jpg,coffee leaf rust,Coffee
+80,soybean_rust_Bing_0135.jpg,bean rust,Soybean
+81,apple_rust_google_0111.jpg,apple rust,Apple
+82,tomato_leaf_mold_google_0063.jpg,tomato leaf mold,Tomato
+83,apple_rust_177.jpg,apple rust,Apple
+84,cucumber_powdery_mildew_121.jpg,cucumber powdery mildew,Cucumber
+85,apple_rust_google_0201.jpg,apple rust,Apple
+86,tomato_leaf_mold_202.jpg,tomato leaf mold,Tomato
+87,tomato_leaf_mold_171.jpg,tomato leaf mold,Tomato
+88,strawberry_leaf_scorch_google_0030.jpg,strawberry leaf scorch,Strawberry
+89,apple_rust_google_0010.jpg,apple rust,Apple
+90,tomato_leaf_mold_google_0116.jpg,tomato leaf mold,Tomato
+91,soybean_rust_Bing_0138.jpg,bean rust,Soybean
+92,apple_rust_google_0121.jpg,apple rust,Apple
+93,apple_scab_google_0043.jpg,apple scab,Apple
+94,strawberry_leaf_scorch_google_0010.jpg,strawberry leaf scorch,Strawberry
+95,strawberry_leaf_scorch_google_0043.jpg,strawberry leaf scorch,Strawberry
+96,tomato_late_blight_220.jpg,tomato late blight,Tomato
+97,coffee_leaf_rust_google_0089.jpg,coffee leaf rust,Coffee
+98,cucumber_powdery_mildew_24.jpg,cucumber powdery mildew,Cucumber
+99,grape_black_rot_google_0024.jpg,grape black rot,Grape
+100,strawberry_leaf_scorch_google_0020.jpg,strawberry leaf scorch,Strawberry
+101,coffee_leaf_rust_google_0174.jpg,coffee leaf rust,Coffee
+102,tomato_late_blight_google_0156.jpg,tomato late blight,Tomato
+103,tomato_late_blight_41.jpg,tomato late blight,Tomato
+104,coffee_leaf_rust_google_0201.jpg,coffee leaf rust,Coffee
+105,apple_scab_google_0187.jpg,apple scab,Apple
+106,grape_black_rot_google_0219.jpg,grape black rot,Grape
+107,apple_rust_google_0191.jpg,apple rust,Apple
+108,strawberry_leaf_scorch_google_0068.jpg,strawberry leaf scorch,Strawberry
+109,banana_cordana_leaf_spot_Bing_0147.jpg,banana cordana leaf spot,Banana
+110,banana_cordana_leaf_spot_Bing_0002.jpg,banana cordana leaf spot,Banana
+111,cucumber_powdery_mildew_google_0159.jpg,cucumber powdery mildew,Cucumber
+112,tomato_late_blight_61.jpg,tomato late blight,Tomato
+113,tomato_late_blight_199.jpg,tomato late blight,Tomato
+114,apple_rust_50.jpg,apple rust,Apple
+115,grape_black_rot_google_0209.jpg,grape black rot,Grape
+116,apple_scab_google_0073.jpg,apple scab,Apple
+117,tomato_late_blight_google_0031.jpg,tomato late blight,Tomato
+118,cucumber_powdery_mildew_151.jpg,cucumber powdery mildew,Cucumber
+119,tomato_leaf_mold_3.jpg,tomato leaf mold,Tomato
+120,strawberry_leaf_scorch_google_0001.jpg,strawberry leaf scorch,Strawberry
+121,tomato_late_blight_google_0087.jpg,tomato late blight,Tomato

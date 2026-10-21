@@ -1,0 +1,116 @@
+115/115 claims match
+PASS  B resnet logits hit1: report=0.262 artifact=0.2622
+PASS  B resnet pooled hit1: report=0.32 artifact=0.32
+PASS  B R1 hit1: report=0.511 artifact=0.5111
+PASS  B dinoS frozen: report=0.538 artifact=0.5378
+PASS  B dinoB frozen: report=0.627 artifact=0.6267
+PASS  B D2 arcface: report=0.76 artifact=0.76
+PASS  B D3 PA mean: report=0.748 artifact=0.7481
+PASS  B D4 SupCon mean: report=0.717 artifact=0.717
+PASS  B D4 P@10: report=0.591 artifact=0.5907
+PASS  B D4 mAP: report=0.658 artifact=0.6585
+PASS  B headline: report=0.807 artifact=0.8074
+PASS  B seed0: report=0.813 artifact=0.8133
+PASS  B seed1: report=0.796 artifact=0.7956
+PASS  B seed2: report=0.813 artifact=0.8133
+PASS  B headline P@10: report=0.651 artifact=0.651
+PASS  B headline Hit@10: report=0.967 artifact=0.9674
+PASS  B headline mAP: report=0.742 artifact=0.7423
+PASS  ensemble: report=0.822 artifact=0.8222
+PASS  ensemble lo: report=0.769 artifact=0.7689
+PASS  ensemble hi: report=0.876 artifact=0.8756
+PASS  fuse resnet: report=0.84 artifact=0.84
+PASS  AUC resnet pooled: report=0.765 artifact=0.7648
+PASS  AUC R1: report=0.914 artifact=0.9137
+PASS  AUC dinoB frozen: report=0.959 artifact=0.9592
+PASS  AUC headline: report=0.989 artifact=0.9893
+PASS  F1 headline: report=0.794 artifact=0.794
+PASS  fusion diff: report=0.018 artifact=0.0178
+PASS  fusion lo: report=-0.004 artifact=-0.0044
+PASS  fusion hi: report=0.044 artifact=0.0444
+PASS  B ( hit1: report=0.807 artifact=0.8074
+PASS  B ( ci_lo: report=0.756 artifact=0.7556
+PASS  B ( ci_hi: report=0.856 artifact=0.8563
+PASS  C ( hit1: report=0.767 artifact=0.7667
+PASS  C ( ci_lo: report=0.689 artifact=0.6889
+PASS  C ( ci_hi: report=0.84 artifact=0.84
+PASS  B+C hit1: report=0.794 artifact=0.7938
+PASS  B+C ci_lo: report=0.741 artifact=0.7411
+PASS  B+C ci_hi: report=0.844 artifact=0.8436
+PASS  ext hit1: report=0.608 artifact=0.6081
+PASS  ext lo: report=0.466 artifact=0.4658
+PASS  ext hi: report=0.76 artifact=0.7601
+PASS  ext p10: report=0.536 artifact=0.5359
+PASS  ext hit10: report=0.869 artifact=0.8694
+PASS  in-domain 11 classes: report=0.778 artifact=0.7778
+PASS  ext BASE_resnet50_frozen_pooled2048_raw: report=0.149 artifact=0.1493
+PASS  ext F_dinov2b_frozen_cls: report=0.484 artifact=0.484
+PASS  A logits hit1: report=0.293 artifact=0.2933
+PASS  A pooled hit1: report=0.391 artifact=0.3911
+PASS  A logits mAP: report=0.118 artifact=0.1182
+PASS  A pooled mAP: report=0.145 artifact=0.1446
+PASS  A logits P@10: report=0.17 artifact=0.1698
+PASS  A pooled P@10: report=0.212 artifact=0.2116
+PASS  L2norm logits: report=0.262 artifact=0.2622
+PASS  L2norm pooled: report=0.373 artifact=0.3733
+PASS  hsv mAP: report=0.05 artifact=0.0503
+PASS  hog mAP: report=0.025 artifact=0.0253
+PASS  concat min: report=0.516 artifact=0.5162
+PASS  concat max: report=0.557 artifact=0.5574
+PASS  attn min: report=0.475 artifact=0.4746
+PASS  attn max: report=0.524 artifact=0.524
+PASS  RGB head mAP: report=0.548 artifact=0.5483
+PASS  clahe alone mAP: report=0.16 artifact=0.16
+PASS  hand fusion w1 P1: report=0.447 artifact=0.4467
+PASS  ROI P@10 diff (2048-D): report=0.016 artifact=0.0156
+PASS  dev D1 head-only mAP: report=0.514 artifact=0.5143
+PASS  dev D1 head-only P1: report=0.667 artifact=0.6667
+PASS  dev D1 head-only P10: report=0.464 artifact=0.464
+PASS  dev D2 mAP: report=0.597 artifact=0.5968
+PASS  dev D2 P1: report=0.72 artifact=0.72
+PASS  dev D2 P10: report=0.546 artifact=0.546
+PASS  dev D3 mAP: report=0.636 artifact=0.636
+PASS  dev D3 P1: report=0.724 artifact=0.7244
+PASS  dev D3 P10: report=0.572 artifact=0.5718
+PASS  dev D4 mAP: report=0.663 artifact=0.6631
+PASS  dev D4 P1: report=0.725 artifact=0.7244
+PASS  dev D4 P10: report=0.596 artifact=0.5967
+PASS  dev D5 mAP: report=0.75 artifact=0.7501
+PASS  dev D5 P1: report=0.815 artifact=0.8156
+PASS  dev D5 P10: report=0.667 artifact=0.6669
+PASS  dev R1 mAP: report=0.42 artifact=0.4202
+PASS  dev R1 P1: report=0.527 artifact=0.5267
+PASS  dev R1 P10: report=0.399 artifact=0.3993
+PASS  count train_B: report=772 artifact=772.0
+PASS  count gallery_B: report=809 artifact=809.0
+PASS  count dev_query_B: report=150 artifact=150.0
+PASS  count test_query_B: report=225 artifact=225.0
+PASS  count C query: report=142 artifact=142.0
+PASS  count C gallery: report=667 artifact=667.0
+PASS  A gallery: report=1731 artifact=1731.0
+PASS  A dev gallery: report=1581 artifact=1581.0
+PASS  usable images: report=2220 artifact=2220.0
+PASS  primary classes: report=75 artifact=75.0
+PASS  primary images: report=1956 artifact=1956.0
+PASS  secondary images: report=264 artifact=264.0
+PASS  class min: report=7 artifact=7.0
+PASS  class max: report=67 artifact=67.0
+PASS  class median: report=21 artifact=21.0
+PASS  excluded images: report=43 artifact=43.0
+PASS  flagged: report=867 artifact=867.0
+PASS  hash flagged: report=229 artifact=229.0
+PASS  emb flagged: report=862 artifact=862.0
+PASS  strict before: report=1621 artifact=1621.0
+PASS  strict after: report=1485 artifact=1485.0
+PASS  plantseg images: report=11458 artifact=11458.0
+PASS  plantseg diseases: report=114 artifact=114.0
+PASS  plantseg plants: report=35 artifact=35.0
+PASS  coco categories: report=117 artifact=117.0
+PASS  coco images: report=11480 artifact=11480.0
+PASS  final classes 0/3: report=1 artifact=1.0
+PASS  final classes 3/3: report=40 artifact=40.0
+PASS  resnet frozen 0/3: report=29 artifact=29.0
+PASS  resnet frozen 3/3: report=4 artifact=4.0
+PASS  params M: report=28.6 artifact=28.5752
+PASS  vram: report=2.98 artifact=2.9811
+PASS  latency p50 ms: report=0.26 artifact=0.2547

@@ -1,0 +1,15 @@
+variant,comparison,a_only,b_only,p
+crop,1nn vs lr (frozen),30,60,0.0020602656809630745
+crop,1nn vs lr (s0),29,33,0.7035366713552733
+crop,1nn vs lr (s1),36,23,0.11747735024505848
+crop,1nn vs lr (s2),26,29,0.7877061896700431
+crop,supcon s0 1nn vs frozen 1nn,101,59,0.0011229051962340462
+crop,supcon s1 1nn vs frozen 1nn,83,57,0.03423566187319538
+crop,supcon s2 1nn vs frozen 1nn,74,67,0.6135127096954123
+agnostic,1nn vs lr (frozen),26,60,0.00031699928227764087
+agnostic,1nn vs lr (s0),43,18,0.001868101030975251
+agnostic,1nn vs lr (s1),45,19,0.0015627893448280279
+agnostic,1nn vs lr (s2),35,33,0.9035973456835127
+agnostic,supcon s0 1nn vs frozen 1nn,84,66,0.164906982656443
+agnostic,supcon s1 1nn vs frozen 1nn,79,70,0.5123564769095189
+agnostic,supcon s2 1nn vs frozen 1nn,69,73,0.8013390218104018

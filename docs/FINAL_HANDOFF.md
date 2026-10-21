@@ -12,7 +12,7 @@
 | Locked Protocol B evaluation (one shot) | DONE - **locked set now consumed** | `artifacts/metrics/protocolB_locked/` |
 | Second locked set, Protocol C (142 queries from gallery_B) | DONE - one shot, now consumed | `artifacts/metrics/protocolC_locked/`, `artifacts/audits/protocolC_audit.json` |
 | Precision-Recall curves (B and C) | DONE | `artifacts/figures/protocol{B,C}_PR_curve.png` |
-| Hit@1 >= 0.80 | **PARTIAL**: B 0.807 [0.754, 0.856]; C 0.767 [0.689, 0.840]; pooled B+C (367 q) 0.794 [0.741, 0.844] | `artifacts/figures/protocolBC_hit1.png` |
+| Hit@1 >= 0.80 | **PARTIAL**: B 0.807 [0.756, 0.856]; C 0.767 [0.689, 0.840]; pooled B+C (367 q) 0.794 [0.741, 0.844] | `artifacts/figures/protocolBC_hit1.png` |
 | External validation (PlantSeg, CC BY-NC-ND), leakage-screened, one shot | DONE: headline Hit@1 0.608 on 11 mapped classes (1,485 queries); 867 PlantSeg images found to overlap SegPPD and removed | `artifacts/metrics/external_plantseg/`, `artifacts/figures/external_plantseg_hit1.png` |
 | Streamlit demo | NOT DONE (lower priority) | |
 | Tests | 35 passed (`uv run pytest -q`) | |

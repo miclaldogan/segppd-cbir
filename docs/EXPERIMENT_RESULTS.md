@@ -25,12 +25,12 @@ Oracle ROI (bbox of GT mask +10% margin, query and gallery; privileged informati
 | DINOv2-S last-4 + ArcFace (1 seed) | 0.760 [0.70,0.82] | 0.547 | 0.964 | 0.603 |
 | DINOv2-S last-4 + Proxy-Anchor (3 seeds: .764/.742/.738) | mean 0.748 | ~0.58 | ~0.96 | ~0.645 |
 | DINOv2-S last-4 + SupCon (3 seeds: .693/.720/.738) | mean 0.717 | ~0.59 | ~0.95 | ~0.659 |
-| **DINOv2-B last-4 + SupCon (3 seeds: .813/.796/.813) - declared headline** | **mean 0.807, class-CI [0.754,0.856]** | 0.651 | 0.967 | 0.742 |
+| **DINOv2-B last-4 + SupCon (3 seeds: .813/.796/.813) - declared headline** | **mean 0.807, class-CI [0.756,0.856]** | 0.651 | 0.967 | 0.742 |
 | DINOv2-B + SupCon, 3-seed ensemble | 0.822 [0.77,0.88] | 0.662 | 0.969 | 0.754 |
 | ... + 0.2 DINOv2-S ensemble (dev-selected w) | 0.822 [0.76,0.88] | 0.662 | 0.969 | 0.756 |
 | ... + 0.1 ResNet50-ft (dev-selected w) | 0.840 [0.78,0.89] | 0.664 | 0.964 | 0.757 |
 
-**Does it reach Hit@1 >= 0.80? The point estimate does (0.807 headline; 0.813/0.796/0.813 per seed), but the 95% interval [0.754, 0.856] includes values below 0.80, so >=0.80 is not established with statistical confidence on 225 queries.**
+**Does it reach Hit@1 >= 0.80? The point estimate does (0.807 headline; 0.813/0.796/0.813 per seed), but the 95% interval [0.756, 0.856] includes values below 0.80, so >=0.80 is not established with statistical confidence on 225 queries.**
 Paired (same queries, class-bootstrap): DINOv2-B+SupCon vs existing ResNet50 system P@1 +0.28..+0.30 (CIs [0.20,0.39]), P@10 +0.28..+0.29 (CIs ~[0.24,0.33]); vs frozen DINOv2-B P@1 +0.196 [0.12,0.27] (ensemble); B vs S (SupCon s0) P@1 +0.120 [0.062,0.178]. Fusions vs the B-ensemble: S +0.000 [-0.027,0.027]; ResNet +0.018 [-0.004,0.044] -> **no significant hybrid gain**. SupCon vs ArcFace (S): P@10 +0.035 [0.015,0.052] but P@1 -0.067 [-0.129,-0.004]; vs Proxy-Anchor P@1 -0.071 [-0.138,-0.009] (loss was chosen on dev mAP; on the test set SupCon is better for deep ranks, worse at rank 1 for DINOv2-S; ArcFace/Proxy-Anchor were not run on DINOv2-B).
 Class coverage (3 queries/class): DINOv2-B ensemble has 0 classes with Hit@1=0 and 45/75 perfect (3/3); the existing ResNet50 system has 14 classes at 0 and 18 perfect. Weakest classes (3-seed mean Hit@1): lemon_healthy 0.11, cotton_fusarium wilt 0.22, hops_nutrient deficiency, cassava_bacterial blight, lemon_sooty mold, tomato_mold (0.33). Dominant confusions are same-genus/healthy pairs (apple_healthy vs plum_healthy, lemon_sooty mold vs orange_canker, eggplant vs tomato blights).
 Dev vs locked test agree (DINOv2-B dev Hit@1 0.80-0.83 -> test 0.80-0.81), so dev-based early stopping did not visibly overfit.
