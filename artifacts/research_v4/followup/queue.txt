@@ -1,0 +1,8 @@
+F_dinov3_convnext_tiny_lr1e-4
+F_dinov3_convnext_tiny_full
+F_dinov3_convnext_tiny_full_lr1e-4
+F_dinov3_convnext_tiny_336
+F_dinov2_small_reg4_lr1e-4
+F_dinov2_small_reg4_full
+F_dinov2_small_reg4_full_lr1e-4
+F_dinov2_small_reg4_336

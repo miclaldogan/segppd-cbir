@@ -1,0 +1,25 @@
+{
+ "blocks": 4,
+ "lr_bb": 3e-05,
+ "lr_head": 0.001,
+ "layer_decay": 0.8,
+ "d_emb": 256,
+ "epochs": 30,
+ "patience": 6,
+ "steps": 60,
+ "P": 16,
+ "K": 4,
+ "aug": "base",
+ "seed": 1,
+ "proxy_lr_mult": 1.0,
+ "method": "metric",
+ "loss": {
+  "type": "proxyanchor",
+  "alpha": 32.0,
+  "delta": 0.3
+ },
+ "name": "cross_X1_s1",
+ "out_dir": "artifacts/research_v3/cross/runs/cross_X1_s1",
+ "variant": "X1",
+ "sampler": "class"
+}

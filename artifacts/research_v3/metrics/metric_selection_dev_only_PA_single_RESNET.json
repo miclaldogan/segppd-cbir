@@ -1,0 +1,14 @@
+{
+ "model": "PA_single_RESNET",
+ "rule": "dev Hit@1 (mean over seeds); tie band 1/150; higher dev mAP inside the band",
+ "selected": "cosine",
+ "selected_tuple": [
+  "cosine"
+ ],
+ "dev_best_hit1": 0.8266666666666667,
+ "band": [
+  "cosine",
+  "dot",
+  "l2"
+ ]
+}

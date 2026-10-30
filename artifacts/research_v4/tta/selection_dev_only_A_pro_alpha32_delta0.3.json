@@ -1,0 +1,9 @@
+{
+ "runs": [
+  "A_pro_alpha32_delta0.3_s0",
+  "A_pro_alpha32_delta0.3_s1",
+  "A_pro_alpha32_delta0.3_s2"
+ ],
+ "rule": "dev Hit@1 (mean over runs), tie band 1/150, then dev mAP",
+ "selected": "all"
+}

@@ -44,3 +44,9 @@ docs/_history/
 artifacts/research_v2/trackB/audit_filtered_images.csv
 artifacts/research_v2/trackB/plantseg_groups.csv
 artifacts/research_v2/trackB/protocol_P.csv
+
+# research_v4 heavy files (checkpoints, embeddings, teachers)
+artifacts/research_v4/**/best.pt
+artifacts/research_v4/**/embeddings.npz
+artifacts/research_v4/teachers/
+artifacts/research_v4/tta/emb_*.npz

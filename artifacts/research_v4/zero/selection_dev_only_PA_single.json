@@ -1,0 +1,20 @@
+{
+ "model": "PA_single",
+ "rule": "dev Hit@1 (seed mean), tie band 1/150, then dev mAP",
+ "selected_per_family": {
+  "dba": "k1",
+  "aqe": "k1_a1",
+  "krecip": "k110_k23_l0.5",
+  "proj": "lda_74"
+ },
+ "stack": [
+  [
+   "aqe",
+   "k1_a1"
+  ]
+ ],
+ "stack_dev": {
+  "hit1": 0.82,
+  "mAP": 0.7673551581348299
+ }
+}

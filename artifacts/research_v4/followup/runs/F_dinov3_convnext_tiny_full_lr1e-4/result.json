@@ -1,0 +1,495 @@
+{
+ "name": "F_dinov3_convnext_tiny_full_lr1e-4",
+ "cfg": {
+  "dataset": "segppd_B",
+  "blocks": 4,
+  "lr_bb": 0.0001,
+  "lr_head": 0.001,
+  "layer_decay": 0.8,
+  "d_emb": 256,
+  "epochs": 60,
+  "patience": 10,
+  "steps": 20,
+  "P": 16,
+  "K": 4,
+  "aug": "base",
+  "seed": 0,
+  "proxy_lr_mult": 1.0,
+  "img_size": 224,
+  "loss": {
+   "type": "proxyanchor",
+   "alpha": 32.0,
+   "delta": 0.3
+  },
+  "backbone": "dinov3_convnext_tiny",
+  "full": true,
+  "name": "F_dinov3_convnext_tiny_full_lr1e-4",
+  "out_dir": "artifacts/research_v4/followup/runs/F_dinov3_convnext_tiny_full_lr1e-4"
+ },
+ "best_epoch": 2,
+ "best_dev": {
+  "epoch": 2,
+  "hit1": 0.14666666666666667,
+  "mAP": 0.054283319080252156,
+  "P5": 0.06666666666666665,
+  "P10": 0.05333333333333332,
+  "micro_hit1": 0.14666666666666667
+ },
+ "epochs_run": 12,
+ "train_seconds": 129.62427759170532,
+ "embed_all_seconds": 31.0291748046875,
+ "embed_ms_per_image": 13.71152222920349,
+ "peak_vram_gb": 4.468422656,
+ "n_trainable_params": 28031296,
+ "n_inference_params": 28016992,
+ "ckpt_sha256": "046fbf212597e966ad5df660d436d43b49c8a6e12bfd877597030acae2ea228a",
+ "gpu_at_start": {
+  "used_mb": 5,
+  "total_mb": 6141,
+  "free_mb": 6136,
+  "compute_apps": ""
+ },
+ "torch": "2.14.1+cu130",
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 25.376038837432862,
+   "kd": 0.0,
+   "hit1": 0.12666666666666668,
+   "mAP": 0.05595428366232625,
+   "P5": 0.07466666666666666,
+   "P10": 0.05266666666666665,
+   "micro_hit1": 0.12666666666666668
+  },
+  {
+   "epoch": 2,
+   "loss": 25.028246116638183,
+   "kd": 0.0,
+   "hit1": 0.14666666666666667,
+   "mAP": 0.054283319080252156,
+   "P5": 0.06666666666666665,
+   "P10": 0.05333333333333332,
+   "micro_hit1": 0.14666666666666667
+  },
+  {
+   "epoch": 3,
+   "loss": 25.16022071838379,
+   "kd": 0.0,
+   "hit1": 0.12,
+   "mAP": 0.04781612913711335,
+   "P5": 0.05866666666666667,
+   "P10": 0.04466666666666666,
+   "micro_hit1": 0.12
+  },
+  {
+   "epoch": 4,
+   "loss": 25.203465366363524,
+   "kd": 0.0,
+   "hit1": 0.1,
+   "mAP": 0.04839115699172607,
+   "P5": 0.05866666666666667,
+   "P10": 0.049333333333333326,
+   "micro_hit1": 0.1
+  },
+  {
+   "epoch": 5,
+   "loss": 24.69219160079956,
+   "kd": 0.0,
+   "hit1": 0.06666666666666667,
+   "mAP": 0.048637252221600286,
+   "P5": 0.064,
+   "P10": 0.051333333333333314,
+   "micro_hit1": 0.06666666666666667
+  },
+  {
+   "epoch": 6,
+   "loss": 24.609150695800782,
+   "kd": 0.0,
+   "hit1": 0.07333333333333333,
+   "mAP": 0.04834545146014808,
+   "P5": 0.06666666666666665,
+   "P10": 0.04933333333333332,
+   "micro_hit1": 0.07333333333333333
+  },
+  {
+   "epoch": 7,
+   "loss": 24.512083435058592,
+   "kd": 0.0,
+   "hit1": 0.09333333333333334,
+   "mAP": 0.04962629850953714,
+   "P5": 0.05733333333333334,
+   "P10": 0.05066666666666664,
+   "micro_hit1": 0.09333333333333334
+  },
+  {
+   "epoch": 8,
+   "loss": 24.930150032043457,
+   "kd": 0.0,
+   "hit1": 0.09333333333333334,
+   "mAP": 0.050268552638370864,
+   "P5": 0.06266666666666666,
+   "P10": 0.04666666666666665,
+   "micro_hit1": 0.09333333333333334
+  },
+  {
+   "epoch": 9,
+   "loss": 24.683023166656493,
+   "kd": 0.0,
+   "hit1": 0.08,
+   "mAP": 0.04790300332268924,
+   "P5": 0.05600000000000003,
+   "P10": 0.04733333333333333,
+   "micro_hit1": 0.08
+  },
+  {
+   "epoch": 10,
+   "loss": 24.99533004760742,
+   "kd": 0.0,
+   "hit1": 0.06666666666666667,
+   "mAP": 0.047443174131191194,
+   "P5": 0.05333333333333336,
+   "P10": 0.04933333333333332,
+   "micro_hit1": 0.06666666666666667
+  },
+  {
+   "epoch": 11,
+   "loss": 25.128455257415773,
+   "kd": 0.0,
+   "hit1": 0.09333333333333334,
+   "mAP": 0.04882608706821607,
+   "P5": 0.061333333333333344,
+   "P10": 0.04733333333333332,
+   "micro_hit1": 0.09333333333333334
+  },
+  {
+   "epoch": 12,
+   "loss": 24.626547718048094,
+   "kd": 0.0,
+   "hit1": 0.08,
+   "mAP": 0.04980647503571779,
+   "P5": 0.05733333333333334,
+   "P10": 0.04666666666666666,
+   "micro_hit1": 0.08
+  }
+ ],
+ "results": {
+  "dev": {
+   "macro_hit1": 0.15333333333333332,
+   "macro_p1": 0.15333333333333332,
+   "macro_r1": 0.015157456378044613,
+   "macro_hit3": 0.22666666666666666,
+   "macro_p3": 0.08222222222222227,
+   "macro_r3": 0.023873020925277988,
+   "macro_hit5": 0.26666666666666666,
+   "macro_p5": 0.06666666666666665,
+   "macro_r5": 0.03213378150125596,
+   "macro_hit10": 0.4,
+   "macro_p10": 0.053999999999999986,
+   "macro_r10": 0.05397604312679931,
+   "macro_hit20": 0.5533333333333333,
+   "macro_p20": 0.043999999999999984,
+   "macro_r20": 0.0883018373136741,
+   "macro_hit50": 0.74,
+   "macro_p50": 0.030399999999999996,
+   "macro_r50": 0.1527531010390619,
+   "micro_hit1": 0.15333333333333332,
+   "micro_p1": 0.15333333333333332,
+   "micro_r1": 0.015157456378044613,
+   "micro_hit3": 0.22666666666666666,
+   "micro_p3": 0.08222222222222221,
+   "micro_r3": 0.02387302092527799,
+   "micro_hit5": 0.26666666666666666,
+   "micro_p5": 0.06666666666666668,
+   "micro_r5": 0.03213378150125596,
+   "micro_hit10": 0.4,
+   "micro_p10": 0.054,
+   "micro_r10": 0.05397604312679932,
+   "micro_hit20": 0.5533333333333333,
+   "micro_p20": 0.044,
+   "micro_r20": 0.08830183731367411,
+   "micro_hit50": 0.74,
+   "micro_p50": 0.030400000000000003,
+   "micro_r50": 0.1527531010390619,
+   "macro_mAP": 0.05478059851490921,
+   "micro_mAP": 0.05478059851490921,
+   "n_queries": 150,
+   "n_classes": 75,
+   "hit1_class_ci": [
+    0.15333333333333332,
+    0.1,
+    0.20666666666666667
+   ],
+   "diag": {
+    "mean_intra_sqdist": 1.933413159349584e-06,
+    "mean_inter_sqdist": 2.567536739661591e-06,
+    "intra_over_inter": 0.7530226111412048,
+    "nn_intra_closer_frac": 0.15333333333333332,
+    "margin_mean": -3.3595841841815854e-07
+   },
+   "top_confusions": [
+    {
+     "true": "eggplant_powdery mildew",
+     "pred": "bean_angular leaf spot",
+     "n": 2
+    },
+    {
+     "true": "apple_healthy",
+     "pred": "pear_healthy",
+     "n": 1
+    },
+    {
+     "true": "apple_powdery mildew",
+     "pred": "eggplant_powdery mildew",
+     "n": 1
+    },
+    {
+     "true": "apple_frog eye leaf spot",
+     "pred": "coffee_brown spot",
+     "n": 1
+    },
+    {
+     "true": "apple_rust",
+     "pred": "apple_scab",
+     "n": 1
+    },
+    {
+     "true": "apple_healthy",
+     "pred": "plum_healthy",
+     "n": 1
+    },
+    {
+     "true": "apple_scab",
+     "pred": "grape_black rot",
+     "n": 1
+    },
+    {
+     "true": "apple_scab",
+     "pred": "lemon_citrus leaf miner",
+     "n": 1
+    },
+    {
+     "true": "banana_healthy",
+     "pred": "corn_blight",
+     "n": 1
+    },
+    {
+     "true": "banana_cordana leaf spot",
+     "pred": "cassava_mosaic disease",
+     "n": 1
+    }
+   ]
+  },
+  "testB_exploratory": {
+   "macro_hit1": 0.07555555555555554,
+   "macro_p1": 0.07555555555555554,
+   "macro_r1": 0.007268118496188672,
+   "macro_hit3": 0.208888888888889,
+   "macro_p3": 0.08296296296296293,
+   "macro_r3": 0.024599239161309915,
+   "macro_hit5": 0.26222222222222225,
+   "macro_p5": 0.07022222222222226,
+   "macro_r5": 0.03357651619960907,
+   "macro_hit10": 0.3911111111111111,
+   "macro_p10": 0.060000000000000026,
+   "macro_r10": 0.056908169597528487,
+   "macro_hit20": 0.5466666666666665,
+   "macro_p20": 0.048222222222222215,
+   "macro_r20": 0.09460758803245958,
+   "macro_hit50": 0.7644444444444441,
+   "macro_p50": 0.03484444444444445,
+   "macro_r50": 0.1709546180319942,
+   "micro_hit1": 0.07555555555555556,
+   "micro_p1": 0.07555555555555556,
+   "micro_r1": 0.007268118496188671,
+   "micro_hit3": 0.2088888888888889,
+   "micro_p3": 0.08296296296296295,
+   "micro_r3": 0.024599239161309915,
+   "micro_hit5": 0.26222222222222225,
+   "micro_p5": 0.07022222222222223,
+   "micro_r5": 0.03357651619960908,
+   "micro_hit10": 0.39111111111111113,
+   "micro_p10": 0.06,
+   "micro_r10": 0.0569081695975285,
+   "micro_hit20": 0.5466666666666666,
+   "micro_p20": 0.04822222222222223,
+   "micro_r20": 0.09460758803245961,
+   "micro_hit50": 0.7644444444444445,
+   "micro_p50": 0.03484444444444444,
+   "micro_r50": 0.17095461803199422,
+   "macro_mAP": 0.05555556444776023,
+   "micro_mAP": 0.05555556444776023,
+   "n_queries": 225,
+   "n_classes": 75,
+   "hit1_class_ci": [
+    0.07555555555555554,
+    0.04444444444444444,
+    0.11111111111111112
+   ],
+   "diag": {
+    "mean_intra_sqdist": 1.8825240886144456e-06,
+    "mean_inter_sqdist": 2.5613626348786056e-06,
+    "intra_over_inter": 0.7349697351455688,
+    "nn_intra_closer_frac": 0.07555555555555556,
+    "margin_mean": -3.47608335005134e-07
+   },
+   "top_confusions": [
+    {
+     "true": "bean_rust",
+     "pred": "pepper_healthy",
+     "n": 2
+    },
+    {
+     "true": "eggplant_early blight",
+     "pred": "grape_powdery mildew",
+     "n": 2
+    },
+    {
+     "true": "cassava_bacterial blight",
+     "pred": "cassava_healthy",
+     "n": 2
+    },
+    {
+     "true": "tomato_mold",
+     "pred": "grape_black rot",
+     "n": 2
+    },
+    {
+     "true": "pepper_bacterial spot",
+     "pred": "cassava_mosaic disease",
+     "n": 2
+    },
+    {
+     "true": "strawberry_calcium deficiency",
+     "pred": "tomato_bacterial spot",
+     "n": 2
+    },
+    {
+     "true": "orange_anthracnose",
+     "pred": "pear_rust",
+     "n": 2
+    },
+    {
+     "true": "peanut_rust",
+     "pred": "sunflower_leaf spot",
+     "n": 2
+    },
+    {
+     "true": "apple_rust",
+     "pred": "apple_powdery mildew",
+     "n": 1
+    },
+    {
+     "true": "apple_frog eye leaf spot",
+     "pred": "tomato_late blight",
+     "n": 1
+    }
+   ]
+  },
+  "testC_exploratory": {
+   "macro_hit1": 0.17333333333333334,
+   "macro_p1": 0.17333333333333334,
+   "macro_r1": 0.02234010978128625,
+   "macro_hit3": 0.24666666666666667,
+   "macro_p3": 0.09555555555555557,
+   "macro_r3": 0.0354366706278471,
+   "macro_hit5": 0.3,
+   "macro_p5": 0.07599999999999998,
+   "macro_r5": 0.04538229366981902,
+   "macro_hit10": 0.35333333333333333,
+   "macro_p10": 0.05133333333333334,
+   "macro_r10": 0.05855698172686001,
+   "macro_hit20": 0.4533333333333333,
+   "macro_p20": 0.03766666666666666,
+   "macro_r20": 0.08868007272571167,
+   "macro_hit50": 0.7266666666666667,
+   "macro_p50": 0.03200000000000001,
+   "macro_r50": 0.1922613232684226,
+   "micro_hit1": 0.176056338028169,
+   "micro_p1": 0.176056338028169,
+   "micro_r1": 0.021838144135161535,
+   "micro_hit3": 0.2535211267605634,
+   "micro_p3": 0.09859154929577464,
+   "micro_r3": 0.03567253939561313,
+   "micro_hit5": 0.30985915492957744,
+   "micro_p5": 0.07887323943661972,
+   "micro_r5": 0.04617847922868206,
+   "micro_hit10": 0.36619718309859156,
+   "micro_p10": 0.05352112676056338,
+   "micro_r10": 0.06009540323259861,
+   "micro_hit20": 0.4647887323943662,
+   "micro_p20": 0.03908450704225351,
+   "micro_r20": 0.09050711907645599,
+   "micro_hit50": 0.7183098591549296,
+   "micro_p50": 0.032394366197183104,
+   "micro_r50": 0.1886563273962211,
+   "macro_mAP": 0.0648196184392859,
+   "micro_mAP": 0.0653524831191249,
+   "n_queries": 142,
+   "n_classes": 75,
+   "hit1_class_ci": [
+    0.17333333333333334,
+    0.11333333333333333,
+    0.24
+   ],
+   "diag": {
+    "mean_intra_sqdist": 1.8428644352752599e-06,
+    "mean_inter_sqdist": 2.3891143428045325e-06,
+    "intra_over_inter": 0.771358847618103,
+    "nn_intra_closer_frac": 0.176056338028169,
+    "margin_mean": -3.58478018824826e-07
+   },
+   "top_confusions": [
+    {
+     "true": "pepper_bacterial spot",
+     "pred": "lemon_citrus leaf miner",
+     "n": 2
+    },
+    {
+     "true": "apple_healthy",
+     "pred": "coffee_rust",
+     "n": 1
+    },
+    {
+     "true": "apple_powdery mildew",
+     "pred": "pear_scab",
+     "n": 1
+    },
+    {
+     "true": "apple_powdery mildew",
+     "pred": "coffee_rust",
+     "n": 1
+    },
+    {
+     "true": "apple_rust",
+     "pred": "coffee_healthy",
+     "n": 1
+    },
+    {
+     "true": "apple_rust",
+     "pred": "plum_healthy",
+     "n": 1
+    },
+    {
+     "true": "apple_scab",
+     "pred": "cotton_healthy",
+     "n": 1
+    },
+    {
+     "true": "banana_healthy",
+     "pred": "tomato_late blight",
+     "n": 1
+    },
+    {
+     "true": "banana_cordana leaf spot",
+     "pred": "eggplant_necrotic leaf spot",
+     "n": 1
+    },
+    {
+     "true": "banana_sigatoka",
+     "pred": "peanut_rust",
+     "n": 1
+    }
+   ]
+  }
+ }
+}

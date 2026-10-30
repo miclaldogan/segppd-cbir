@@ -1,0 +1,13 @@
+{
+ "rule": "dev Hit@1, tie band 1/150, then dev mAP",
+ "selected_w": {
+  "convnext336+reg4_336": 0.0,
+  "convnext336+resnet50ft": 0.0,
+  "reg4_336+resnet50ft": 0.0,
+  "convnext336+vits16plus": 0.2,
+  "convnext224+reg4_224": 0.1,
+  "convnext336+reg4_336+resnet50ft": 0.1,
+  "dinov3_vitb+resnet50ft": 0.0,
+  "dinov2_base_PA_s0+resnet50ft": 0.1
+ }
+}

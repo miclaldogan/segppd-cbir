@@ -1,0 +1,7 @@
+{
+ "rule": "dev Hit@1 (mean 3 seeds), tie band 1/150, then dev mAP",
+ "selected_w": {
+  "PA_single": 0.05,
+  "SUPCON_single": 0.1
+ }
+}

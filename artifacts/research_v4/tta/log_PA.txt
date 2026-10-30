@@ -1,0 +1,20 @@
+[A_pro_alpha32_delta0.3_s0] flip: dev 0.820/0.764 test 0.831/0.758 test 0.753/0.752 (6.6 ms/img)
+[A_pro_alpha32_delta0.3_s0] flip+ms: dev 0.820/0.771 test 0.836/0.764 test 0.800/0.761 (16.8 ms/img)
+[A_pro_alpha32_delta0.3_s0] flip+5crop: dev 0.820/0.769 test 0.827/0.766 test 0.813/0.764 (39.1 ms/img)
+[A_pro_alpha32_delta0.3_s0] all: dev 0.827/0.772 test 0.822/0.766 test 0.820/0.766 (49.3 ms/img)
+[A_pro_alpha32_delta0.3_s1] flip: dev 0.813/0.758 test 0.813/0.755 test 0.793/0.753 (6.5 ms/img)
+[A_pro_alpha32_delta0.3_s1] flip+ms: dev 0.813/0.767 test 0.818/0.765 test 0.787/0.754 (16.8 ms/img)
+[A_pro_alpha32_delta0.3_s1] flip+5crop: dev 0.807/0.766 test 0.813/0.764 test 0.813/0.756 (39.1 ms/img)
+[A_pro_alpha32_delta0.3_s1] all: dev 0.800/0.766 test 0.818/0.766 test 0.800/0.758 (49.3 ms/img)
+[A_pro_alpha32_delta0.3_s2] flip: dev 0.827/0.749 test 0.831/0.745 test 0.800/0.749 (6.5 ms/img)
+[A_pro_alpha32_delta0.3_s2] flip+ms: dev 0.820/0.756 test 0.849/0.756 test 0.813/0.756 (16.8 ms/img)
+[A_pro_alpha32_delta0.3_s2] flip+5crop: dev 0.820/0.756 test 0.827/0.755 test 0.813/0.752 (39.1 ms/img)
+[A_pro_alpha32_delta0.3_s2] all: dev 0.827/0.757 test 0.831/0.757 test 0.813/0.754 (49.3 ms/img)
+set           dev  testB_exploratory  testC_exploratory
+views                                                  
+all         0.818              0.824              0.811
+flip        0.820              0.825              0.782
+flip+5crop  0.816              0.822              0.813
+flip+ms     0.818              0.834              0.800
+selected on dev: all
+TTA_DONE

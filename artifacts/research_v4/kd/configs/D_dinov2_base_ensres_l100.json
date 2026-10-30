@@ -1,0 +1,29 @@
+{
+ "dataset": "segppd_B",
+ "blocks": 4,
+ "lr_bb": 3e-05,
+ "lr_head": 0.001,
+ "layer_decay": 0.8,
+ "d_emb": 256,
+ "epochs": 60,
+ "patience": 10,
+ "steps": 20,
+ "P": 16,
+ "K": 4,
+ "aug": "base",
+ "seed": 0,
+ "proxy_lr_mult": 1.0,
+ "img_size": 224,
+ "loss": {
+  "type": "proxyanchor",
+  "alpha": 32.0,
+  "delta": 0.3
+ },
+ "backbone": "dinov2_base",
+ "kd": {
+  "teacher": "artifacts/research_v4/teachers/pa_ens_resnet.npz",
+  "lam": 100.0
+ },
+ "name": "D_dinov2_base_ensres_l100",
+ "out_dir": "artifacts/research_v4/kd/runs/D_dinov2_base_ensres_l100"
+}

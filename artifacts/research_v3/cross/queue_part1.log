@@ -1,0 +1,264 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ok artifacts/research_v3/cross/emb_single/S0_s0.npz
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ok artifacts/research_v3/cross/emb_single/T0_s0.npz
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ok artifacts/research_v3/cross/emb_single/S0_s1.npz
+ok artifacts/research_v3/cross/emb_single/T0_s1.npz
+ok artifacts/research_v3/cross/emb_single/S0_s2.npz
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ok artifacts/research_v3/cross/emb_single/T0_s2.npz
+[cross_X1_s0] ep1 loss 23.201 dev seg 0.620 ps 0.602 | best ep1 0.611
+[cross_X1_s0] ep2 loss 19.912 dev seg 0.747 ps 0.657 | best ep2 0.702
+[cross_X1_s0] ep3 loss 17.848 dev seg 0.747 ps 0.665 | best ep3 0.706
+[cross_X1_s0] ep4 loss 16.600 dev seg 0.760 ps 0.701 | best ep4 0.730
+[cross_X1_s0] ep5 loss 15.576 dev seg 0.720 ps 0.701 | best ep4 0.730
+[cross_X1_s0] ep6 loss 14.645 dev seg 0.760 ps 0.717 | best ep6 0.739
+[cross_X1_s0] ep7 loss 13.925 dev seg 0.753 ps 0.717 | best ep6 0.739
+[cross_X1_s0] ep8 loss 13.060 dev seg 0.753 ps 0.744 | best ep8 0.749
+[cross_X1_s0] ep9 loss 12.660 dev seg 0.767 ps 0.743 | best ep9 0.755
+[cross_X1_s0] ep10 loss 11.903 dev seg 0.727 ps 0.753 | best ep9 0.755
+[cross_X1_s0] ep11 loss 11.353 dev seg 0.747 ps 0.762 | best ep11 0.754
+[cross_X1_s0] ep12 loss 11.030 dev seg 0.773 ps 0.746 | best ep12 0.760
+[cross_X1_s0] ep13 loss 10.601 dev seg 0.760 ps 0.746 | best ep12 0.760
+[cross_X1_s0] ep14 loss 10.192 dev seg 0.813 ps 0.764 | best ep14 0.789
+[cross_X1_s0] ep15 loss 9.832 dev seg 0.800 ps 0.763 | best ep14 0.789
+[cross_X1_s0] ep16 loss 9.420 dev seg 0.820 ps 0.768 | best ep16 0.794
+[cross_X1_s0] ep17 loss 9.572 dev seg 0.780 ps 0.772 | best ep16 0.794
+[cross_X1_s0] ep18 loss 9.181 dev seg 0.800 ps 0.766 | best ep16 0.794
+[cross_X1_s0] ep19 loss 8.794 dev seg 0.787 ps 0.770 | best ep16 0.794
+[cross_X1_s0] ep20 loss 8.624 dev seg 0.793 ps 0.773 | best ep16 0.794
+[cross_X1_s0] ep21 loss 8.583 dev seg 0.800 ps 0.785 | best ep21 0.793
+[cross_X1_s0] ep22 loss 8.406 dev seg 0.800 ps 0.780 | best ep21 0.793
+[cross_X1_s0] ep23 loss 8.214 dev seg 0.793 ps 0.781 | best ep21 0.793
+[cross_X1_s0] ep24 loss 8.210 dev seg 0.807 ps 0.782 | best ep24 0.794
+[cross_X1_s0] ep25 loss 8.047 dev seg 0.780 ps 0.788 | best ep24 0.794
+[cross_X1_s0] ep26 loss 8.039 dev seg 0.787 ps 0.791 | best ep24 0.794
+[cross_X1_s0] ep27 loss 7.959 dev seg 0.780 ps 0.793 | best ep24 0.794
+[cross_X1_s0] ep28 loss 7.922 dev seg 0.793 ps 0.790 | best ep28 0.792
+[cross_X1_s0] ep29 loss 8.016 dev seg 0.793 ps 0.790 | best ep29 0.792
+[cross_X1_s0] ep30 loss 8.136 dev seg 0.793 ps 0.790 | best ep29 0.792
+[cross_X1_s0] DONE best ep29 dev 0.792 1254s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[cross_X1_s1] ep1 loss 23.456 dev seg 0.593 ps 0.558 | best ep1 0.576
+[cross_X1_s1] ep2 loss 20.669 dev seg 0.707 ps 0.624 | best ep2 0.665
+[cross_X1_s1] ep3 loss 18.351 dev seg 0.720 ps 0.680 | best ep3 0.700
+[cross_X1_s1] ep4 loss 16.700 dev seg 0.727 ps 0.699 | best ep4 0.713
+[cross_X1_s1] ep5 loss 15.361 dev seg 0.733 ps 0.706 | best ep5 0.720
+[cross_X1_s1] ep6 loss 14.607 dev seg 0.760 ps 0.709 | best ep6 0.734
+[cross_X1_s1] ep7 loss 13.840 dev seg 0.753 ps 0.719 | best ep7 0.736
+[cross_X1_s1] ep8 loss 13.235 dev seg 0.747 ps 0.720 | best ep8 0.733
+[cross_X1_s1] ep9 loss 12.515 dev seg 0.753 ps 0.749 | best ep9 0.751
+[cross_X1_s1] ep10 loss 11.750 dev seg 0.760 ps 0.749 | best ep10 0.754
+[cross_X1_s1] ep11 loss 11.432 dev seg 0.727 ps 0.746 | best ep10 0.754
+[cross_X1_s1] ep12 loss 10.908 dev seg 0.780 ps 0.749 | best ep12 0.764
+[cross_X1_s1] ep13 loss 10.636 dev seg 0.773 ps 0.746 | best ep12 0.764
+[cross_X1_s1] ep14 loss 10.218 dev seg 0.773 ps 0.746 | best ep12 0.764
+[cross_X1_s1] ep15 loss 9.843 dev seg 0.767 ps 0.763 | best ep15 0.765
+[cross_X1_s1] ep16 loss 9.414 dev seg 0.767 ps 0.755 | best ep15 0.765
+[cross_X1_s1] ep17 loss 9.199 dev seg 0.793 ps 0.765 | best ep17 0.779
+[cross_X1_s1] ep18 loss 8.989 dev seg 0.767 ps 0.766 | best ep17 0.779
+[cross_X1_s1] ep19 loss 8.827 dev seg 0.787 ps 0.762 | best ep17 0.779
+[cross_X1_s1] ep20 loss 8.635 dev seg 0.773 ps 0.766 | best ep17 0.779
+[cross_X1_s1] ep21 loss 8.564 dev seg 0.787 ps 0.769 | best ep21 0.778
+[cross_X1_s1] ep22 loss 8.381 dev seg 0.813 ps 0.771 | best ep22 0.792
+[cross_X1_s1] ep23 loss 8.351 dev seg 0.773 ps 0.778 | best ep22 0.792
+[cross_X1_s1] ep24 loss 8.118 dev seg 0.793 ps 0.779 | best ep22 0.792
+[cross_X1_s1] ep25 loss 8.086 dev seg 0.800 ps 0.785 | best ep25 0.793
+[cross_X1_s1] ep26 loss 8.029 dev seg 0.800 ps 0.784 | best ep26 0.792
+[cross_X1_s1] ep27 loss 8.004 dev seg 0.800 ps 0.783 | best ep26 0.792
+[cross_X1_s1] ep28 loss 8.045 dev seg 0.800 ps 0.785 | best ep28 0.793
+[cross_X1_s1] ep29 loss 7.928 dev seg 0.807 ps 0.784 | best ep29 0.795
+[cross_X1_s1] ep30 loss 8.021 dev seg 0.807 ps 0.783 | best ep29 0.795
+[cross_X1_s1] DONE best ep29 dev 0.795 1255s
+[cross_X1_s2] ep1 loss 23.007 dev seg 0.600 ps 0.578 | best ep1 0.589
+[cross_X1_s2] ep2 loss 19.958 dev seg 0.700 ps 0.634 | best ep2 0.667
+[cross_X1_s2] ep3 loss 17.583 dev seg 0.733 ps 0.674 | best ep3 0.704
+[cross_X1_s2] ep4 loss 16.472 dev seg 0.753 ps 0.689 | best ep4 0.721
+[cross_X1_s2] ep5 loss 15.110 dev seg 0.760 ps 0.697 | best ep5 0.729
+[cross_X1_s2] ep6 loss 14.236 dev seg 0.767 ps 0.721 | best ep6 0.744
+[cross_X1_s2] ep7 loss 13.742 dev seg 0.787 ps 0.722 | best ep7 0.754
+[cross_X1_s2] ep8 loss 13.031 dev seg 0.787 ps 0.725 | best ep8 0.756
+[cross_X1_s2] ep9 loss 12.155 dev seg 0.820 ps 0.732 | best ep9 0.776
+[cross_X1_s2] ep10 loss 11.800 dev seg 0.767 ps 0.749 | best ep9 0.776
+[cross_X1_s2] ep11 loss 11.413 dev seg 0.793 ps 0.736 | best ep9 0.776
+[cross_X1_s2] ep12 loss 10.933 dev seg 0.780 ps 0.761 | best ep9 0.776
+[cross_X1_s2] ep13 loss 10.402 dev seg 0.760 ps 0.751 | best ep9 0.776
+[cross_X1_s2] ep14 loss 10.256 dev seg 0.787 ps 0.764 | best ep14 0.775
+[cross_X1_s2] ep15 loss 9.801 dev seg 0.800 ps 0.766 | best ep15 0.783
+[cross_X1_s2] ep16 loss 9.356 dev seg 0.767 ps 0.756 | best ep15 0.783
+[cross_X1_s2] ep17 loss 9.101 dev seg 0.807 ps 0.762 | best ep17 0.784
+[cross_X1_s2] ep18 loss 9.174 dev seg 0.807 ps 0.774 | best ep18 0.790
+[cross_X1_s2] ep19 loss 8.922 dev seg 0.780 ps 0.770 | best ep18 0.790
+[cross_X1_s2] ep20 loss 8.705 dev seg 0.780 ps 0.760 | best ep18 0.790
+[cross_X1_s2] ep21 loss 8.518 dev seg 0.800 ps 0.779 | best ep21 0.789
+[cross_X1_s2] ep22 loss 8.457 dev seg 0.793 ps 0.781 | best ep22 0.787
+[cross_X1_s2] ep23 loss 8.224 dev seg 0.793 ps 0.782 | best ep23 0.788
+[cross_X1_s2] ep24 loss 8.181 dev seg 0.793 ps 0.785 | best ep24 0.789
+[cross_X1_s2] ep25 loss 8.069 dev seg 0.793 ps 0.783 | best ep25 0.788
+[cross_X1_s2] ep26 loss 7.980 dev seg 0.800 ps 0.786 | best ep26 0.793
+[cross_X1_s2] ep27 loss 7.964 dev seg 0.793 ps 0.784 | best ep26 0.793
+[cross_X1_s2] ep28 loss 7.984 dev seg 0.793 ps 0.784 | best ep26 0.793
+[cross_X1_s2] ep29 loss 7.964 dev seg 0.800 ps 0.784 | best ep29 0.792
+[cross_X1_s2] ep30 loss 7.944 dev seg 0.813 ps 0.785 | best ep30 0.799
+[cross_X1_s2] DONE best ep30 dev 0.799 1254s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[cross_X2_s0] ep1 loss 22.743 dev seg 0.613 ps 0.556 | best ep1 0.585
+[cross_X2_s0] ep2 loss 19.395 dev seg 0.687 ps 0.621 | best ep2 0.654
+[cross_X2_s0] ep3 loss 17.651 dev seg 0.720 ps 0.674 | best ep3 0.697
+[cross_X2_s0] ep4 loss 16.064 dev seg 0.713 ps 0.674 | best ep4 0.694
+[cross_X2_s0] ep5 loss 15.301 dev seg 0.693 ps 0.687 | best ep4 0.694
+[cross_X2_s0] ep6 loss 13.990 dev seg 0.747 ps 0.700 | best ep6 0.723
+[cross_X2_s0] ep7 loss 13.466 dev seg 0.747 ps 0.719 | best ep7 0.733
+[cross_X2_s0] ep8 loss 12.804 dev seg 0.767 ps 0.717 | best ep8 0.742
+[cross_X2_s0] ep9 loss 12.450 dev seg 0.753 ps 0.735 | best ep9 0.744
+[cross_X2_s0] ep10 loss 11.601 dev seg 0.753 ps 0.729 | best ep9 0.744
+[cross_X2_s0] ep11 loss 11.085 dev seg 0.780 ps 0.739 | best ep11 0.759
+[cross_X2_s0] ep12 loss 10.831 dev seg 0.773 ps 0.737 | best ep11 0.759
+[cross_X2_s0] ep13 loss 10.436 dev seg 0.807 ps 0.747 | best ep13 0.777
+[cross_X2_s0] ep14 loss 10.044 dev seg 0.800 ps 0.749 | best ep14 0.774
+[cross_X2_s0] ep15 loss 9.863 dev seg 0.753 ps 0.752 | best ep14 0.774
+[cross_X2_s0] ep16 loss 9.458 dev seg 0.767 ps 0.768 | best ep14 0.774
+[cross_X2_s0] ep17 loss 9.298 dev seg 0.787 ps 0.770 | best ep17 0.778
+[cross_X2_s0] ep18 loss 8.998 dev seg 0.780 ps 0.764 | best ep17 0.778
+[cross_X2_s0] ep19 loss 8.881 dev seg 0.807 ps 0.774 | best ep19 0.790
+[cross_X2_s0] ep20 loss 8.611 dev seg 0.787 ps 0.772 | best ep19 0.790
+[cross_X2_s0] ep21 loss 8.366 dev seg 0.800 ps 0.775 | best ep21 0.788
+[cross_X2_s0] ep22 loss 8.327 dev seg 0.787 ps 0.773 | best ep21 0.788
+[cross_X2_s0] ep23 loss 8.051 dev seg 0.800 ps 0.770 | best ep21 0.788
+[cross_X2_s0] ep24 loss 8.048 dev seg 0.807 ps 0.772 | best ep24 0.789
+[cross_X2_s0] ep25 loss 8.050 dev seg 0.800 ps 0.775 | best ep25 0.788
+[cross_X2_s0] ep26 loss 7.989 dev seg 0.813 ps 0.773 | best ep26 0.793
+[cross_X2_s0] ep27 loss 7.868 dev seg 0.800 ps 0.772 | best ep26 0.793
+[cross_X2_s0] ep28 loss 7.840 dev seg 0.820 ps 0.771 | best ep28 0.795
+[cross_X2_s0] ep29 loss 7.857 dev seg 0.813 ps 0.773 | best ep28 0.795
+[cross_X2_s0] ep30 loss 7.839 dev seg 0.813 ps 0.773 | best ep28 0.795
+[cross_X2_s0] DONE best ep28 dev 0.795 1256s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[cross_X2_s1] ep1 loss 22.831 dev seg 0.647 ps 0.573 | best ep1 0.610
+[cross_X2_s1] ep2 loss 19.317 dev seg 0.667 ps 0.637 | best ep2 0.652
+[cross_X2_s1] ep3 loss 17.324 dev seg 0.753 ps 0.669 | best ep3 0.711
+[cross_X2_s1] ep4 loss 16.202 dev seg 0.733 ps 0.684 | best ep4 0.709
+[cross_X2_s1] ep5 loss 14.751 dev seg 0.780 ps 0.693 | best ep5 0.736
+[cross_X2_s1] ep6 loss 14.156 dev seg 0.773 ps 0.689 | best ep5 0.736
+[cross_X2_s1] ep7 loss 13.474 dev seg 0.767 ps 0.706 | best ep7 0.737
+[cross_X2_s1] ep8 loss 12.645 dev seg 0.753 ps 0.726 | best ep8 0.740
+[cross_X2_s1] ep9 loss 12.274 dev seg 0.753 ps 0.742 | best ep9 0.748
+[cross_X2_s1] ep10 loss 11.741 dev seg 0.773 ps 0.736 | best ep10 0.755
+[cross_X2_s1] ep11 loss 11.182 dev seg 0.760 ps 0.745 | best ep11 0.753
+[cross_X2_s1] ep12 loss 10.717 dev seg 0.727 ps 0.740 | best ep11 0.753
+[cross_X2_s1] ep13 loss 10.341 dev seg 0.753 ps 0.744 | best ep11 0.753
+[cross_X2_s1] ep14 loss 10.069 dev seg 0.787 ps 0.760 | best ep14 0.773
+[cross_X2_s1] ep15 loss 9.874 dev seg 0.747 ps 0.762 | best ep14 0.773
+[cross_X2_s1] ep16 loss 9.358 dev seg 0.760 ps 0.769 | best ep14 0.773
+[cross_X2_s1] ep17 loss 9.258 dev seg 0.787 ps 0.769 | best ep17 0.778
+[cross_X2_s1] ep18 loss 9.007 dev seg 0.780 ps 0.765 | best ep17 0.778
+[cross_X2_s1] ep19 loss 8.683 dev seg 0.773 ps 0.781 | best ep19 0.777
+[cross_X2_s1] ep20 loss 8.699 dev seg 0.787 ps 0.775 | best ep20 0.781
+[cross_X2_s1] ep21 loss 8.422 dev seg 0.807 ps 0.781 | best ep21 0.794
+[cross_X2_s1] ep22 loss 8.381 dev seg 0.800 ps 0.776 | best ep21 0.794
+[cross_X2_s1] ep23 loss 8.275 dev seg 0.800 ps 0.779 | best ep21 0.794
+[cross_X2_s1] ep24 loss 8.107 dev seg 0.793 ps 0.774 | best ep21 0.794
+[cross_X2_s1] ep25 loss 8.024 dev seg 0.787 ps 0.781 | best ep21 0.794
+[cross_X2_s1] ep26 loss 7.880 dev seg 0.793 ps 0.780 | best ep21 0.794
+[cross_X2_s1] ep27 loss 7.827 dev seg 0.793 ps 0.781 | best ep21 0.794
+[cross_X2_s1] DONE best ep21 dev 0.794 1131s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[cross_X2_s2] ep1 loss 22.698 dev seg 0.673 ps 0.583 | best ep1 0.628
+[cross_X2_s2] ep2 loss 19.539 dev seg 0.680 ps 0.650 | best ep2 0.665
+[cross_X2_s2] ep3 loss 17.535 dev seg 0.707 ps 0.687 | best ep3 0.697
+[cross_X2_s2] ep4 loss 16.070 dev seg 0.720 ps 0.700 | best ep4 0.710
+[cross_X2_s2] ep5 loss 15.053 dev seg 0.773 ps 0.700 | best ep5 0.736
+[cross_X2_s2] ep6 loss 13.702 dev seg 0.760 ps 0.707 | best ep6 0.734
+[cross_X2_s2] ep7 loss 13.305 dev seg 0.787 ps 0.705 | best ep7 0.746
+[cross_X2_s2] ep8 loss 12.746 dev seg 0.747 ps 0.724 | best ep7 0.746
+[cross_X2_s2] ep9 loss 12.012 dev seg 0.767 ps 0.710 | best ep7 0.746
+[cross_X2_s2] ep10 loss 11.540 dev seg 0.767 ps 0.726 | best ep10 0.747
+[cross_X2_s2] ep11 loss 10.998 dev seg 0.760 ps 0.737 | best ep11 0.749
+[cross_X2_s2] ep12 loss 10.556 dev seg 0.780 ps 0.739 | best ep12 0.759
+[cross_X2_s2] ep13 loss 10.249 dev seg 0.767 ps 0.742 | best ep12 0.759
+[cross_X2_s2] ep14 loss 9.861 dev seg 0.793 ps 0.753 | best ep14 0.773
+[cross_X2_s2] ep15 loss 9.675 dev seg 0.787 ps 0.755 | best ep15 0.771
+[cross_X2_s2] ep16 loss 9.411 dev seg 0.787 ps 0.755 | best ep16 0.771
+[cross_X2_s2] ep17 loss 9.190 dev seg 0.807 ps 0.754 | best ep17 0.780
+[cross_X2_s2] ep18 loss 9.054 dev seg 0.827 ps 0.768 | best ep18 0.797
+[cross_X2_s2] ep19 loss 8.772 dev seg 0.793 ps 0.765 | best ep18 0.797
+[cross_X2_s2] ep20 loss 8.603 dev seg 0.807 ps 0.771 | best ep18 0.797
+[cross_X2_s2] ep21 loss 8.372 dev seg 0.787 ps 0.768 | best ep18 0.797
+[cross_X2_s2] ep22 loss 8.267 dev seg 0.800 ps 0.769 | best ep18 0.797
+[cross_X2_s2] ep23 loss 7.938 dev seg 0.820 ps 0.774 | best ep23 0.797
+[cross_X2_s2] ep24 loss 8.139 dev seg 0.800 ps 0.775 | best ep23 0.797
+[cross_X2_s2] ep25 loss 8.023 dev seg 0.833 ps 0.783 | best ep25 0.808
+[cross_X2_s2] ep26 loss 7.767 dev seg 0.820 ps 0.783 | best ep25 0.808
+[cross_X2_s2] ep27 loss 7.908 dev seg 0.820 ps 0.785 | best ep25 0.808
+[cross_X2_s2] ep28 loss 7.789 dev seg 0.827 ps 0.779 | best ep25 0.808
+[cross_X2_s2] ep29 loss 7.941 dev seg 0.827 ps 0.780 | best ep25 0.808
+[cross_X2_s2] ep30 loss 7.808 dev seg 0.820 ps 0.779 | best ep25 0.808
+[cross_X2_s2] DONE best ep25 dev 0.808 1256s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[cross_X3_s0] ep1 loss 23.236 dev seg 0.620 ps 0.596 | best ep1 0.608
+[cross_X3_s0] ep2 loss 19.942 dev seg 0.740 ps 0.655 | best ep2 0.698
+[cross_X3_s0] ep3 loss 17.875 dev seg 0.740 ps 0.664 | best ep3 0.702
+[cross_X3_s0] ep4 loss 16.689 dev seg 0.747 ps 0.690 | best ep4 0.718
+[cross_X3_s0] ep5 loss 15.651 dev seg 0.727 ps 0.703 | best ep5 0.715
+[cross_X3_s0] ep6 loss 14.722 dev seg 0.753 ps 0.715 | best ep6 0.734
+[cross_X3_s0] ep7 loss 13.981 dev seg 0.713 ps 0.712 | best ep6 0.734
+[cross_X3_s0] ep8 loss 13.158 dev seg 0.760 ps 0.741 | best ep8 0.750
+[cross_X3_s0] ep9 loss 12.754 dev seg 0.747 ps 0.735 | best ep8 0.750
+[cross_X3_s0] ep10 loss 11.988 dev seg 0.733 ps 0.749 | best ep8 0.750
+[cross_X3_s0] ep11 loss 11.463 dev seg 0.740 ps 0.760 | best ep11 0.750
+[cross_X3_s0] ep12 loss 11.122 dev seg 0.753 ps 0.749 | best ep11 0.750
+[cross_X3_s0] ep13 loss 10.681 dev seg 0.760 ps 0.751 | best ep13 0.755
+[cross_X3_s0] ep14 loss 10.288 dev seg 0.807 ps 0.754 | best ep14 0.780
+[cross_X3_s0] ep15 loss 9.919 dev seg 0.767 ps 0.763 | best ep14 0.780
+[cross_X3_s0] ep16 loss 9.529 dev seg 0.793 ps 0.764 | best ep16 0.779
+[cross_X3_s0] ep17 loss 9.686 dev seg 0.760 ps 0.760 | best ep16 0.779
+[cross_X3_s0] ep18 loss 9.282 dev seg 0.800 ps 0.775 | best ep18 0.788
+[cross_X3_s0] ep19 loss 8.885 dev seg 0.787 ps 0.772 | best ep18 0.788
+[cross_X3_s0] ep20 loss 8.706 dev seg 0.780 ps 0.773 | best ep18 0.788
+[cross_X3_s0] ep21 loss 8.693 dev seg 0.807 ps 0.786 | best ep21 0.797
+[cross_X3_s0] ep22 loss 8.497 dev seg 0.793 ps 0.785 | best ep21 0.797
+[cross_X3_s0] ep23 loss 8.290 dev seg 0.780 ps 0.782 | best ep21 0.797
+[cross_X3_s0] ep24 loss 8.284 dev seg 0.793 ps 0.782 | best ep21 0.797
+[cross_X3_s0] ep25 loss 8.127 dev seg 0.787 ps 0.783 | best ep21 0.797
+[cross_X3_s0] ep26 loss 8.136 dev seg 0.780 ps 0.788 | best ep21 0.797
+[cross_X3_s0] ep27 loss 8.028 dev seg 0.793 ps 0.790 | best ep21 0.797
+[cross_X3_s0] DONE best ep21 dev 0.797 1130s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[cross_X3_s1] ep1 loss 23.473 dev seg 0.587 ps 0.556 | best ep1 0.571
+[cross_X3_s1] ep2 loss 20.716 dev seg 0.707 ps 0.615 | best ep2 0.661
+[cross_X3_s1] ep3 loss 18.406 dev seg 0.720 ps 0.672 | best ep3 0.696
+[cross_X3_s1] ep4 loss 16.778 dev seg 0.740 ps 0.684 | best ep4 0.712
+[cross_X3_s1] ep5 loss 15.458 dev seg 0.740 ps 0.704 | best ep5 0.722
+[cross_X3_s1] ep6 loss 14.693 dev seg 0.753 ps 0.707 | best ep6 0.730
+[cross_X3_s1] ep7 loss 13.923 dev seg 0.767 ps 0.716 | best ep7 0.742
+[cross_X3_s1] ep8 loss 13.329 dev seg 0.747 ps 0.725 | best ep7 0.742
+[cross_X3_s1] ep9 loss 12.601 dev seg 0.773 ps 0.745 | best ep9 0.759
+[cross_X3_s1] ep10 loss 11.840 dev seg 0.747 ps 0.741 | best ep9 0.759
+[cross_X3_s1] ep11 loss 11.558 dev seg 0.767 ps 0.758 | best ep11 0.762
+[cross_X3_s1] ep12 loss 11.061 dev seg 0.773 ps 0.745 | best ep12 0.759
+[cross_X3_s1] ep13 loss 10.765 dev seg 0.787 ps 0.747 | best ep13 0.767
+[cross_X3_s1] ep14 loss 10.337 dev seg 0.773 ps 0.751 | best ep13 0.767
+[cross_X3_s1] ep15 loss 9.956 dev seg 0.753 ps 0.768 | best ep13 0.767
+[cross_X3_s1] ep16 loss 9.491 dev seg 0.767 ps 0.751 | best ep13 0.767
+[cross_X3_s1] ep17 loss 9.289 dev seg 0.773 ps 0.764 | best ep17 0.769
+[cross_X3_s1] ep18 loss 9.071 dev seg 0.760 ps 0.769 | best ep17 0.769
+[cross_X3_s1] ep19 loss 8.920 dev seg 0.780 ps 0.761 | best ep19 0.770
+[cross_X3_s1] ep20 loss 8.739 dev seg 0.787 ps 0.765 | best ep20 0.776
+[cross_X3_s1] ep21 loss 8.663 dev seg 0.800 ps 0.760 | best ep21 0.780
+[cross_X3_s1] ep22 loss 8.462 dev seg 0.780 ps 0.761 | best ep21 0.780
+[cross_X3_s1] ep23 loss 8.435 dev seg 0.807 ps 0.771 | best ep23 0.789
+[cross_X3_s1] ep24 loss 8.217 dev seg 0.780 ps 0.775 | best ep23 0.789
+[cross_X3_s1] ep25 loss 8.180 dev seg 0.800 ps 0.776 | best ep25 0.788
+[cross_X3_s1] ep26 loss 8.125 dev seg 0.807 ps 0.775 | best ep26 0.791
+[cross_X3_s1] ep27 loss 8.098 dev seg 0.787 ps 0.780 | best ep26 0.791
+[cross_X3_s1] ep28 loss 8.139 dev seg 0.787 ps 0.778 | best ep26 0.791
+[cross_X3_s1] ep29 loss 8.021 dev seg 0.787 ps 0.778 | best ep26 0.791
+[cross_X3_s1] ep30 loss 8.115 dev seg 0.787 ps 0.778 | best ep26 0.791
+[cross_X3_s1] DONE best ep26 dev 0.791 1256s
+[cross_X3_s2] ep1 loss 23.002 dev seg 0.600 ps 0.574 | best ep1 0.587
+[cross_X3_s2] ep2 loss 19.963 dev seg 0.713 ps 0.628 | best ep2 0.671
+[cross_X3_s2] ep3 loss 17.582 dev seg 0.713 ps 0.677 | best ep3 0.695
+[cross_X3_s2] ep4 loss 16.513 dev seg 0.747 ps 0.686 | best ep4 0.716
+[cross_X3_s2] ep5 loss 15.159 dev seg 0.740 ps 0.706 | best ep5 0.723

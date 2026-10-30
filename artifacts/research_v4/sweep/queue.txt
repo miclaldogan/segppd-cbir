@@ -1,0 +1,8 @@
+S_dinov3_vits16plus
+S_dinov3_vits16
+S_dinov2_small
+S_dinov2_small_reg4
+S_dinov3_convnext_tiny
+S_dinov2_base_trunc9
+S_dinov2_base_trunc8
+S_dinov3_vitb16

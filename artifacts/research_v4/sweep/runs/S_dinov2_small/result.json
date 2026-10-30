@@ -1,0 +1,514 @@
+{
+ "name": "S_dinov2_small",
+ "cfg": {
+  "dataset": "segppd_B",
+  "blocks": 4,
+  "lr_bb": 3e-05,
+  "lr_head": 0.001,
+  "layer_decay": 0.8,
+  "d_emb": 256,
+  "epochs": 60,
+  "patience": 10,
+  "steps": 20,
+  "P": 16,
+  "K": 4,
+  "aug": "base",
+  "seed": 0,
+  "proxy_lr_mult": 1.0,
+  "img_size": 224,
+  "loss": {
+   "type": "proxyanchor",
+   "alpha": 32.0,
+   "delta": 0.3
+  },
+  "backbone": "dinov2_small",
+  "name": "S_dinov2_small",
+  "out_dir": "artifacts/research_v4/sweep/runs/S_dinov2_small"
+ },
+ "best_epoch": 4,
+ "best_dev": {
+  "epoch": 4,
+  "hit1": 0.7133333333333334,
+  "mAP": 0.5348321572613656,
+  "P5": 0.5706666666666667,
+  "P10": 0.48600000000000004,
+  "micro_hit1": 0.7133333333333334
+ },
+ "epochs_run": 14,
+ "train_seconds": 82.82503151893616,
+ "embed_all_seconds": 38.17747497558594,
+ "embed_ms_per_image": 16.870293846922642,
+ "peak_vram_gb": 1.33513216,
+ "n_trainable_params": 7219456,
+ "n_inference_params": 21727360,
+ "ckpt_sha256": "a9815bbf95b0eb6558d50c53ff7e792cd45cb7568a42fde95c1058521ff6f7bb",
+ "gpu_at_start": {
+  "used_mb": 4,
+  "total_mb": 6141,
+  "free_mb": 6137,
+  "compute_apps": ""
+ },
+ "torch": "2.14.1+cu130",
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 24.28487434387207,
+   "kd": 0.0,
+   "hit1": 0.5933333333333334,
+   "mAP": 0.39950173911462294,
+   "P5": 0.4599999999999999,
+   "P10": 0.36866666666666675,
+   "micro_hit1": 0.5933333333333334
+  },
+  {
+   "epoch": 2,
+   "loss": 21.49119653701782,
+   "kd": 0.0,
+   "hit1": 0.6133333333333333,
+   "mAP": 0.4660310202177009,
+   "P5": 0.5079999999999998,
+   "P10": 0.4273333333333333,
+   "micro_hit1": 0.6133333333333333
+  },
+  {
+   "epoch": 3,
+   "loss": 19.885266971588134,
+   "kd": 0.0,
+   "hit1": 0.62,
+   "mAP": 0.48533549614973887,
+   "P5": 0.5239999999999998,
+   "P10": 0.4473333333333334,
+   "micro_hit1": 0.62
+  },
+  {
+   "epoch": 4,
+   "loss": 18.462407112121582,
+   "kd": 0.0,
+   "hit1": 0.7133333333333334,
+   "mAP": 0.5348321572613656,
+   "P5": 0.5706666666666667,
+   "P10": 0.48600000000000004,
+   "micro_hit1": 0.7133333333333334
+  },
+  {
+   "epoch": 5,
+   "loss": 17.089554929733275,
+   "kd": 0.0,
+   "hit1": 0.6733333333333333,
+   "mAP": 0.5419664715879513,
+   "P5": 0.5719999999999997,
+   "P10": 0.4919999999999999,
+   "micro_hit1": 0.6733333333333333
+  },
+  {
+   "epoch": 6,
+   "loss": 16.297741889953613,
+   "kd": 0.0,
+   "hit1": 0.7,
+   "mAP": 0.5483642261024277,
+   "P5": 0.5693333333333331,
+   "P10": 0.49666666666666676,
+   "micro_hit1": 0.7
+  },
+  {
+   "epoch": 7,
+   "loss": 15.612247705459595,
+   "kd": 0.0,
+   "hit1": 0.6866666666666666,
+   "mAP": 0.5575711673859962,
+   "P5": 0.5866666666666667,
+   "P10": 0.5133333333333332,
+   "micro_hit1": 0.6866666666666666
+  },
+  {
+   "epoch": 8,
+   "loss": 14.479935121536254,
+   "kd": 0.0,
+   "hit1": 0.6733333333333333,
+   "mAP": 0.5705718724539421,
+   "P5": 0.6053333333333331,
+   "P10": 0.5253333333333332,
+   "micro_hit1": 0.6733333333333333
+  },
+  {
+   "epoch": 9,
+   "loss": 14.22861351966858,
+   "kd": 0.0,
+   "hit1": 0.6333333333333333,
+   "mAP": 0.5597835114653793,
+   "P5": 0.5813333333333329,
+   "P10": 0.5173333333333334,
+   "micro_hit1": 0.6333333333333333
+  },
+  {
+   "epoch": 10,
+   "loss": 13.475264072418213,
+   "kd": 0.0,
+   "hit1": 0.6266666666666667,
+   "mAP": 0.5720593305911589,
+   "P5": 0.5893333333333332,
+   "P10": 0.5266666666666667,
+   "micro_hit1": 0.6266666666666667
+  },
+  {
+   "epoch": 11,
+   "loss": 12.802860498428345,
+   "kd": 0.0,
+   "hit1": 0.6533333333333333,
+   "mAP": 0.5758782576151501,
+   "P5": 0.6026666666666665,
+   "P10": 0.5286666666666666,
+   "micro_hit1": 0.6533333333333333
+  },
+  {
+   "epoch": 12,
+   "loss": 12.424789667129517,
+   "kd": 0.0,
+   "hit1": 0.6666666666666666,
+   "mAP": 0.5810063726063658,
+   "P5": 0.6173333333333331,
+   "P10": 0.5433333333333336,
+   "micro_hit1": 0.6666666666666666
+  },
+  {
+   "epoch": 13,
+   "loss": 11.998786020278931,
+   "kd": 0.0,
+   "hit1": 0.6666666666666666,
+   "mAP": 0.5957575263573047,
+   "P5": 0.6253333333333331,
+   "P10": 0.5479999999999998,
+   "micro_hit1": 0.6666666666666666
+  },
+  {
+   "epoch": 14,
+   "loss": 11.760982990264893,
+   "kd": 0.0,
+   "hit1": 0.6933333333333334,
+   "mAP": 0.5940740521513809,
+   "P5": 0.6133333333333331,
+   "P10": 0.5326666666666668,
+   "micro_hit1": 0.6933333333333334
+  }
+ ],
+ "results": {
+  "dev": {
+   "macro_hit1": 0.7133333333333334,
+   "macro_p1": 0.7133333333333334,
+   "macro_r1": 0.07220564765159398,
+   "macro_hit3": 0.82,
+   "macro_p3": 0.6111111111111112,
+   "macro_r3": 0.18498421679049903,
+   "macro_hit5": 0.9,
+   "macro_p5": 0.5706666666666667,
+   "macro_r5": 0.28396831920953935,
+   "macro_hit10": 0.9333333333333333,
+   "macro_p10": 0.48600000000000004,
+   "macro_r10": 0.4699847380321895,
+   "macro_hit20": 0.98,
+   "macro_p20": 0.34500000000000003,
+   "macro_r20": 0.6466464090656369,
+   "macro_hit50": 0.9866666666666667,
+   "macro_p50": 0.17786666666666667,
+   "macro_r50": 0.8247470067157798,
+   "micro_hit1": 0.7133333333333334,
+   "micro_p1": 0.7133333333333334,
+   "micro_r1": 0.07220564765159401,
+   "micro_hit3": 0.82,
+   "micro_p3": 0.611111111111111,
+   "micro_r3": 0.18498421679049906,
+   "micro_hit5": 0.9,
+   "micro_p5": 0.5706666666666667,
+   "micro_r5": 0.28396831920953935,
+   "micro_hit10": 0.9333333333333333,
+   "micro_p10": 0.48600000000000004,
+   "micro_r10": 0.4699847380321895,
+   "micro_hit20": 0.98,
+   "micro_p20": 0.345,
+   "micro_r20": 0.6466464090656369,
+   "micro_hit50": 0.9866666666666667,
+   "micro_p50": 0.1778666666666667,
+   "micro_r50": 0.8247470067157799,
+   "macro_mAP": 0.5347823205463115,
+   "micro_mAP": 0.5347823205463115,
+   "n_queries": 150,
+   "n_classes": 75,
+   "hit1_class_ci": [
+    0.7133333333333334,
+    0.6333333333333333,
+    0.7933333333333333
+   ],
+   "diag": {
+    "mean_intra_sqdist": 0.5106595754623413,
+    "mean_inter_sqdist": 1.2658673524856567,
+    "intra_over_inter": 0.40340685844421387,
+    "nn_intra_closer_frac": 0.7133333333333334,
+    "margin_mean": 0.0740196630358696
+   },
+   "top_confusions": [
+    {
+     "true": "whitegourd_healthy",
+     "pred": "cucmber_healthy",
+     "n": 2
+    },
+    {
+     "true": "plum_healthy",
+     "pred": "apple_healthy",
+     "n": 2
+    },
+    {
+     "true": "apple_scab",
+     "pred": "pear_scab",
+     "n": 1
+    },
+    {
+     "true": "apple_scab",
+     "pred": "apple_powdery mildew",
+     "n": 1
+    },
+    {
+     "true": "bean_angular leaf spot",
+     "pred": "coffee_rust",
+     "n": 1
+    },
+    {
+     "true": "bean_rust",
+     "pred": "eggplant_necrotic leaf spot",
+     "n": 1
+    },
+    {
+     "true": "bean_rust",
+     "pred": "peanut_rust",
+     "n": 1
+    },
+    {
+     "true": "banana_cordana leaf spot",
+     "pred": "banana_sigatoka",
+     "n": 1
+    },
+    {
+     "true": "apple_frog eye leaf spot",
+     "pred": "apple_healthy",
+     "n": 1
+    },
+    {
+     "true": "coffee_brown spot",
+     "pred": "coffee_healthy",
+     "n": 1
+    }
+   ]
+  },
+  "testB_exploratory": {
+   "macro_hit1": 0.6488888888888887,
+   "macro_p1": 0.6488888888888887,
+   "macro_r1": 0.06516399083114235,
+   "macro_hit3": 0.8311111111111109,
+   "macro_p3": 0.5985185185185187,
+   "macro_r3": 0.18036881391689044,
+   "macro_hit5": 0.8755555555555552,
+   "macro_p5": 0.5706666666666664,
+   "macro_r5": 0.28780974522539554,
+   "macro_hit10": 0.951111111111111,
+   "macro_p10": 0.48444444444444446,
+   "macro_r10": 0.4724726535151816,
+   "macro_hit20": 0.9866666666666667,
+   "macro_p20": 0.352,
+   "macro_r20": 0.6583826747213292,
+   "macro_hit50": 0.9955555555555554,
+   "macro_p50": 0.1839111111111111,
+   "macro_r50": 0.8479785417839396,
+   "micro_hit1": 0.6488888888888888,
+   "micro_p1": 0.6488888888888888,
+   "micro_r1": 0.06516399083114237,
+   "micro_hit3": 0.8311111111111111,
+   "micro_p3": 0.5985185185185183,
+   "micro_r3": 0.18036881391689055,
+   "micro_hit5": 0.8755555555555555,
+   "micro_p5": 0.5706666666666667,
+   "micro_r5": 0.2878097452253955,
+   "micro_hit10": 0.9511111111111111,
+   "micro_p10": 0.48444444444444446,
+   "micro_r10": 0.4724726535151816,
+   "micro_hit20": 0.9866666666666667,
+   "micro_p20": 0.3519999999999999,
+   "micro_r20": 0.6583826747213295,
+   "micro_hit50": 0.9955555555555555,
+   "micro_p50": 0.18391111111111116,
+   "micro_r50": 0.8479785417839397,
+   "macro_mAP": 0.5293008399053396,
+   "micro_mAP": 0.5293008399053394,
+   "n_queries": 225,
+   "n_classes": 75,
+   "hit1_class_ci": [
+    0.6488888888888888,
+    0.5822222222222222,
+    0.72
+   ],
+   "diag": {
+    "mean_intra_sqdist": 0.5009300112724304,
+    "mean_inter_sqdist": 1.252489447593689,
+    "intra_over_inter": 0.39994749426841736,
+    "nn_intra_closer_frac": 0.6488888888888888,
+    "margin_mean": 0.06744733452796936
+   },
+   "top_confusions": [
+    {
+     "true": "tomato_mold",
+     "pred": "tomato_late blight",
+     "n": 3
+    },
+    {
+     "true": "apple_frog eye leaf spot",
+     "pred": "apple_scab",
+     "n": 2
+    },
+    {
+     "true": "cassava_bacterial blight",
+     "pred": "cassava_healthy",
+     "n": 2
+    },
+    {
+     "true": "orange_healthy",
+     "pred": "lemon_healthy",
+     "n": 2
+    },
+    {
+     "true": "persimmon_diseased",
+     "pred": "pear_scab",
+     "n": 2
+    },
+    {
+     "true": "lemon_sooty mold",
+     "pred": "orange_canker",
+     "n": 2
+    },
+    {
+     "true": "apple_rust",
+     "pred": "pear_rust",
+     "n": 2
+    },
+    {
+     "true": "cucmber_healthy",
+     "pred": "whitegourd_healthy",
+     "n": 2
+    },
+    {
+     "true": "cotton_fussarium wilt",
+     "pred": "cotton_bacterial blight",
+     "n": 2
+    },
+    {
+     "true": "eggplant_healthy",
+     "pred": "whitegourd_healthy",
+     "n": 2
+    }
+   ]
+  },
+  "testC_exploratory": {
+   "macro_hit1": 0.62,
+   "macro_p1": 0.62,
+   "macro_r1": 0.07494502179137066,
+   "macro_hit3": 0.7666666666666667,
+   "macro_p3": 0.6,
+   "macro_r3": 0.21762955791860444,
+   "macro_hit5": 0.8666666666666667,
+   "macro_p5": 0.568,
+   "macro_r5": 0.34271969770144217,
+   "macro_hit10": 0.9266666666666666,
+   "macro_p10": 0.4540000000000001,
+   "macro_r10": 0.5265929335858343,
+   "macro_hit20": 0.98,
+   "macro_p20": 0.3113333333333333,
+   "macro_r20": 0.6999676605229344,
+   "macro_hit50": 0.9933333333333333,
+   "macro_p50": 0.1552,
+   "macro_r50": 0.8598848999021413,
+   "micro_hit1": 0.6408450704225352,
+   "micro_p1": 0.6408450704225352,
+   "micro_r1": 0.07635037513172958,
+   "micro_hit3": 0.7746478873239436,
+   "micro_p3": 0.6150234741784038,
+   "micro_r3": 0.21862277244923017,
+   "micro_hit5": 0.8591549295774648,
+   "micro_p5": 0.5802816901408451,
+   "micro_r5": 0.3416053144733544,
+   "micro_hit10": 0.9225352112676056,
+   "micro_p10": 0.4669014084507042,
+   "micro_r10": 0.5298516904075713,
+   "micro_hit20": 0.9788732394366197,
+   "micro_p20": 0.3190140845070423,
+   "micro_r20": 0.6982052752002827,
+   "micro_hit50": 0.9929577464788732,
+   "micro_p50": 0.15943661971830986,
+   "micro_r50": 0.8614981336994451,
+   "macro_mAP": 0.5465351959677915,
+   "micro_mAP": 0.5571338754032693,
+   "n_queries": 142,
+   "n_classes": 75,
+   "hit1_class_ci": [
+    0.62,
+    0.5266666666666666,
+    0.7133333333333334
+   ],
+   "diag": {
+    "mean_intra_sqdist": 0.48849818110466003,
+    "mean_inter_sqdist": 1.2543023824691772,
+    "intra_over_inter": 0.3894580602645874,
+    "nn_intra_closer_frac": 0.6408450704225352,
+    "margin_mean": 0.07621868699789047
+   },
+   "top_confusions": [
+    {
+     "true": "apple_rust",
+     "pred": "pear_rust",
+     "n": 2
+    },
+    {
+     "true": "lemon_chlorosis",
+     "pred": "orange_huanglongbing",
+     "n": 2
+    },
+    {
+     "true": "apple_powdery mildew",
+     "pred": "pear_powdery mildew",
+     "n": 1
+    },
+    {
+     "true": "apple_scab",
+     "pred": "apple_healthy",
+     "n": 1
+    },
+    {
+     "true": "apple_frog eye leaf spot",
+     "pred": "pear_rust",
+     "n": 1
+    },
+    {
+     "true": "banana_cordana leaf spot",
+     "pred": "banana_sigatoka",
+     "n": 1
+    },
+    {
+     "true": "bean_healthy",
+     "pred": "cotton_healthy",
+     "n": 1
+    },
+    {
+     "true": "bean_angular leaf spot",
+     "pred": "bean_rust",
+     "n": 1
+    },
+    {
+     "true": "apple_scab",
+     "pred": "apple_rust",
+     "n": 1
+    },
+    {
+     "true": "bean_rust",
+     "pred": "cotton_bacterial blight",
+     "n": 1
+    }
+   ]
+  }
+ }
+}

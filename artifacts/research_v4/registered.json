@@ -1,0 +1,71 @@
+{
+ "name": "research_v4: fewer parameters, same or better Hit@1 (registered 2026-10-26, before any run)",
+ "goal": "Replace the 282M-parameter ensemble+ResNet50 fusion by a lighter system. Target (declared up front): class-macro Hit@1 >= 0.85 on dev AND Protocol-B test AND Protocol-C test jointly (pooled B+C >= 0.85). The B-only 0.858 of the ensemble is NOT a valid target (it did not replicate on C: 0.760).",
+ "status_of_sets": "dev = only selection set. Protocol B/C tests are consumed (inspected many times) -> every B/C number is EXPLORATORY; no new independent claim. A confirmatory result still needs docs/FRESH_TEST_PLAN_PA_RESNET.md.",
+ "selection_rule": "dev class-macro Hit@1; improvement needs > 1/150 (one dev query); inside the tie band the higher dev mAP wins. Used for epochs, hyper-parameters, methods and the final stack. B/C are never read for any choice.",
+ "reference": "single DINOv2-B + Proxy-Anchor a32 d0.3 (artifacts/research_v2/trackA/runs/A_pro_alpha32_delta0.3_s{0,1,2}): dev 0.820, B 0.825, C 0.782; 85.9M params, 21.9 GMAC.",
+ "stages": {
+  "Z (zero-parameter, CPU, existing embeddings)": {
+   "inputs": [
+    "PA_single seeds 0-2 (256-d)",
+    "PA_single + ResNet50-ft w=0.05 (512-d)"
+   ],
+   "methods": {
+    "DBA": "gallery-side: g_i <- normalise(sum_{j in kNN_gal(i) U {i}} cos(g_i,g_j)^p * g_j); k in {1,2,3,5}, p=1; gallery only (gallery_B for dev/B, gallery_C for C); no labels",
+    "aQE": "query expansion: q <- normalise(q + sum_{top-k} cos^alpha * g); k in {1,2,3,5}, alpha in {1,3}",
+    "k_reciprocal": "Zhong et al. 2017, each query handled alone against the gallery (no query-query information); k1 in {10,20}, k2 in {3,6}, lambda in {0.3,0.5}",
+    "NCA": "sklearn NeighborhoodComponentsAnalysis fitted on train_B embeddings + labels only; n_components in {256,128,64}; projected vectors L2-normalised, exact L2",
+    "LDA": "shrinkage LDA (solver eigen, shrinkage auto) fitted on train_B only; n_components in {74 (=C-1), 64, 32}; L2-normalised",
+    "PCA_whiten": "already done in research_v3 (no gain); reused as a row for completeness",
+    "stack": "the dev-selected setting of each family is applied in the order NCA/LDA -> DBA -> aQE -> k-reciprocal; the stack is adopted only if it beats the best single family on dev by the rule"
+   },
+   "note": "all are label-free at query time except NCA/LDA (train labels only). Chamfer reranking (research_v2 Track C) is not re-run; its numbers are quoted."
+  },
+  "S (backbone sweep, GPU, seed 0, dev only)": {
+   "recipe": "identical to Track A: Proxy-Anchor a32 d0.3, d_emb 256, last-4 blocks + norm trainable, layer decay 0.8, lr_bb 3e-5, lr_head 1e-3, AdamW wd 1e-4, cosine, 16x4 PK batches, 20 steps/epoch, 60 epochs, patience 10, aug base, 224 px, flip-averaged embedding, train_B only, leakage asserts",
+   "candidates": [
+    "dinov2_small (21.6M)",
+    "dinov2_small_reg4",
+    "dinov3_vits16 (21.6M)",
+    "dinov3_vits16plus (28.7M)",
+    "dinov3_convnext_tiny (27.8M; last stage trainable)",
+    "dinov2_base truncated to 9 blocks (64.5M)",
+    "dinov2_base truncated to 8 blocks (57.4M)",
+    "dinov3_vitb16 (85.7M; same budget as reference, newer pretraining)"
+   ],
+   "follow-ups (registered)": [
+    "top-2 small candidates by dev rule: lr_bb 1e-4; full fine-tune (all blocks, LLRD 0.8) at lr_bb 3e-5 and 1e-4; 336 px",
+    "3 seeds for every candidate that enters stage F"
+   ]
+  },
+  "T (test-time augmentation, zero parameters)": {
+   "views": [
+    "flip (baseline)",
+    "flip + 2 scales (1.0x, 1.25x)",
+    "flip + 5-crop (resize 1.15x, four corners + centre)",
+    "all"
+   ],
+   "applied to": "reference PA DINOv2-B seeds 0-2 and the stage-S/D winners; selection on dev"
+  },
+  "D (distillation, GPU)": {
+   "teacher": "similarity structure of (a) PA 3-seed ensemble (768-d concat/sqrt3) and (b) ensemble + ResNet50 fusion (1024-d); teacher similarities S_T = Z_T Z_T^T restricted to train_B images only (embeddings of all 2,263 images exist but ONLY train_B rows are read)",
+   "student loss": "Proxy-Anchor + lambda * mean over off-diagonal batch pairs of (S_student - S_teacher)^2 (relational KD on cosine similarities; spaces differ, so vector matching is not meaningful)",
+   "grid": "lambda in {30, 100, 300} (revised 2026-10-26 before any KD run: PA loss ~10-20 vs relational MSE ~0.02-0.05 made 2-8 negligible); teacher (a) and (b); students = reference DINOv2-B (86M) and the two best small backbones from stage S (with their best stage-S follow-up recipe); seed 0 on dev, then 3 seeds for the selected",
+   "optional extra data": "PlantSeg protocol-P train images may be added as unlabeled KD pairs ONLY if registered as a separate variant; not in the base grid"
+  },
+  "F (final)": "winner of S/D (+T, +Z stack, each adopted only by the dev rule) -> 3 seeds -> B/C exploratory, paired class-bootstrap CIs vs reference and vs ensemble+ResNet; cost table (params, GMACs, embed ms, train s). No fresh-data claim."
+ },
+ "not_allowed": [
+  "reading B/C for any choice",
+  "using gallery or query images in training or KD",
+  "moving images between splits",
+  "changing the metric away from exact L2 for the registered system (variants are comparisons)"
+ ],
+ "hardware": "RTX 4050 6 GB, one GPU job at a time; CPU jobs (stage Z) may run concurrently",
+ "stage_Z_result": "DONE 2026-10-26: no family beat exact L2 on dev for PA_single (dev 0.820) or PA_single+ResNet (0.827); LDA_74 +0.011 on B but -0.011 dev / -0.002 C; NCA, DBA, k-reciprocal all below baseline. Negative result; nothing adopted.",
+ "stage_S_result": "DONE 2026-10-26: best small recipes on dev: dinov3_convnext_tiny @336px last-stage lr3e-5 (0.793/0.686), dinov2_small_reg4 @336px (0.780/0.674); full fine-tuning never helped; truncating DINOv2-B hurt (-11/-13 pts); dinov3_vitb16 0.793 < dinov2_base 0.820.",
+ "stage_D_revision_2": "Before any small-student KD run: lambda grid for small students reduced to {30,100} (lambda 300 was the worst setting for both teachers on DINOv2-B); both teachers kept; students = the two best stage-S recipes at 336 px.",
+ "stage_D_result_dinov2_base": "DONE: dev Hit@1 0.813/0.813/0.813 (ens teacher, l30/100/300), 0.820/0.793/0.787 (ens+ResNet teacher); reference 0.820. No gain for the 86M student.",
+ "stage_D_revision_3": "2026-10-26 15:55: small-student KD queue cut after 4 of 8 runs (ConvNeXt-T 336 x {ens,ensres} x {30,100}): all below the undistilled student (0.793). The 4 DINOv2-S reg4 KD runs were NOT run (0/9 KD runs had helped). Stage F proceeds with the undistilled ConvNeXt-T 336 recipe.",
+ "stage_F_result": "DONE 2026-10-26: ConvNeXt-T 336 px, 3 seeds: dev 0.773 +/- 0.041, B 0.702, C 0.691; paired vs reference DINOv2-B: dev -0.047 [-0.082,-0.009], B -0.123, C -0.091. TARGET NOT REACHED by any system. Usable result: 281.8M -> 85.9M at equal accuracy; below 86M accuracy drops reliably. See docs/PARAMETER_REDUCTION_STUDY.md."
+}

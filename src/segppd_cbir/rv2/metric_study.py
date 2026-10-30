@@ -38,17 +38,25 @@ def distance(variant, Q, G):
 
 
 VARS = [("l2",), ("cosine",), ("dot",), ("l1",)] + [("whiten", a, d) for a, d in itertools.product((0.25, 0.5, 1.0), (256, 128, 64))]
+NSEEDS = lambda model: 1 if model in ("PA_ensemble", "SUPCON_ensemble", "SUPCON_ens_RESNET") else 3  # ensembles already pool the 3 seeds
 vname = lambda v: v[0] if v[0] != "whiten" else f"whiten(alpha={v[1]},dims={v[2]})+L2"
 def load_model(model, seed):
     """-> (image_id array, embeddings). Ensembles = concat of sqrt(1/3)*each unit-norm 256-d seed embedding (squared L2 = mean of the three squared L2)."""
     if model == "PA_single": z = np.load(RUN.format(seed)); return z["image_id"], z["emb"]
+    if model in ("PA_single_RESNET", "SUPCON_single_RESNET"):  # SINGLE model (per seed) + ResNet50-ft ArcFace; w = dev-selected weight from single_fusion.py (PA 0.05, SupCon 0.1); sqrt-weighted concat of unit vectors
+        w = json.load(open(OUT / "single_fusion_selection_dev_only.json"))["selected_w"][model.replace("_RESNET", "")]; z = np.load((RUN if model.startswith("PA") else SUP).format(seed))
+        r = np.load("artifacts/extensions/B/R1_resnet_arcface_s0_embeddings.npz"); assert (r["image_id"] == z["image_id"]).all()
+        return z["image_id"], np.concatenate([np.sqrt(1 - w) * L2n(z["emb"].astype(np.float64)), np.sqrt(w) * L2n(r["emb"].astype(np.float64))], axis=1)
+    if model == "SUPCON_ens_RESNET":  # report Tablo 4 last row: 0.9 * SupCon 3-seed ensemble + 0.1 * ResNet50 fine-tuned ArcFace (weights dev-selected earlier; sqrt-weighted concat of unit vectors)
+        ids, ens = load_model("SUPCON_ensemble", 0); r = np.load("artifacts/extensions/B/R1_resnet_arcface_s0_embeddings.npz"); assert (r["image_id"] == ids).all()
+        return ids, np.concatenate([np.sqrt(0.9) * L2n(ens), np.sqrt(0.1) * L2n(r["emb"].astype(np.float64))], axis=1)
     tpl = RUN if model == "PA_ensemble" else SUP; zs = [np.load(tpl.format(s)) for s in range(3)]; assert all((zs[0]["image_id"] == z["image_id"]).all() for z in zs)
     return zs[0]["image_id"], np.concatenate([np.sqrt(1 / 3) * z["emb"] for z in zs], axis=1)
 
 
 def main(model):
     rows = []; pqf = OUT / f"per_query_{model}.csv"; pqf.unlink(missing_ok=True)
-    for seed in range(3 if model == "PA_single" else 1):
+    for seed in range(NSEEDS(model)):
         ids, emb = load_model(model, seed); pos = {i: k for k, i in enumerate(ids)}; E = lambda df: emb[[pos[i] for i in df.image_id]].astype(np.float64); Ztr = E(S["train"])
         for v in VARS:
             if v[0] == "whiten" and v[2] > Ztr.shape[1]: continue
@@ -58,7 +66,7 @@ def main(model):
                 rows.append(dict(variant=vname(v), seed=seed, set=name, hit1=s["macro_hit1"], mAP=s["macro_mAP"], P10=s["macro_p10"], hit10=s["macro_hit10"])); pq.assign(variant=vname(v), seed=seed, set=name).to_csv(pqf, mode="a", header=not pqf.exists(), index=False)
     R = pd.DataFrame(rows); R.to_csv(OUT / f"metric_study_by_seed_{model}.csv", index=False); M = R.groupby(["variant", "set"])[["hit1", "mAP", "P10", "hit10"]].mean().reset_index(); M.to_csv(OUT / f"metric_study_mean_{model}.csv", index=False)
     dev = M[M.set == "dev"].set_index("variant"); mx = dev.hit1.max(); band = dev[dev.hit1 >= mx - C.TIE_EPS + 1e-12]; sel = band.mAP.idxmax()
-    json.dump(dict(model=model, rule="dev Hit@1 (mean over seeds); tie band 1/150; higher dev mAP inside the band", selected=sel, dev_best_hit1=float(mx), band=list(band.index)), open(OUT / f"metric_selection_dev_only_{model}.json", "w"), indent=1)
+    json.dump(dict(model=model, rule="dev Hit@1 (mean over seeds); tie band 1/150; higher dev mAP inside the band", selected=sel, selected_tuple=next(([v[0], v[1], v[2]] if v[0] == "whiten" else [v[0]] for v in VARS if vname(v) == sel)), dev_best_hit1=float(mx), band=list(band.index)), open(OUT / f"metric_selection_dev_only_{model}.json", "w"), indent=1)
     pd.set_option("display.width", 220); print(model); print(M.pivot(index="variant", columns="set", values="hit1").round(3).to_string()); print("selected on dev:", sel)
     l2 = R[R.variant == "l2"].hit1.to_numpy(); print("cosine/dot identical to l2:", [bool(np.allclose(l2, R[R.variant == v].hit1.to_numpy())) for v in ("cosine", "dot")])
 

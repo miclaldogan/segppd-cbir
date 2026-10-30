@@ -1,0 +1,2 @@
+FIN_convnext_tiny_336_s1
+FIN_convnext_tiny_336_s2

@@ -1,0 +1,26 @@
+[PA_single] seed 0 single families done 14s
+[PA_single] seed 1 single families done 36s
+[PA_single] seed 2 single families done 54s
+[PA_single] dev-selected per family: {'dba': 'k1', 'aqe': 'k1_a1', 'krecip': 'k110_k23_l0.5', 'proj': 'lda_74'}; stack: [('aqe', 'k1_a1')]
+set                       dev  testB_exploratory  testC_exploratory
+family   setting                                                   
+aqe      k1_a1          0.820              0.825              0.782
+baseline l2             0.820              0.825              0.782
+dba      k1             0.809              0.828              0.769
+krecip   k110_k23_l0.5  0.800              0.816              0.760
+proj     lda_74         0.809              0.836              0.780
+stack    aqe:k1_a1      0.820              0.825              0.782
+[PA_single] done 64s
+[PA_single_RESNET] seed 0 single families done 22s
+[PA_single_RESNET] seed 1 single families done 43s
+[PA_single_RESNET] seed 2 single families done 81s
+[PA_single_RESNET] dev-selected per family: {'dba': 'k1', 'aqe': 'k1_a1', 'krecip': 'k120_k23_l0.5', 'proj': 'lda_74'}; stack: [('aqe', 'k1_a1'), ('krecip', 'k110_k26_l0.5')]
+set                                        dev  testB_exploratory  testC_exploratory
+family   setting                                                                    
+aqe      k1_a1                           0.827              0.839              0.800
+baseline l2                              0.827              0.839              0.800
+dba      k1                              0.816              0.822              0.780
+krecip   k120_k23_l0.5                   0.811              0.819              0.784
+proj     lda_74                          0.816              0.837              0.771
+stack    aqe:k1_a1+krecip:k110_k26_l0.5  0.827              0.836              0.798
+[PA_single_RESNET] done 97s

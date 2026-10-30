@@ -1,0 +1,16 @@
+{
+ "model": "SUPCON_ens_RESNET",
+ "rule": "dev Hit@1 (mean over seeds); tie band 1/150; higher dev mAP inside the band",
+ "selected": "whiten(alpha=0.25,dims=64)+L2",
+ "selected_tuple": [
+  "whiten",
+  0.25,
+  64
+ ],
+ "dev_best_hit1": 0.8266666666666667,
+ "band": [
+  "whiten(alpha=0.25,dims=64)+L2",
+  "whiten(alpha=0.5,dims=128)+L2",
+  "whiten(alpha=0.5,dims=64)+L2"
+ ]
+}
