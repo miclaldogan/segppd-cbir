@@ -50,3 +50,7 @@ artifacts/research_v4/**/best.pt
 artifacts/research_v4/**/embeddings.npz
 artifacts/research_v4/teachers/
 artifacts/research_v4/tta/emb_*.npz
+
+# third-party papers (copyrighted, local only)
+cbir1.pdf
+s41598-025-14605-9.pdf

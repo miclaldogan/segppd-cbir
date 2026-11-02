@@ -77,7 +77,7 @@ def canvas(w, h):
 def arch_baseline():
     fig, ax = canvas(10.2, 3.1)
     box(ax, 0.01, 0.36, 0.12, 0.30, "Giriş\ngörüntüsü\n256×256 RGB", "#F2F2F2")
-    box(ax, 0.16, 0.36, 0.13, 0.30, "Ön işleme\nyeniden boyutlandır 232\nmerkez kırp 224\nImageNet norm.", "#F2F2F2", fs=7.5)
+    box(ax, 0.16, 0.36, 0.13, 0.30, "Preprocessing\nresize 232\ncenter crop 224\nImageNet norm.", "#F2F2F2", fs=7.5)
     # ResNet block
     ax.add_patch(FancyBboxPatch((0.32, 0.12), 0.40, 0.76, boxstyle="round,pad=0.002,rounding_size=0.012", fc="#EAF1F8", ec=BLUE, lw=1.5))
     ax.text(0.52, 0.845, "ResNet50 (ImageNet-1K V2)  -  donmuş, eğitimsiz", ha="center", fontsize=8.5, fontweight="bold", color=BLUE)
@@ -90,7 +90,7 @@ def arch_baseline():
     box(ax, 0.655, 0.54, 0.055, 0.12, "2048-B", "#D9E8F5", BLUE, fs=7, bold=True)
     box(ax, 0.655, 0.20, 0.055, 0.12, "1000-B", "#D9E8F5", BLUE, fs=7, bold=True)
     arrow(ax, (0.645, 0.60), (0.655, 0.60), BLUE); arrow(ax, (0.645, 0.265), (0.655, 0.265), BLUE)
-    box(ax, 0.755, 0.36, 0.11, 0.30, "Tam Öklid (L2)\nsıralama\n(bağ kırma:\nmesafe, id)", "#FDF1E3", ORANGE, fs=7.5)
+    box(ax, 0.755, 0.36, 0.11, 0.30, "Tam Öklid (L2)\nsıralama\n(tie-break:\nmesafe, id)", "#FDF1E3", ORANGE, fs=7.5)
     box(ax, 0.89, 0.36, 0.10, 0.30, "Top-K\nsonuçlar\nP@K, Hit@K,\nmAP", "#EAF4E8", GREEN, fs=7.5)
     arrow(ax, (0.13, 0.51), (0.16, 0.51)); arrow(ax, (0.29, 0.51), (0.335, 0.60)); arrow(ax, (0.71, 0.60), (0.755, 0.52)); arrow(ax, (0.71, 0.265), (0.755, 0.50))
     arrow(ax, (0.865, 0.51), (0.89, 0.51))
@@ -105,35 +105,35 @@ def arch_final():
     ax.add_patch(FancyBboxPatch((0.005, 0.50), 0.99, 0.49, boxstyle="round,pad=0.002,rounding_size=0.012", fc="#FBFBFB", ec="#BBB", lw=1))
     ax.text(0.015, 0.955, "(a) Eğitim  -  yalnızca train_B (772 görüntü), 75 sınıf", fontsize=9, fontweight="bold")
     box(ax, 0.02, 0.70, 0.10, 0.17, "Eğitim\ngörüntüsü", "#F2F2F2")
-    box(ax, 0.14, 0.64, 0.14, 0.29, "Sınıf dengeli batch\n16 sınıf × 4 görüntü\n\nArtırma: kırpma (0,4-1),\nyatay/dikey çevirme,\nrenk oynatma", "#F2F2F2", fs=7.3)
+    box(ax, 0.14, 0.64, 0.14, 0.29, "Sınıf dengeli batch\n16 sınıf × 4 görüntü\n\nAugmentation: kırpma (0,4-1),\nyatay/dikey çevirme,\nrenk oynatma", "#F2F2F2", fs=7.3)
     # DINO block
     ax.add_patch(FancyBboxPatch((0.31, 0.565), 0.45, 0.36, boxstyle="round,pad=0.002,rounding_size=0.012", fc="#EAF1F8", ec=BLUE, lw=1.5))
-    ax.text(0.535, 0.895, "DINOv2-B (ViT-B/14, LVD-142M ön eğitimi)", ha="center", fontsize=8.5, fontweight="bold", color=BLUE)
-    box(ax, 0.325, 0.62, 0.085, 0.20, "Yama\ngömme\n+ konum", "#FFFFFF", BLUE, fs=7)
+    ax.text(0.535, 0.895, "DINOv2-B (ViT-B/14, LVD-142M pretraining)", ha="center", fontsize=8.5, fontweight="bold", color=BLUE)
+    box(ax, 0.325, 0.62, 0.085, 0.20, "Patch\nembedding\n+ position", "#FFFFFF", BLUE, fs=7)
     box(ax, 0.425, 0.62, 0.135, 0.20, "Blok 1-8\nDONMUŞ", "#E6E6E6", GREY, fs=7.8, bold=True)
     box(ax, 0.575, 0.62, 0.135, 0.20, "Blok 9-12 + norm\nEĞİTİLİR\nlr 3e-5, katman\nbaşına ×0,8", "#FDE9D5", ORANGE, fs=7, bold=True)
     for a, b in [(0.41, 0.425), (0.56, 0.575)]: arrow(ax, (a, 0.72), (b, 0.72), BLUE)
-    ax.text(0.535, 0.585, "CLS jetonu → 768-B", ha="center", fontsize=7.3, color=BLUE, style="italic")
+    ax.text(0.535, 0.585, "CLS token → 768-B", ha="center", fontsize=7.3, color=BLUE, style="italic")
     box(ax, 0.785, 0.70, 0.095, 0.17, "Dropout 0,2\nLinear\n768→256\nL2 norm.", "#FDE9D5", ORANGE, fs=7)
-    box(ax, 0.90, 0.70, 0.085, 0.17, "256-B\ngömme\nz", "#D9E8F5", BLUE, fs=7.5, bold=True)
+    box(ax, 0.90, 0.70, 0.085, 0.17, "256-B\nembedding\nz", "#D9E8F5", BLUE, fs=7.5, bold=True)
     box(ax, 0.785, 0.53, 0.20, 0.12, "SupCon kaybı (τ = 0,1)\naynı sınıfı yaklaştır, diğerini uzaklaştır", "#F9E1E1", RED, fs=7.2)
     arrow(ax, (0.12, 0.785), (0.14, 0.785)); arrow(ax, (0.28, 0.785), (0.325, 0.74)); arrow(ax, (0.71, 0.72), (0.785, 0.785))
     arrow(ax, (0.88, 0.785), (0.90, 0.785)); arrow(ax, (0.9425, 0.70), (0.9425, 0.65), RED)
-    ax.text(0.02, 0.585, "AdamW, kosinüs lr; erken durdurma: dev mAP, sabır 10", fontsize=7.2, color="#555", style="italic")
+    ax.text(0.02, 0.585, "AdamW, cosine LR schedule; early stopping: dev mAP, patience 10", fontsize=7.2, color="#555", style="italic")
     ax.text(0.99, 0.955, "YALNIZCA EĞİTİM", ha="right", fontsize=8, fontweight="bold", color=RED)
     # ---- panel B: retrieval
     ax.add_patch(FancyBboxPatch((0.005, 0.01), 0.99, 0.47, boxstyle="round,pad=0.002,rounding_size=0.012", fc="#FBFBFB", ec="#BBB", lw=1))
     ax.text(0.015, 0.445, "(b) Erişim (CBIR)  -  eğitimsiz, tam Öklid arama", fontsize=9, fontweight="bold")
     box(ax, 0.02, 0.20, 0.10, 0.16, "Sorgu\ngörüntüsü", "#F2F2F2")
     box(ax, 0.02, 0.04, 0.10, 0.12, "Yatay çevrilmiş\nsorgu", "#F2F2F2", fs=7.3)
-    box(ax, 0.17, 0.08, 0.22, 0.27, "Aynı ağ: (a)'da eğitilen\nağırlıklar kullanılır\n(DINOv2-B + 256-B başlık)\n224×224, görüntü başına\n2 ileri geçiş", "#EAF1F8", BLUE, fs=7.3)
-    box(ax, 0.43, 0.20, 0.11, 0.16, "iki gömmenin\nortalaması\n+ L2 norm.", "#F2F2F2", fs=7.3)
+    box(ax, 0.17, 0.08, 0.22, 0.27, "Aynı ağ: (a)'da eğitilen\nağırlıklar kullanılır\n(DINOv2-B + 256-B projection head)\n224×224, görüntü başına\n2 forward pass", "#EAF1F8", BLUE, fs=7.3)
+    box(ax, 0.43, 0.20, 0.11, 0.16, "iki embedding'in\nortalaması\n+ L2 norm.", "#F2F2F2", fs=7.3)
     box(ax, 0.58, 0.20, 0.10, 0.16, "256-B\nsorgu\nvektörü", "#D9E8F5", BLUE, fs=7.5, bold=True)
     box(ax, 0.58, 0.04, 0.10, 0.12, "Galeri\n(809 görüntü\nçevrimdışı)", "#EDEDED", GREY, fs=7)
-    box(ax, 0.72, 0.10, 0.12, 0.25, "Tam Öklid (L2)\nsıralama\n(kaba-kuvvet,\nyaklaşık arama yok)", "#FDF1E3", ORANGE, fs=7.2)
+    box(ax, 0.72, 0.10, 0.12, 0.25, "Tam Öklid (L2)\nsıralama\n(brute-force,\nyaklaşık arama yok)", "#FDF1E3", ORANGE, fs=7.2)
     box(ax, 0.875, 0.10, 0.11, 0.25, "Top-K\nsonuçlar\n(Protokol B:\nHit@1 0,807)", "#EAF4E8", GREEN, fs=7.5, bold=True)
     ax.text(0.99, 0.445, "ÇIKARIM (eğitim yok)", ha="right", fontsize=8, fontweight="bold", color=GREEN)
-    ax.text(0.585, 0.395, "isteğe bağlı (ikincil sonuç): 3 tohumun gömmeleri √(1/3) ile ağırlıklanıp birleştirilir (768-B);\nkare mesafe üç modelin kare mesafelerinin ortalaması olur", fontsize=6.8, color="#666", style="italic", ha="center")
+    ax.text(0.585, 0.395, "isteğe bağlı (ikincil sonuç): 3 seed'in embedding'leri √(1/3) ile ağırlıklanıp birleştirilir (768-B);\nkare mesafe üç modelin kare mesafelerinin ortalaması olur", fontsize=6.8, color="#666", style="italic", ha="center")
     arrow(ax, (0.12, 0.28), (0.17, 0.26)); arrow(ax, (0.12, 0.10), (0.17, 0.17)); arrow(ax, (0.39, 0.225), (0.43, 0.27)); arrow(ax, (0.54, 0.28), (0.58, 0.28))
     arrow(ax, (0.68, 0.28), (0.72, 0.26)); arrow(ax, (0.68, 0.10), (0.72, 0.16)); arrow(ax, (0.84, 0.225), (0.875, 0.225))
     save(fig, "arch_final")
@@ -146,7 +146,7 @@ def ablation_bar():
     seeds = lambda pre: [g(f"{pre}_s{i}") for i in range(3)]
     steps = [("ResNet50 donmuş, 1000-B logit", g("BASE_resnet50_frozen_logits1000_raw"), GREY),
              ("ResNet50 donmuş, 2048-B", g("BASE_resnet50_frozen_pooled2048_raw"), GREY),
-             ("ResNet50 ince ayar + ArcFace", g("R1_resnet50_ft_arcface_existing_system"), ORANGE),
+             ("ResNet50 fine-tuned + ArcFace", g("R1_resnet50_ft_arcface_existing_system"), ORANGE),
              ("DINOv2-S donmuş", g("F_dinov2s_frozen_cls"), TEAL),
              ("DINOv2-B donmuş", g("F_dinov2b_frozen_cls"), TEAL),
              ("DINOv2-S son 4 blok + ArcFace", g("D2_dinoS_p4_arcface_s0"), BLUE),
@@ -163,13 +163,13 @@ def ablation_bar():
         ax.text(0.01, i, f"{mean:.3f}".replace(".", ","), va="center", ha="left", fontsize=8, color="white", fontweight="bold")
     ax.axvline(0.8, color=RED, ls="--", lw=1); ax.text(0.805, -0.75, "0,80", color=RED, fontsize=7.5)
     ax.set_yticks(range(len(steps)), [s[0] for s in steps], fontsize=8); ax.invert_yaxis(); ax.set_xlim(0, 1)
-    ax.set_xlabel("Hit@1 (sınıf ortalaması; %95 sınıf-bootstrap GA; * = 3 tohum ortalaması)", fontsize=8)
+    ax.set_xlabel("Hit@1 (sınıf ortalaması; %95 sınıf-bootstrap GA; * = 3 seed ortalaması)", fontsize=8)
     fig.tight_layout(); fig.savefig(O / "ablation_hit1.png", dpi=200); plt.close(fig)
 
 
 def roc_fig():
     cv = pd.read_pickle("artifacts/metrics/protocolB_locked/roc_curves.pkl")
-    show = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 ince ayar + ArcFace", ORANGE),
+    show = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 fine-tuned + ArcFace", ORANGE),
             ("F_dinov2b_frozen_cls", "DINOv2-B donmuş", TEAL), ("D2_dinoS_p4_arcface_s0", "DINOv2-S + ArcFace", PURPLE),
             ("D5_dinoB_p4_supcon_s0", "DINOv2-B + SupCon (önerilen)", GREEN)]
     auc = pd.read_csv("artifacts/metrics/protocolB_locked/classification_roc_metrics.csv").set_index("rep").roc_auc_pairwise
@@ -185,20 +185,20 @@ def roc_fig():
 
 def pr_fig():
     d = pd.read_csv("artifacts/metrics/protocolB_locked/pr_curves_11pt.csv")
-    show = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 ince ayar + ArcFace", ORANGE),
+    show = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 fine-tuned + ArcFace", ORANGE),
             ("F_dinov2b_frozen_cls", "DINOv2-B donmuş", TEAL), ("D2_dinoS_p4_arcface_s0", "DINOv2-S + ArcFace", PURPLE),
             ("D5_dinoB_p4_supcon_s0", "DINOv2-B + SupCon (önerilen)", GREEN)]
     fig, ax = plt.subplots(figsize=(4.6, 3.6))
     for k, lab, col in show:
         s = d[d.rep == k]; ax.plot(s.recall, s.interp_precision, color=col, lw=1.7, marker="o", ms=2.8, label=lab)
-    ax.set_xlabel("Anma (recall)"); ax.set_ylabel("Enterpole edilmiş kesinlik (precision)"); ax.set_xlim(0, 1); ax.set_ylim(0, 1.02)
+    ax.set_xlabel("Recall"); ax.set_ylabel("Interpolated precision"); ax.set_xlim(0, 1); ax.set_ylim(0, 1.02)
     ax.grid(alpha=.25); ax.legend(fontsize=6.8, loc="upper right"); fig.tight_layout(); save(fig, "pr_curve")
 
 
 def pk_fig():
     ci = pd.read_csv("artifacts/metrics/protocolB_locked/macro_ci.csv")
     ks = [1, 3, 5, 10, 20, 50, 100]
-    show = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 ince ayar + ArcFace", ORANGE),
+    show = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 fine-tuned + ArcFace", ORANGE),
             ("F_dinov2b_frozen_cls", "DINOv2-B donmuş", TEAL), ("D5_dinoB_p4_supcon_s0", "DINOv2-B + SupCon (önerilen)", GREEN)]
     fig, axs = plt.subplots(1, 2, figsize=(7.2, 3.1))
     for a, (m, yl) in zip(axs, (("P", "P@K"), ("Hit", "Hit@K"))):
@@ -232,8 +232,8 @@ def generalisation():
 # ------------------------------------------------------------------ additional figures (v2 report)
 from segppd_cbir.index import rank  # noqa: E402
 
-SYS5 = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 ince ayar + ArcFace", ORANGE),
-        ("F_dinov2b_frozen_cls", "DINOv2-B donmuş", TEAL), ("D5_dinoB_p4_supcon_s0", "DINOv2-B + SupCon (tohum 0)", GREEN)]
+SYS5 = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 fine-tuned + ArcFace", ORANGE),
+        ("F_dinov2b_frozen_cls", "DINOv2-B donmuş", TEAL), ("D5_dinoB_p4_supcon_s0", "DINOv2-B + SupCon (seed 0)", GREEN)]
 
 
 def prk_rk():
@@ -257,7 +257,7 @@ def hit_map():
     g = lambda r, m, K=1: ci[(ci.rep == r) & (ci.K == K) & (ci.metric == m)].iloc[0]
     sd = lambda p: [f"{p}_s{i}" for i in range(3)]
     steps = [("ResNet50 donmuş, 1000-B logit", ["BASE_resnet50_frozen_logits1000_raw"], GREY), ("ResNet50 donmuş, 2048-B", ["BASE_resnet50_frozen_pooled2048_raw"], GREY),
-             ("ResNet50 ince ayar + ArcFace", ["R1_resnet50_ft_arcface_existing_system"], ORANGE), ("DINOv2-S donmuş", ["F_dinov2s_frozen_cls"], TEAL),
+             ("ResNet50 fine-tuned + ArcFace", ["R1_resnet50_ft_arcface_existing_system"], ORANGE), ("DINOv2-S donmuş", ["F_dinov2s_frozen_cls"], TEAL),
              ("DINOv2-B donmuş", ["F_dinov2b_frozen_cls"], TEAL), ("DINOv2-S son 4 blok + ArcFace", ["D2_dinoS_p4_arcface_s0"], BLUE),
              ("DINOv2-S son 4 blok + Proxy-Anchor*", sd("D3_dinoS_p4_proxyanchor"), BLUE), ("DINOv2-S son 4 blok + SupCon*", sd("D4_dinoS_p4_supcon"), BLUE),
              ("DINOv2-B son 4 blok + SupCon* (önerilen)", sd("D5_dinoB_p4_supcon"), GREEN)]
@@ -273,7 +273,7 @@ def hit_map():
         a.set_xlim(0, 1); a.set_xlabel(xl, fontsize=8)
     axs[0].axvline(0.8, color=RED, ls="--", lw=1)
     axs[0].set_yticks(range(len(steps)), [s[0] for s in steps], fontsize=7.5); axs[0].invert_yaxis()
-    fig.text(0.5, 0.005, "Protokol B kilitli test (225 sorgu, galeri 809); * = 3 tohum ortalaması; çubuk uçları %95 sınıf-bootstrap GA (yalnızca Hit@1)", ha="center", fontsize=6.8, color="#444")
+    fig.text(0.5, 0.005, "Protokol B kilitli test (225 sorgu, galeri 809); * = 3 seed ortalaması; çubuk uçları %95 sınıf-bootstrap GA (yalnızca Hit@1)", ha="center", fontsize=6.8, color="#444")
     fig.tight_layout(rect=(0, 0.03, 1, 1)); save(fig, "hit_map")
 
 
@@ -282,7 +282,7 @@ def per_class():
     m = pd.read_csv("artifacts/audits/dataset_manifest.csv", dtype={"image_id": str}).drop_duplicates("class_id").set_index("class_id").raw_class_label
     sd = [f"D5_dinoB_p4_supcon_s{i}" for i in range(3)]
     fin = pc[sd].mean(axis=1)
-    sysd = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 ince ayar", ORANGE),
+    sysd = [("BASE_resnet50_frozen_pooled2048_raw", "ResNet50 donmuş 2048-B", GREY), ("R1_resnet50_ft_arcface_existing_system", "ResNet50 fine-tuned", ORANGE),
             ("F_dinov2b_frozen_cls", "DINOv2-B donmuş", TEAL), (None, "DINOv2-B + SupCon (önerilen)", GREEN)]
     fig, axs = plt.subplots(1, 2, figsize=(7.4, 3.4), gridspec_kw=dict(width_ratios=[1.0, 1.25]))
     ax = axs[0]; w = 0.2
@@ -295,7 +295,7 @@ def per_class():
     ax.barh(range(len(low)), low.values, color=GREEN, height=.65)
     ax.set_yticks(range(len(low)), [m[c].replace("_", " ") for c in low.index], fontsize=6.8); ax.invert_yaxis(); ax.set_xlim(0, 1)
     for i, v in enumerate(low.values): ax.text(v + 0.01, i, f"{v:.2f}".replace(".", ","), va="center", fontsize=6.8)
-    ax.set_xlabel("Hit@1 (3 tohum ort.) - en zayıf 12 sınıf")
+    ax.set_xlabel("Hit@1 (3 seed ort.) - en zayıf 12 sınıf")
     fig.tight_layout(); save(fig, "per_class")
 
 
@@ -345,7 +345,7 @@ def pr_roc():
     for k, lab, col in SYS5:
         s_ = d[d.rep == k]; axs[0].plot(s_.recall, s_.interp_precision, color=col, lw=1.6, marker="o", ms=2.5, label=lab)
         f, t = cv[k]; axs[1].plot(f, t, color=col, lw=1.5, label=f"AUC {str(round(auc[k], 3)).replace('.', ',')}"); axs[2].plot(f, t, color=col, lw=1.5)
-    axs[0].set_xlabel("Anma (recall)"); axs[0].set_ylabel("Enterpole kesinlik"); axs[0].set_title("(a) Kesinlik-anma", fontsize=8.5); axs[0].set_xlim(0, 1); axs[0].set_ylim(0, 1.02)
+    axs[0].set_xlabel("Recall"); axs[0].set_ylabel("Interpolated precision"); axs[0].set_title("(a) Precision-recall", fontsize=8.5); axs[0].set_xlim(0, 1); axs[0].set_ylim(0, 1.02)
     axs[1].set_xlabel("Yanlış pozitif oranı"); axs[1].set_ylabel("Doğru pozitif oranı"); axs[1].set_title("(b) ROC", fontsize=8.5); axs[1].plot([0, 1], [0, 1], color="#BBB", ls=":", lw=1)
     axs[2].set_xlabel("Yanlış pozitif oranı"); axs[2].set_title("(c) ROC, YPO ≤ 0,1", fontsize=8.5); axs[2].set_xlim(0, 0.1)
     for a in axs: a.grid(alpha=.25); a.set_ylim(0, 1.02)
