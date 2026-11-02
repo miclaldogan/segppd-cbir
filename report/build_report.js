@@ -1,7 +1,7 @@
 // Source text of docs/CBIR_RESEARCH_REPORT.docx (Turkish). Run: NODE_PATH=<docx install> node report/build_report.js
 const fs = require('fs');
 const { Document, Packer, Paragraph, TextRun, ImageRun, Table, TableRow, TableCell, WidthType, ShadingType, AlignmentType, BorderStyle,
-  Footer, PageNumber, HeadingLevel, VerticalAlign } = require('docx');
+  Footer, PageNumber, HeadingLevel, VerticalAlign, ExternalHyperlink } = require('docx');
 const D = JSON.parse(fs.readFileSync('report/data.json'));
 const FONT = 'Arial';
 const f3 = (x) => x.toFixed(3).replace('.', ',');
@@ -272,7 +272,10 @@ refs.forEach((r, i) => kids.push(new Paragraph({ children: [new TextRun({ text: 
 
 
 kids.push(H1('Kod ve Veri Erişimi'));
-kids.push(P(`Çalışmanın kodu, veri bölme dosyaları, sonuç tabloları ve rapordaki şekilleri üreten betikler https://github.com/miclaldogan/segppd-cbir adresinde paylaşılmaktadır. Veri setlerinin görüntüleri lisans ve hak durumu nedeniyle depoda yer almamaktadır; SegPPD-101 ve PlantSeg v2 kendi Zenodo kayıtlarından [7, 8] indirilmelidir.`));
+kids.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 60, after: 140 }, children: [
+  new TextRun({ text: 'GitHub: ', font: FONT, size: 22, bold: true }),
+  new ExternalHyperlink({ link: 'https://github.com/miclaldogan/segppd-cbir', children: [new TextRun({ text: 'https://github.com/miclaldogan/segppd-cbir', font: FONT, size: 22, bold: true, color: '1F5FA8', underline: {} })] })] }));
+kids.push(P(`Çalışmanın kodu, veri bölme dosyaları, sonuç tabloları ve rapordaki şekilleri üreten betikler yukarıdaki GitHub deposunda paylaşılmaktadır. Veri setlerinin görüntüleri lisans ve hak durumu nedeniyle depoda yer almamaktadır; SegPPD-101 ve PlantSeg v2 kendi Zenodo kayıtlarından [7, 8] indirilmelidir.`));
 
 const doc = new Document({
   creator: 'İclal Doğan', title: 'SegPPD-101 CBIR Araştırma Raporu',
